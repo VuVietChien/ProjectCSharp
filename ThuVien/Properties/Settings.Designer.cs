@@ -33,5 +33,16 @@ namespace ThuVien.Properties {
                 return ((string)(this["ProjectCSharpConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DATNGUYEN\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Securit" +
+            "y=True")]
+        public string ProjectCSharpConnectionString1 {
+            get {
+                return ((string)(this["ProjectCSharpConnectionString1"]));
+            }
+        }
     }
 }
