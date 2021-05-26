@@ -16,7 +16,7 @@ namespace ThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TheLoai());
+            Application.Run(new Sach());
         }
     }
 }

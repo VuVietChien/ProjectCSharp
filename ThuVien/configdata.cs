@@ -20,18 +20,17 @@ namespace ThuVien
 
             SqlConnection con = new SqlConnection(connection);
             SqlCommand cmd = new SqlCommand(sql, con);
-            DataTable tb = new DataTable();
            int i = -1;
             try
             {
                 // mở kết nối csdl
                 con.Open();
-                cmd.ExecuteNonQuery();
-                //i =cmd.ExecuteNonQuery();
+                //cmd.ExecuteNonQuery();
+                i =cmd.ExecuteNonQuery();
             }
             catch
             {
-                // i = -1;
+                 i = -1;
             }
             finally
             {

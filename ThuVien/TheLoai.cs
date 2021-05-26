@@ -28,7 +28,7 @@ namespace ThuVien
         private void TheLoai_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'projectCSharpDataSet1.TheLoai' table. You can move, or remove it, as needed.
-            this.theLoaiTableAdapter1.Fill(this.projectCSharpDataSet1.TheLoai);
+            this.theLoaiTableAdapter.Fill(this.projectCSharpDataSet.TheLoai);
             
 
         }

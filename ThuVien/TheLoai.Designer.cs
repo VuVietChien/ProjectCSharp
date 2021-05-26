@@ -30,24 +30,24 @@ namespace ThuVien
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheLoai));
             System.Windows.Forms.Label maTheLoaiLabel;
             System.Windows.Forms.Label tenTheLoaiLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheLoai));
             this.theLoaiBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.theLoaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projectCSharpDataSet = new ThuVien.ProjectCSharpDataSet();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.theLoaiBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.theLoaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.projectCSharpDataSet = new ThuVien.ProjectCSharpDataSet();
             this.theLoaiTableAdapter = new ThuVien.ProjectCSharpDataSetTableAdapters.TheLoaiTableAdapter();
             this.tableAdapterManager = new ThuVien.ProjectCSharpDataSetTableAdapters.TableAdapterManager();
             this.projectCSharpDataSet1 = new ThuVien.ProjectCSharpDataSet1();
@@ -70,6 +70,24 @@ namespace ThuVien
             ((System.ComponentModel.ISupportInitialize)(this.theLoaiBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.theLoaiDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // maTheLoaiLabel
+            // 
+            maTheLoaiLabel.AutoSize = true;
+            maTheLoaiLabel.Location = new System.Drawing.Point(135, 129);
+            maTheLoaiLabel.Name = "maTheLoaiLabel";
+            maTheLoaiLabel.Size = new System.Drawing.Size(91, 17);
+            maTheLoaiLabel.TabIndex = 1;
+            maTheLoaiLabel.Text = "Ma The Loai:";
+            // 
+            // tenTheLoaiLabel
+            // 
+            tenTheLoaiLabel.AutoSize = true;
+            tenTheLoaiLabel.Location = new System.Drawing.Point(135, 157);
+            tenTheLoaiLabel.Name = "tenTheLoaiLabel";
+            tenTheLoaiLabel.Size = new System.Drawing.Size(97, 17);
+            tenTheLoaiLabel.TabIndex = 3;
+            tenTheLoaiLabel.Text = "Ten The Loai:";
             // 
             // theLoaiBindingNavigator
             // 
@@ -98,9 +116,44 @@ namespace ThuVien
             this.theLoaiBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.theLoaiBindingNavigator.Name = "theLoaiBindingNavigator";
             this.theLoaiBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.theLoaiBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.theLoaiBindingNavigator.Size = new System.Drawing.Size(800, 31);
             this.theLoaiBindingNavigator.TabIndex = 0;
             this.theLoaiBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // theLoaiBindingSource
+            // 
+            this.theLoaiBindingSource.DataMember = "TheLoai";
+            this.theLoaiBindingSource.DataSource = this.projectCSharpDataSet;
+            // 
+            // projectCSharpDataSet
+            // 
+            this.projectCSharpDataSet.DataSetName = "ProjectCSharpDataSet";
+            this.projectCSharpDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -108,7 +161,7 @@ namespace ThuVien
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -117,13 +170,13 @@ namespace ThuVien
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -135,17 +188,10 @@ namespace ThuVien
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -153,7 +199,7 @@ namespace ThuVien
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -162,50 +208,22 @@ namespace ThuVien
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // theLoaiBindingNavigatorSaveItem
             // 
             this.theLoaiBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.theLoaiBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("theLoaiBindingNavigatorSaveItem.Image")));
             this.theLoaiBindingNavigatorSaveItem.Name = "theLoaiBindingNavigatorSaveItem";
-            this.theLoaiBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.theLoaiBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.theLoaiBindingNavigatorSaveItem.Text = "Save Data";
             this.theLoaiBindingNavigatorSaveItem.Click += new System.EventHandler(this.theLoaiBindingNavigatorSaveItem_Click);
-            // 
-            // theLoaiBindingSource
-            // 
-            this.theLoaiBindingSource.DataMember = "TheLoai";
-            this.theLoaiBindingSource.DataSource = this.projectCSharpDataSet;
-            // 
-            // projectCSharpDataSet
-            // 
-            this.projectCSharpDataSet.DataSetName = "ProjectCSharpDataSet";
-            this.projectCSharpDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // theLoaiTableAdapter
             // 
@@ -253,15 +271,6 @@ namespace ThuVien
             this.tableAdapterManager1.TheThuVienTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = ThuVien.ProjectCSharpDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // maTheLoaiLabel
-            // 
-            maTheLoaiLabel.AutoSize = true;
-            maTheLoaiLabel.Location = new System.Drawing.Point(135, 129);
-            maTheLoaiLabel.Name = "maTheLoaiLabel";
-            maTheLoaiLabel.Size = new System.Drawing.Size(91, 17);
-            maTheLoaiLabel.TabIndex = 1;
-            maTheLoaiLabel.Text = "Ma The Loai:";
-            // 
             // maTheLoaiTextBox
             // 
             this.maTheLoaiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.theLoaiBindingSource1, "MaTheLoai", true));
@@ -269,15 +278,6 @@ namespace ThuVien
             this.maTheLoaiTextBox.Name = "maTheLoaiTextBox";
             this.maTheLoaiTextBox.Size = new System.Drawing.Size(100, 22);
             this.maTheLoaiTextBox.TabIndex = 2;
-            // 
-            // tenTheLoaiLabel
-            // 
-            tenTheLoaiLabel.AutoSize = true;
-            tenTheLoaiLabel.Location = new System.Drawing.Point(135, 157);
-            tenTheLoaiLabel.Name = "tenTheLoaiLabel";
-            tenTheLoaiLabel.Size = new System.Drawing.Size(97, 17);
-            tenTheLoaiLabel.TabIndex = 3;
-            tenTheLoaiLabel.Text = "Ten The Loai:";
             // 
             // tenTheLoaiTextBox
             // 

@@ -138,6 +138,9 @@
     <EmbeddedResource Include="Sach.resx">
       <DependentUpon>Sach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TacGia.resx">
+      <DependentUpon>TacGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TheLoai.resx">
       <DependentUpon>TheLoai.cs</DependentUpon>
     </EmbeddedResource>
