@@ -16,5 +16,24 @@ namespace ThuVien
         {
             InitializeComponent();
         }
+
+        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sửaMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show("Bạn muốn thoát khỏi hệ thống", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
