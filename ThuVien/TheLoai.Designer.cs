@@ -1,5 +1,4 @@
-﻿
-namespace ThuVien
+﻿namespace ThuVien
 {
     partial class TheLoai
     {
