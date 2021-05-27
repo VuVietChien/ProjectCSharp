@@ -254,21 +254,7 @@ namespace ThuVien
 
         }
 
-        private void btnback_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Main a = new Main();
-            a.Show();
 
-
-        }
-
-       
-
-        private void btntimkiem_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void Sach_Load(object sender, EventArgs e)
         {
@@ -293,6 +279,13 @@ namespace ThuVien
             adapt.Fill(dt);
             GridviewSach.DataSource = dt;
             con.Close();
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main a = new Main();
+            a.Show();
         }
 
 

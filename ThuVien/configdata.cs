@@ -13,12 +13,12 @@ namespace ThuVien
     {
         static String connection = ConfigurationManager.ConnectionStrings["QuanLyThuVien"].ConnectionString;
         //công việc chính là thêm ,sửa , xóa thông qua câu lệnh sql
-
+        SqlConnection con = new SqlConnection(connection);
 
         public int InsertDb(String sql)
         {
 
-            SqlConnection con = new SqlConnection(connection);
+            
             SqlCommand cmd = new SqlCommand(sql, con);
            int i = -1;
             try
@@ -40,8 +40,6 @@ namespace ThuVien
         }
         public DataTable selectDb(String sql)
         {
-            //cấu hình kết nối
-            SqlConnection con = new SqlConnection(connection);
             SqlCommand cmd = new SqlCommand(sql, con);
             //lưới chứa dữu liệu trả về
             DataTable tb = new DataTable();

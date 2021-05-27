@@ -31,3 +31,4 @@ E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.
 E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
 E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
