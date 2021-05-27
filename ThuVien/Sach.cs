@@ -125,8 +125,8 @@ namespace ThuVien
         private void sachBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.sachBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.projectCSharpDataSet);
+            //this.sachBindingSource.EndEdit();
+            //this.tableAdapterManager.UpdateAll(this.projectCSharpDataSet);
 
         }
 
@@ -157,7 +157,7 @@ namespace ThuVien
 
             configdata a = new configdata();
             string sql = "insert into Sach(MaSach,TenSach,MaTacGia, MaTheLoai,MaNXB,NamXuatBan  )";
-            sql += " Values('" + maSachTextBox.Text + "' ,  N'" + tenSachTextBox.Text + " ', '" + matacgiacombobox.SelectedValue + "', '" + theloaicombobox.SelectedValue + "',N'" + nhaxuatbancombobox.SelectedValue + "'," + namXuatBanTextBox.Text + ")";
+            sql += " Values('" + masachtb.Text + "' ,  N'" + tensachtb.Text + " ', '" + matacgiacombobox.SelectedValue + "', '" + theloaicombobox.SelectedValue + "',N'" + nhaxuatbancombobox.SelectedValue + "'," + Namxuatbantb.Text + ")";
             int sosanhdulieu = a.InsertDb(sql);
             if(sosanhdulieu == 0)
             {
@@ -180,7 +180,7 @@ namespace ThuVien
         private void Xóa_Click(object sender, EventArgs e)
         {
             configdata a = new configdata();
-            string sql = "delete from Sach where MaSach = '" + maSachTextBox.Text + "'";
+            string sql = "delete from Sach where MaSach = '" + masachtb.Text + "'";
            
             int sosanhdulieu = a.InsertDb(sql);
             if (sosanhdulieu == 0)
@@ -196,6 +196,13 @@ namespace ThuVien
             else
             {
                 MessageBox.Show("Xóa dữ liệu thành công");
+                
+                masachtb.Text = null;
+                tensachtb.Text = null;
+                matacgiacombobox.Text = null;
+                theloaicombobox.Text = "";
+                nhaxuatbancombobox.Text = "";
+                Namxuatbantb.Text = "";
                 GridviewSach.DataSource = null;
                 hienthiGridviewsach();
             }
@@ -203,18 +210,18 @@ namespace ThuVien
 
         private void GridviewSach_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            maSachTextBox.Text = GridviewSach.CurrentRow.Cells[0].Value.ToString();
-            tenSachTextBox.Text = GridviewSach.CurrentRow.Cells[1].Value.ToString();
+            masachtb.Text = GridviewSach.CurrentRow.Cells[0].Value.ToString();
+            tensachtb.Text = GridviewSach.CurrentRow.Cells[1].Value.ToString();
             matacgiacombobox.SelectedValue = GridviewSach.CurrentRow.Cells[2].Value.ToString();
             theloaicombobox.SelectedValue = GridviewSach.CurrentRow.Cells[3].Value.ToString();
             nhaxuatbancombobox.SelectedValue = GridviewSach.CurrentRow.Cells[4].Value.ToString();
-            namXuatBanTextBox.Text = GridviewSach.CurrentRow.Cells[5].Value.ToString();
+            Namxuatbantb.Text = GridviewSach.CurrentRow.Cells[5].Value.ToString();
         }
 
         private void btnsuasach_Click(object sender, EventArgs e)
         {
             configdata a = new configdata();
-            string sql = "update Sach set TenSach = N'"+ tenSachTextBox.Text +"', MaTacGia  = '"+matacgiacombobox.SelectedValue +"',MaTheLoai = '"+theloaicombobox.SelectedValue +"', MaNXB = '"+nhaxuatbancombobox.SelectedValue +"', NamXuatBan = "+namXuatBanTextBox.Text+"  where MaSach = '"+maSachTextBox.Text+"' " ;
+            string sql = "update Sach set TenSach = N'"+ tensachtb.Text +"', MaTacGia  = '"+matacgiacombobox.SelectedValue +"',MaTheLoai = '"+theloaicombobox.SelectedValue +"', MaNXB = '"+nhaxuatbancombobox.SelectedValue +"', NamXuatBan = "+Namxuatbantb.Text+"  where MaSach = '"+masachtb.Text+"' " ;
 
             int sosanhdulieu = a.InsertDb(sql);
             if (sosanhdulieu == 0)
@@ -237,12 +244,12 @@ namespace ThuVien
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            maSachTextBox.Text = null;
-            tenSachTextBox.Text = null;
+            masachtb.Text = null;
+            tensachtb.Text = null;
             matacgiacombobox.Text = null;
             theloaicombobox.Text = "";
             nhaxuatbancombobox.Text = "";
-            namXuatBanTextBox.Text = "";
+            Namxuatbantb.Text = "";
             GridviewSach.Refresh();
 
         }
@@ -287,5 +294,7 @@ namespace ThuVien
             GridviewSach.DataSource = dt;
             con.Close();
         }
+
+
     }
 }

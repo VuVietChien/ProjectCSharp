@@ -21,3 +21,13 @@ F:\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
 E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
 E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
 E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
