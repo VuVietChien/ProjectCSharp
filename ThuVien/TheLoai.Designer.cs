@@ -126,7 +126,7 @@
             // 
             this.btnlammoi.Location = new System.Drawing.Point(502, 222);
             this.btnlammoi.Name = "btnlammoi";
-            this.btnlammoi.Size = new System.Drawing.Size(75, 23);
+            this.btnlammoi.Size = new System.Drawing.Size(75, 30);
             this.btnlammoi.TabIndex = 9;
             this.btnlammoi.Text = "Làm mới";
             this.btnlammoi.UseVisualStyleBackColor = true;

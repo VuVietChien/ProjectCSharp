@@ -67,3 +67,4 @@ F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInp
 F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
 F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
