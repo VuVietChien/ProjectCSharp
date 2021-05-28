@@ -120,11 +120,14 @@ namespace ThuVien
             // btnthemtacgia
             // 
             this.btnthemtacgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthemtacgia.Image = global::ThuVien.Properties.Resources.icons8_add_book_35;
+            this.btnthemtacgia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthemtacgia.Location = new System.Drawing.Point(23, 47);
             this.btnthemtacgia.Name = "btnthemtacgia";
-            this.btnthemtacgia.Size = new System.Drawing.Size(157, 50);
+            this.btnthemtacgia.Size = new System.Drawing.Size(190, 50);
             this.btnthemtacgia.TabIndex = 0;
             this.btnthemtacgia.Text = "Thêm Tác Giả";
+            this.btnthemtacgia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthemtacgia.UseVisualStyleBackColor = true;
             this.btnthemtacgia.Click += new System.EventHandler(this.btnthemtacgia_Click);
             // 
@@ -142,7 +145,7 @@ namespace ThuVien
             // btnxoatacgia
             // 
             this.btnxoatacgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoatacgia.Location = new System.Drawing.Point(199, 120);
+            this.btnxoatacgia.Location = new System.Drawing.Point(267, 120);
             this.btnxoatacgia.Name = "btnxoatacgia";
             this.btnxoatacgia.Size = new System.Drawing.Size(189, 50);
             this.btnxoatacgia.TabIndex = 2;
@@ -153,7 +156,7 @@ namespace ThuVien
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(199, 47);
+            this.button1.Location = new System.Drawing.Point(267, 47);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(189, 50);
             this.button1.TabIndex = 3;
