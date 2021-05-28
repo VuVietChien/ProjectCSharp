@@ -153,6 +153,9 @@
     <EmbeddedResource Include="TacGia.resx">
       <DependentUpon>TacGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TheLoai.resx">
+      <DependentUpon>TheLoai.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

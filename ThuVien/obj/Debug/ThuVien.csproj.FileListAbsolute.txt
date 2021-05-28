@@ -51,3 +51,19 @@ E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.
 E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
 E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
 E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
+F:\đồ án lớn\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
+F:\đồ án lớn\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
+F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
