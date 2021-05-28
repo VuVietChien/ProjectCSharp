@@ -21,7 +21,8 @@ namespace ThuVien
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection sql = new SqlConnection();
-            sql.ConnectionString = "Data Source=DESKTOP-VJNST16\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            //sql.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            sql.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             sql.Open();
             string newc = "select username from login where username='" + textBox1.Text + "' and password='" + textBox3.Text + "'";
             SqlDataAdapter adp = new SqlDataAdapter(newc, sql);

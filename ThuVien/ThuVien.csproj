@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -180,6 +183,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gioi-thieu-ve-tac-gia-ho-chi-minh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sách.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-book-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-book-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchronize-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-support-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thu-vien-dep-co-thiet-ke-doc-dao-ai-cung-muon-ghe-chan-mot-lan-147973.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thuvien.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

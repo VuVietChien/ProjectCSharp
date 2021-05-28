@@ -48,38 +48,52 @@ namespace ThuVien
             this.Tacgialb = new System.Windows.Forms.Label();
             this.theloailb = new System.Windows.Forms.Label();
             this.namxuatbanlb = new System.Windows.Forms.Label();
-            this.btnback = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnloadfile = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnback = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridviewSach)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThem
             // 
+            this.btnThem.AutoSize = true;
+            this.btnThem.BackColor = System.Drawing.Color.Snow;
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(38, 159);
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnThem.Image = global::ThuVien.Properties.Resources.icons8_add_book_35;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(20, 123);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(121, 50);
-            this.btnThem.TabIndex = 13;
+            this.btnThem.Size = new System.Drawing.Size(136, 43);
+            this.btnThem.TabIndex = 1;
             this.btnThem.Text = "Thêm Sách";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(417, 9);
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(453, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(373, 43);
             this.label1.TabIndex = 26;
@@ -88,87 +102,102 @@ namespace ThuVien
             // GridviewSach
             // 
             this.GridviewSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridviewSach.Location = new System.Drawing.Point(0, 61);
+            this.GridviewSach.Location = new System.Drawing.Point(10, 58);
             this.GridviewSach.Name = "GridviewSach";
             this.GridviewSach.RowHeadersWidth = 51;
             this.GridviewSach.RowTemplate.Height = 24;
-            this.GridviewSach.Size = new System.Drawing.Size(1062, 193);
+            this.GridviewSach.Size = new System.Drawing.Size(1091, 193);
             this.GridviewSach.TabIndex = 27;
             this.GridviewSach.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.GridviewSach_CellMouseClick);
             // 
             // matacgiacombobox
             // 
             this.matacgiacombobox.FormattingEnabled = true;
-            this.matacgiacombobox.Location = new System.Drawing.Point(156, 173);
+            this.matacgiacombobox.Location = new System.Drawing.Point(197, 157);
             this.matacgiacombobox.Name = "matacgiacombobox";
-            this.matacgiacombobox.Size = new System.Drawing.Size(229, 30);
-            this.matacgiacombobox.TabIndex = 28;
+            this.matacgiacombobox.Size = new System.Drawing.Size(278, 30);
+            this.matacgiacombobox.TabIndex = 2;
             // 
             // theloaicombobox
             // 
             this.theloaicombobox.FormattingEnabled = true;
-            this.theloaicombobox.Location = new System.Drawing.Point(156, 220);
+            this.theloaicombobox.Location = new System.Drawing.Point(197, 193);
             this.theloaicombobox.Name = "theloaicombobox";
-            this.theloaicombobox.Size = new System.Drawing.Size(229, 30);
-            this.theloaicombobox.TabIndex = 29;
+            this.theloaicombobox.Size = new System.Drawing.Size(278, 30);
+            this.theloaicombobox.TabIndex = 3;
             // 
             // nhaxuatbancombobox
             // 
             this.nhaxuatbancombobox.FormattingEnabled = true;
-            this.nhaxuatbancombobox.Location = new System.Drawing.Point(156, 282);
+            this.nhaxuatbancombobox.Location = new System.Drawing.Point(211, 231);
             this.nhaxuatbancombobox.Name = "nhaxuatbancombobox";
-            this.nhaxuatbancombobox.Size = new System.Drawing.Size(229, 30);
-            this.nhaxuatbancombobox.TabIndex = 30;
+            this.nhaxuatbancombobox.Size = new System.Drawing.Size(264, 30);
+            this.nhaxuatbancombobox.TabIndex = 4;
             // 
             // Xóa
             // 
+            this.Xóa.AutoSize = true;
+            this.Xóa.BackColor = System.Drawing.Color.Snow;
             this.Xóa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Xóa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Xóa.Location = new System.Drawing.Point(260, 71);
+            this.Xóa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Xóa.Image = global::ThuVien.Properties.Resources.icons8_delete_35;
+            this.Xóa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Xóa.Location = new System.Drawing.Point(180, 66);
             this.Xóa.Name = "Xóa";
-            this.Xóa.Size = new System.Drawing.Size(121, 50);
-            this.Xóa.TabIndex = 31;
+            this.Xóa.Size = new System.Drawing.Size(121, 41);
+            this.Xóa.TabIndex = 2;
             this.Xóa.Text = "Xóa Sách";
-            this.Xóa.UseVisualStyleBackColor = true;
+            this.Xóa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Xóa.UseVisualStyleBackColor = false;
             this.Xóa.Click += new System.EventHandler(this.Xóa_Click);
             // 
             // btnsuasach
             // 
+            this.btnsuasach.AutoSize = true;
+            this.btnsuasach.BackColor = System.Drawing.Color.Snow;
             this.btnsuasach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnsuasach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsuasach.Location = new System.Drawing.Point(38, 71);
+            this.btnsuasach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsuasach.Image = global::ThuVien.Properties.Resources.icons8_support_35;
+            this.btnsuasach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsuasach.Location = new System.Drawing.Point(20, 64);
             this.btnsuasach.Name = "btnsuasach";
-            this.btnsuasach.Size = new System.Drawing.Size(121, 50);
-            this.btnsuasach.TabIndex = 32;
+            this.btnsuasach.Size = new System.Drawing.Size(136, 43);
+            this.btnsuasach.TabIndex = 0;
             this.btnsuasach.Text = "Sửa Sách";
-            this.btnsuasach.UseVisualStyleBackColor = true;
+            this.btnsuasach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsuasach.UseVisualStyleBackColor = false;
             this.btnsuasach.Click += new System.EventHandler(this.btnsuasach_Click);
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.AutoSize = true;
+            this.btnLamMoi.BackColor = System.Drawing.Color.Snow;
             this.btnLamMoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(260, 159);
+            this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.Image = global::ThuVien.Properties.Resources.icons8_synchronize_35;
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLamMoi.Location = new System.Drawing.Point(180, 123);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(121, 50);
-            this.btnLamMoi.TabIndex = 33;
+            this.btnLamMoi.Size = new System.Drawing.Size(121, 41);
+            this.btnLamMoi.TabIndex = 3;
             this.btnLamMoi.Text = "Làm Mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // timkiemtextbox
             // 
-            this.timkiemtextbox.Location = new System.Drawing.Point(312, 27);
+            this.timkiemtextbox.Location = new System.Drawing.Point(381, 31);
             this.timkiemtextbox.Name = "timkiemtextbox";
             this.timkiemtextbox.Size = new System.Drawing.Size(273, 24);
-            this.timkiemtextbox.TabIndex = 36;
+            this.timkiemtextbox.TabIndex = 0;
             this.timkiemtextbox.TextChanged += new System.EventHandler(this.timkiemtextbox_TextChanged);
             // 
             // MaSachlbl
             // 
             this.MaSachlbl.AutoSize = true;
             this.MaSachlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaSachlbl.Location = new System.Drawing.Point(6, 84);
+            this.MaSachlbl.Location = new System.Drawing.Point(48, 92);
             this.MaSachlbl.Name = "MaSachlbl";
             this.MaSachlbl.Size = new System.Drawing.Size(82, 20);
             this.MaSachlbl.TabIndex = 38;
@@ -178,7 +207,7 @@ namespace ThuVien
             // 
             this.Tensachlb.AutoSize = true;
             this.Tensachlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tensachlb.Location = new System.Drawing.Point(6, 125);
+            this.Tensachlb.Location = new System.Drawing.Point(48, 125);
             this.Tensachlb.Name = "Tensachlb";
             this.Tensachlb.Size = new System.Drawing.Size(88, 20);
             this.Tensachlb.TabIndex = 39;
@@ -188,7 +217,7 @@ namespace ThuVien
             // 
             this.nhaxuatbanlb.AutoSize = true;
             this.nhaxuatbanlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nhaxuatbanlb.Location = new System.Drawing.Point(6, 292);
+            this.nhaxuatbanlb.Location = new System.Drawing.Point(48, 241);
             this.nhaxuatbanlb.Name = "nhaxuatbanlb";
             this.nhaxuatbanlb.Size = new System.Drawing.Size(125, 20);
             this.nhaxuatbanlb.TabIndex = 40;
@@ -196,30 +225,30 @@ namespace ThuVien
             // 
             // masachtb
             // 
-            this.masachtb.Location = new System.Drawing.Point(156, 79);
+            this.masachtb.Location = new System.Drawing.Point(197, 84);
             this.masachtb.Name = "masachtb";
-            this.masachtb.Size = new System.Drawing.Size(229, 28);
-            this.masachtb.TabIndex = 41;
+            this.masachtb.Size = new System.Drawing.Size(278, 28);
+            this.masachtb.TabIndex = 0;
             // 
             // tensachtb
             // 
-            this.tensachtb.Location = new System.Drawing.Point(156, 117);
+            this.tensachtb.Location = new System.Drawing.Point(197, 120);
             this.tensachtb.Name = "tensachtb";
-            this.tensachtb.Size = new System.Drawing.Size(229, 28);
-            this.tensachtb.TabIndex = 42;
+            this.tensachtb.Size = new System.Drawing.Size(278, 28);
+            this.tensachtb.TabIndex = 1;
             // 
             // Namxuatbantb
             // 
-            this.Namxuatbantb.Location = new System.Drawing.Point(156, 328);
+            this.Namxuatbantb.Location = new System.Drawing.Point(211, 267);
             this.Namxuatbantb.Name = "Namxuatbantb";
-            this.Namxuatbantb.Size = new System.Drawing.Size(229, 28);
-            this.Namxuatbantb.TabIndex = 43;
+            this.Namxuatbantb.Size = new System.Drawing.Size(264, 28);
+            this.Namxuatbantb.TabIndex = 5;
             // 
             // Tacgialb
             // 
             this.Tacgialb.AutoSize = true;
             this.Tacgialb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tacgialb.Location = new System.Drawing.Point(6, 183);
+            this.Tacgialb.Location = new System.Drawing.Point(48, 167);
             this.Tacgialb.Name = "Tacgialb";
             this.Tacgialb.Size = new System.Drawing.Size(75, 20);
             this.Tacgialb.TabIndex = 44;
@@ -229,7 +258,7 @@ namespace ThuVien
             // 
             this.theloailb.AutoSize = true;
             this.theloailb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theloailb.Location = new System.Drawing.Point(6, 230);
+            this.theloailb.Location = new System.Drawing.Point(48, 203);
             this.theloailb.Name = "theloailb";
             this.theloailb.Size = new System.Drawing.Size(82, 20);
             this.theloailb.TabIndex = 45;
@@ -239,30 +268,11 @@ namespace ThuVien
             // 
             this.namxuatbanlb.AutoSize = true;
             this.namxuatbanlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namxuatbanlb.Location = new System.Drawing.Point(6, 336);
+            this.namxuatbanlb.Location = new System.Drawing.Point(48, 270);
             this.namxuatbanlb.Name = "namxuatbanlb";
             this.namxuatbanlb.Size = new System.Drawing.Size(130, 20);
             this.namxuatbanlb.TabIndex = 46;
             this.namxuatbanlb.Text = "Năm Xuất Bản";
-            // 
-            // btnback
-            // 
-            this.btnback.AutoEllipsis = true;
-            this.btnback.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnback.BackColor = System.Drawing.SystemColors.Control;
-            this.btnback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnback.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.btnback.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnback.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnback.Image = global::ThuVien.Properties.Resources.home3;
-            this.btnback.Location = new System.Drawing.Point(-2, -3);
-            this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(44, 43);
-            this.btnback.TabIndex = 34;
-            this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnback.UseVisualStyleBackColor = false;
-            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // groupBox1
             // 
@@ -281,60 +291,85 @@ namespace ThuVien
             this.groupBox1.Controls.Add(this.theloailb);
             this.groupBox1.Controls.Add(this.theloaicombobox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(34, 21);
+            this.groupBox1.Location = new System.Drawing.Point(6, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(585, 367);
-            this.groupBox1.TabIndex = 47;
+            this.groupBox1.Size = new System.Drawing.Size(499, 367);
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(0, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(213, 24);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "Thông tin quyển sách";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.Controls.Add(this.btnloadfile);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnsuasach);
             this.groupBox2.Controls.Add(this.Xóa);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnLamMoi);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(667, 146);
+            this.groupBox2.Location = new System.Drawing.Point(556, 204);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(408, 242);
+            this.groupBox2.Size = new System.Drawing.Size(541, 184);
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
+            // 
+            // btnloadfile
+            // 
+            this.btnloadfile.BackColor = System.Drawing.Color.Snow;
+            this.btnloadfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnloadfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnloadfile.Location = new System.Drawing.Point(335, 123);
+            this.btnloadfile.Name = "btnloadfile";
+            this.btnloadfile.Size = new System.Drawing.Size(121, 42);
+            this.btnloadfile.TabIndex = 4;
+            this.btnloadfile.Text = "Tải file lên";
+            this.btnloadfile.UseVisualStyleBackColor = false;
+            this.btnloadfile.Click += new System.EventHandler(this.btnloadfile_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(207, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 24);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "Chức năng";
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Snow;
+            this.groupBox3.Controls.Add(this.pictureBox2);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.GridviewSach);
             this.groupBox3.Controls.Add(this.timkiemtextbox);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(34, 411);
+            this.groupBox3.Location = new System.Drawing.Point(0, 411);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1047, 269);
+            this.groupBox3.Size = new System.Drawing.Size(1183, 269);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             // 
-            // groupBox4
+            // pictureBox2
             // 
-            this.groupBox4.Controls.Add(this.groupBox1);
-            this.groupBox4.Controls.Add(this.groupBox3);
-            this.groupBox4.Controls.Add(this.groupBox2);
-            this.groupBox4.Location = new System.Drawing.Point(58, 80);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1081, 689);
-            this.groupBox4.TabIndex = 47;
-            this.groupBox4.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(214, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 24);
-            this.label3.TabIndex = 47;
-            this.label3.Text = "Thông tin quyển sách";
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::ThuVien.Properties.Resources.icons8_search_35;
+            this.pictureBox2.Location = new System.Drawing.Point(73, 23);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
@@ -347,22 +382,58 @@ namespace ThuVien
             this.label4.TabIndex = 38;
             this.label4.Text = "Tìm kiếm thông tin :";
             // 
-            // label2
+            // groupBox4
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(138, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 24);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Chức năng";
+            this.groupBox4.Controls.Add(this.pictureBox1);
+            this.groupBox4.Controls.Add(this.groupBox1);
+            this.groupBox4.Controls.Add(this.groupBox3);
+            this.groupBox4.Controls.Add(this.groupBox2);
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox4.Location = new System.Drawing.Point(58, 80);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1107, 689);
+            this.groupBox4.TabIndex = 47;
+            this.groupBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ThuVien.Properties.Resources.sách;
+            this.pictureBox1.Location = new System.Drawing.Point(556, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(541, 177);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnback
+            // 
+            this.btnback.AutoEllipsis = true;
+            this.btnback.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnback.BackColor = System.Drawing.SystemColors.Control;
+            this.btnback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnback.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.btnback.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnback.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnback.Image = global::ThuVien.Properties.Resources.home3;
+            this.btnback.Location = new System.Drawing.Point(-2, -3);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(44, 43);
+            this.btnback.TabIndex = 34;
+            this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnback.UseVisualStyleBackColor = false;
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // Sach
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Coral;
-            this.ClientSize = new System.Drawing.Size(1164, 781);
+            this.BackgroundImage = global::ThuVien.Properties.Resources.sách;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1231, 781);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnback);
@@ -377,19 +448,15 @@ namespace ThuVien
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        //private ProjectCSharpDataSet projectCSharpDataSet;
-        //private System.Windows.Forms.BindingSource sachBindingSource;
-        //private ProjectCSharpDataSetTableAdapters.SachTableAdapter sachTableAdapter;
-        //private ProjectCSharpDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView GridviewSach;
         private System.Windows.Forms.ComboBox matacgiacombobox;
@@ -416,5 +483,9 @@ namespace ThuVien
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnloadfile;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

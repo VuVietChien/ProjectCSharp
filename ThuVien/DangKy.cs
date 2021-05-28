@@ -20,7 +20,8 @@ namespace ThuVien
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection co = new SqlConnection("Data Source=DESKTOP-VJNST16\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True");
+            //SqlConnection co = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True");
+            SqlConnection co = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True");
             co.Open();
             String con = "insert into  login(username,password,email) ";
             con += "values('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "') ";

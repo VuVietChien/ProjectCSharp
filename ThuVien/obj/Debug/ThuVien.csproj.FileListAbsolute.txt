@@ -47,3 +47,7 @@ C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Dan
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
+E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
