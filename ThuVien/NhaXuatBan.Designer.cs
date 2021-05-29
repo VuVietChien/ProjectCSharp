@@ -223,6 +223,8 @@ namespace ThuVien
             // 
             this.btnexxcel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnexxcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexxcel.Image = global::ThuVien.Properties.Resources.icons8_microsoft_excel_35;
+            this.btnexxcel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnexxcel.Location = new System.Drawing.Point(530, 166);
             this.btnexxcel.Name = "btnexxcel";
             this.btnexxcel.Size = new System.Drawing.Size(207, 46);

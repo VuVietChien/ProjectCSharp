@@ -329,9 +329,9 @@ namespace ThuVien
             this.btnloadfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnloadfile.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
             this.btnloadfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnloadfile.Location = new System.Drawing.Point(381, 121);
+            this.btnloadfile.Location = new System.Drawing.Point(371, 123);
             this.btnloadfile.Name = "btnloadfile";
-            this.btnloadfile.Size = new System.Drawing.Size(165, 42);
+            this.btnloadfile.Size = new System.Drawing.Size(189, 42);
             this.btnloadfile.TabIndex = 4;
             this.btnloadfile.Text = "Export Excel";
             this.btnloadfile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
