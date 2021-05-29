@@ -259,9 +259,9 @@ namespace ThuVien
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ThuVien.Properties.Resources.nha_xuat_ban_giao_duc_115157;
-            this.pictureBox1.Location = new System.Drawing.Point(872, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(856, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(251, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 227);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -284,7 +284,7 @@ namespace ThuVien
             this.groupBox2.Controls.Add(this.maNXBTextBox);
             this.groupBox2.Location = new System.Drawing.Point(21, 17);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(792, 227);
+            this.groupBox2.Size = new System.Drawing.Size(809, 227);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             // 
