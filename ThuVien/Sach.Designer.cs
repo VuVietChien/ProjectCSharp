@@ -59,6 +59,7 @@ namespace ThuVien
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnback = new System.Windows.Forms.Button();
+            this.import = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridviewSach)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -309,6 +310,7 @@ namespace ThuVien
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.Controls.Add(this.import);
             this.groupBox2.Controls.Add(this.btnloadfile);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnsuasach);
@@ -426,6 +428,21 @@ namespace ThuVien
             this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
+            // import
+            // 
+            this.import.BackColor = System.Drawing.Color.Snow;
+            this.import.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.import.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.import.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
+            this.import.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.import.Location = new System.Drawing.Point(381, 64);
+            this.import.Name = "import";
+            this.import.Size = new System.Drawing.Size(165, 42);
+            this.import.TabIndex = 49;
+            this.import.Text = "Import Excel";
+            this.import.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.import.UseVisualStyleBackColor = false;
+            // 
             // Sach
             // 
             this.AllowDrop = true;
@@ -489,5 +506,6 @@ namespace ThuVien
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button import;
     }
 }
