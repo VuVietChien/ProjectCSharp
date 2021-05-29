@@ -327,11 +327,14 @@ namespace ThuVien
             this.btnloadfile.BackColor = System.Drawing.Color.Snow;
             this.btnloadfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnloadfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnloadfile.Location = new System.Drawing.Point(389, 121);
+            this.btnloadfile.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
+            this.btnloadfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnloadfile.Location = new System.Drawing.Point(381, 121);
             this.btnloadfile.Name = "btnloadfile";
-            this.btnloadfile.Size = new System.Drawing.Size(145, 42);
+            this.btnloadfile.Size = new System.Drawing.Size(165, 42);
             this.btnloadfile.TabIndex = 4;
-            this.btnloadfile.Text = "Tải file lên";
+            this.btnloadfile.Text = "Export Excel";
+            this.btnloadfile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnloadfile.UseVisualStyleBackColor = false;
             this.btnloadfile.Click += new System.EventHandler(this.btnloadfile_Click);
             // 
@@ -339,7 +342,7 @@ namespace ThuVien
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(207, 11);
+            this.label2.Location = new System.Drawing.Point(247, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 24);
             this.label2.TabIndex = 48;

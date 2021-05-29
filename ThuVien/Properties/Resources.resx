@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="9_DSNL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9_DSNL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-add-book-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-add-book-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,9 +132,6 @@
   </data>
   <data name="icons8-delete-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-delete-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thuvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thuvien.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-refresh-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-refresh-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,20 +145,23 @@
   <data name="icons8-support-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-support-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-add-book-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-add-book-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nha-xuat-ban-giao-duc-115157" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nha-xuat-ban-giao-duc-115157.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="188797746_378192953613005_3137058549730593592_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\188797746_378192953613005_3137058549730593592_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gioi-thieu-ve-tac-gia-ho-chi-minh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gioi-thieu-ve-tac-gia-ho-chi-minh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-search-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-search-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="từ-vựng-về-thư-viện-300x200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\từ-vựng-về-thư-viện-300x200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="188797746_378192953613005_3137058549730593592_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\188797746_378192953613005_3137058549730593592_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sách" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sách.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,19 +175,19 @@
   <data name="home2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-add-book-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-add-book-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-delete-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-delete-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thuvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thuvien.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="từ-vựng-về-thư-viện-300x200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\từ-vựng-về-thư-viện-300x200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gioi-thieu-ve-tac-gia-ho-chi-minh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gioi-thieu-ve-tac-gia-ho-chi-minh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9_DSNL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9_DSNL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-export-excel-35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-export-excel-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

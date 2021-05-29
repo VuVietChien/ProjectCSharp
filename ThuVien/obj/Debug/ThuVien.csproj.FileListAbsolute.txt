@@ -68,3 +68,8 @@ F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
 F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
 F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
