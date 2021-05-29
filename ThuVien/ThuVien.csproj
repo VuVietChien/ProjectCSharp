@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -230,6 +230,7 @@
     <None Include="Resources\thuvien.jpg" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\từ-vựng-về-thư-viện-300x200.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -240,6 +241,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\9_DSNL.jpg" />
+=======
+    <None Include="Resources\icons8-export-excel-35.png" />
+>>>>>>> 11c55b677255915dd9f308ee7eeecc6c78c57e68
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

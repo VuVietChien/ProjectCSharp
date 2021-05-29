@@ -51,7 +51,8 @@ namespace ThuVien
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnloadfile = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnexportexcel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -141,7 +142,7 @@ namespace ThuVien
             this.Xóa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xóa.Image = global::ThuVien.Properties.Resources.icons8_delete_35;
             this.Xóa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Xóa.Location = new System.Drawing.Point(201, 63);
+            this.Xóa.Location = new System.Drawing.Point(211, 63);
             this.Xóa.Name = "Xóa";
             this.Xóa.Size = new System.Drawing.Size(148, 41);
             this.Xóa.TabIndex = 2;
@@ -175,7 +176,7 @@ namespace ThuVien
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.Image = global::ThuVien.Properties.Resources.icons8_synchronize_35;
             this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoi.Location = new System.Drawing.Point(198, 122);
+            this.btnLamMoi.Location = new System.Drawing.Point(211, 121);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(151, 41);
             this.btnLamMoi.TabIndex = 3;
@@ -309,7 +310,8 @@ namespace ThuVien
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Controls.Add(this.btnloadfile);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnexportexcel);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnsuasach);
             this.groupBox2.Controls.Add(this.Xóa);
@@ -322,18 +324,35 @@ namespace ThuVien
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             // 
-            // btnloadfile
+            // button1
             // 
-            this.btnloadfile.BackColor = System.Drawing.Color.Snow;
-            this.btnloadfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnloadfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnloadfile.Location = new System.Drawing.Point(389, 121);
-            this.btnloadfile.Name = "btnloadfile";
-            this.btnloadfile.Size = new System.Drawing.Size(145, 42);
-            this.btnloadfile.TabIndex = 4;
-            this.btnloadfile.Text = "Tải file lên";
-            this.btnloadfile.UseVisualStyleBackColor = false;
-            this.btnloadfile.Click += new System.EventHandler(this.btnloadfile_Click);
+            this.button1.BackColor = System.Drawing.Color.Snow;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(389, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 42);
+            this.button1.TabIndex = 49;
+            this.button1.Text = "import excel";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnexportexcel
+            // 
+            this.btnexportexcel.AutoSize = true;
+            this.btnexportexcel.BackColor = System.Drawing.Color.Snow;
+            this.btnexportexcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnexportexcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexportexcel.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
+            this.btnexportexcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexportexcel.Location = new System.Drawing.Point(389, 121);
+            this.btnexportexcel.Name = "btnexportexcel";
+            this.btnexportexcel.Size = new System.Drawing.Size(155, 42);
+            this.btnexportexcel.TabIndex = 4;
+            this.btnexportexcel.Text = "export excel";
+            this.btnexportexcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnexportexcel.UseVisualStyleBackColor = false;
+            this.btnexportexcel.Click += new System.EventHandler(this.btnexportexcel_Click);
             // 
             // label2
             // 
@@ -482,9 +501,10 @@ namespace ThuVien
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btnloadfile;
+        private System.Windows.Forms.Button btnexportexcel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }

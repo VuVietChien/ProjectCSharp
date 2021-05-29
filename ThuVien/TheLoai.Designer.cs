@@ -159,7 +159,11 @@
             this.btnlammoi.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnlammoi.Location = new System.Drawing.Point(29, 383);
             this.btnlammoi.Name = "btnlammoi";
+<<<<<<< HEAD
             this.btnlammoi.Size = new System.Drawing.Size(132, 48);
+=======
+            this.btnlammoi.Size = new System.Drawing.Size(75, 30);
+>>>>>>> 11c55b677255915dd9f308ee7eeecc6c78c57e68
             this.btnlammoi.TabIndex = 9;
             this.btnlammoi.Text = "Reset";
             this.btnlammoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
