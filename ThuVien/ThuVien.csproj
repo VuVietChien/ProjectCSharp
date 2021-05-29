@@ -226,5 +226,8 @@
   <ItemGroup>
     <None Include="Resources\thuvien.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-export-excel-35.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

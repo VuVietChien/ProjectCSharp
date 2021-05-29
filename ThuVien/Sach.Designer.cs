@@ -51,6 +51,7 @@ namespace ThuVien
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnexportexcel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -59,7 +60,6 @@ namespace ThuVien
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnback = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridviewSach)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -324,16 +324,33 @@ namespace ThuVien
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Snow;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(389, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 42);
+            this.button1.TabIndex = 49;
+            this.button1.Text = "import excel";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnexportexcel
             // 
+            this.btnexportexcel.AutoSize = true;
             this.btnexportexcel.BackColor = System.Drawing.Color.Snow;
             this.btnexportexcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnexportexcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexportexcel.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
+            this.btnexportexcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnexportexcel.Location = new System.Drawing.Point(389, 121);
             this.btnexportexcel.Name = "btnexportexcel";
-            this.btnexportexcel.Size = new System.Drawing.Size(145, 42);
+            this.btnexportexcel.Size = new System.Drawing.Size(155, 42);
             this.btnexportexcel.TabIndex = 4;
             this.btnexportexcel.Text = "export excel";
+            this.btnexportexcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnexportexcel.UseVisualStyleBackColor = false;
             this.btnexportexcel.Click += new System.EventHandler(this.btnexportexcel_Click);
             // 
@@ -424,19 +441,6 @@ namespace ThuVien
             this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnback.UseVisualStyleBackColor = false;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Snow;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(389, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 42);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "import excel";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Sach
             // 

@@ -173,6 +173,16 @@ namespace ThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_export_excel_35 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-export-excel-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_refresh_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-refresh-16", resourceCulture);
