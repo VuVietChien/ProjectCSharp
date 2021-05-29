@@ -178,5 +178,36 @@ namespace ThuVien
 
         }
 
+        private void btnexport_Click(object sender, EventArgs e)
+        {
+            // mở file excel 
+            //trước tiên phải thêm thư viện Microsoft.Office.Interop.Excel
+            // khởi tạo excel
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+
+            // khởi tạo wordbook
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+
+            //khởi tạo worksheet và chạy excel
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = workbook.Sheets["Sheet1"];
+            worksheet = workbook.ActiveSheet;
+            app.Visible = true;
+
+            // đổ dữ liệu vào sheets
+
+            worksheet.Cells[2, 1] = "Mã Tác Giả";
+            worksheet.Cells[2, 2] = "Tên Tác Giả";
+            worksheet.Cells[2, 3] = "Ghi Chú";
+          
+
+            for (int i = 0; i < gridviewtacgia.RowCount - 1; i++)// 
+            {
+                for (int j = 0; j < gridviewtacgia.ColumnCount; j++)
+                {
+                    worksheet.Cells[i + 3, j + 1] = gridviewtacgia.Rows[i].Cells[j].Value;
+                }
+            }
+        }
     }
 }
