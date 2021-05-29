@@ -204,5 +204,10 @@ namespace ThuVien
                 }
             }
         }
+
+        private void NhaXuatBan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

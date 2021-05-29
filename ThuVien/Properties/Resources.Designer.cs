@@ -73,6 +73,16 @@ namespace ThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9_DSNL {
+            get {
+                object obj = ResourceManager.GetObject("9_DSNL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gioi_thieu_ve_tac_gia_ho_chi_minh {
             get {
                 object obj = ResourceManager.GetObject("gioi-thieu-ve-tac-gia-ho-chi-minh", resourceCulture);
