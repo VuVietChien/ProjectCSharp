@@ -137,6 +137,9 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhaXuatBan.resx">
+      <DependentUpon>NhaXuatBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -225,6 +228,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thuvien.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\từ-vựng-về-thư-viện-300x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\188797746_378192953613005_3137058549730593592_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nha-xuat-ban-giao-duc-115157.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

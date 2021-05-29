@@ -63,6 +63,16 @@ namespace ThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _188797746_378192953613005_3137058549730593592_n {
+            get {
+                object obj = ResourceManager.GetObject("188797746_378192953613005_3137058549730593592_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gioi_thieu_ve_tac_gia_ho_chi_minh {
             get {
                 object obj = ResourceManager.GetObject("gioi-thieu-ve-tac-gia-ho-chi-minh", resourceCulture);
@@ -223,6 +233,16 @@ namespace ThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nha_xuat_ban_giao_duc_115157 {
+            get {
+                object obj = ResourceManager.GetObject("nha-xuat-ban-giao-duc-115157", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sách {
             get {
                 object obj = ResourceManager.GetObject("sách", resourceCulture);
@@ -246,6 +266,16 @@ namespace ThuVien.Properties {
         internal static System.Drawing.Bitmap thuvien {
             get {
                 object obj = ResourceManager.GetObject("thuvien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap từ_vựng_về_thư_viện_300x200 {
+            get {
+                object obj = ResourceManager.GetObject("từ-vựng-về-thư-viện-300x200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
