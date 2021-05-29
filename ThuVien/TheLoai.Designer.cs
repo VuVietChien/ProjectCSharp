@@ -40,14 +40,14 @@
             this.btnlammoi = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnback = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -194,16 +194,15 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             // 
-            // label4
+            // pictureBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(297, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(272, 32);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Các Thể Loại Sách";
+            this.pictureBox1.Image = global::ThuVien.Properties.Resources.từ_vựng_về_thư_viện_300x200;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(308, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox2
             // 
@@ -218,15 +217,17 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             // 
-            // pictureBox1
+            // label4
             // 
-            this.pictureBox1.Image = global::ThuVien.Properties.Resources.từ_vựng_về_thư_viện_300x200;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(308, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(295, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(318, 49);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Các Thể Loại Sách";
             // 
             // btnback
             // 
@@ -245,7 +246,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::ThuVien.Properties.Resources.thu_vien_dep_co_thiet_ke_doc_dao_ai_cung_muon_ghe_chan_mot_lan_147973;
+            this.BackgroundImage = global::ThuVien.Properties.Resources.thuvien;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(865, 554);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
@@ -255,9 +257,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
