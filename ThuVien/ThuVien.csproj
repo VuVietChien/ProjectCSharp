@@ -247,5 +247,68 @@
   <ItemGroup>
     <None Include="Resources\icons8-microsoft-excel-35.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-windows-10-144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-windows-10-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-of-content-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-index-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-export-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thư viện UTT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-coworking-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-two-tickets-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-read-online-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-borrow-book-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-elective-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-index-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-export-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-emergency-exit-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-reset-40.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
