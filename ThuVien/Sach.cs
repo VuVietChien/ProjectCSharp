@@ -131,6 +131,7 @@ namespace ThuVien
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            
             //string sql = "insert into Sach(MaSach,TenSach,MaTacGia, MaTheLoai,MaNXB,NamXuatBan)";
             //sql += " Values('" + maSachTextBox.Text + "' ,  N'" + tenSachTextBox.Text + " ', '" + maTacGiaTextBox.Text + "', '" +maTheLoaiTextBox.Text + "',N'" + maNXBTextBox.Text + "'," + namXuatBanTextBox.Text + ")";
             //SqlCommand cmd = new SqlCommand(sql, con);

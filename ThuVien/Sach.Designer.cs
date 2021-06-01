@@ -453,6 +453,7 @@ namespace ThuVien
             this.BackgroundImage = global::ThuVien.Properties.Resources.sách;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1231, 781);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnback);

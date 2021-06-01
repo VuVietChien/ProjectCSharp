@@ -115,6 +115,7 @@ namespace ThuVien
         {
             groupBox1.Visible = false;
             groupBox2.Visible = false;
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -261,6 +262,7 @@ namespace ThuVien
 
         }
 
+  
         private void thoátToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn thoát khỏi hệ thống ", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
