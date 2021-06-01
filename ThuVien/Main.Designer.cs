@@ -33,9 +33,9 @@ namespace ThuVien
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chứcNăngQuảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tìmKiếmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
@@ -70,6 +70,7 @@ namespace ThuVien
             // menuStrip1
             // 
             this.menuStrip1.AutoSize = false;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hệThốngToolStripMenuItem,
@@ -80,8 +81,8 @@ namespace ThuVien
             this.thoátToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1462, 60);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1645, 75);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -105,7 +106,7 @@ namespace ThuVien
             this.chứcNăngQuảnLýToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.chứcNăngQuảnLýToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.chứcNăngQuảnLýToolStripMenuItem.Name = "chứcNăngQuảnLýToolStripMenuItem";
-            this.chứcNăngQuảnLýToolStripMenuItem.Size = new System.Drawing.Size(125, 56);
+            this.chứcNăngQuảnLýToolStripMenuItem.Size = new System.Drawing.Size(144, 71);
             this.chứcNăngQuảnLýToolStripMenuItem.Text = "Quản Lý";
             this.chứcNăngQuảnLýToolStripMenuItem.Click += new System.EventHandler(this.chứcNăngQuảnLýToolStripMenuItem_Click);
             // 
@@ -115,9 +116,19 @@ namespace ThuVien
             this.tìmKiếmToolStripMenuItem.Image = global::ThuVien.Properties.Resources.icons8_search_40;
             this.tìmKiếmToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tìmKiếmToolStripMenuItem.Name = "tìmKiếmToolStripMenuItem";
-            this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(137, 56);
+            this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(155, 71);
             this.tìmKiếmToolStripMenuItem.Text = "Tìm Kiếm";
             this.tìmKiếmToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmToolStripMenuItem_Click);
+            // 
+            // đổiMậtKhẩuToolStripMenuItem
+            // 
+            this.đổiMậtKhẩuToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.đổiMậtKhẩuToolStripMenuItem.Image = global::ThuVien.Properties.Resources.icons8_password_reset_40;
+            this.đổiMậtKhẩuToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(186, 71);
+            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
+            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
@@ -137,18 +148,9 @@ namespace ThuVien
             this.thoátToolStripMenuItem.Image = global::ThuVien.Properties.Resources.icons8_emergency_exit_40;
             this.thoátToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(105, 56);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(119, 71);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click_1);
-            // 
-            // đổiMậtKhẩuToolStripMenuItem
-            // 
-            this.đổiMậtKhẩuToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.đổiMậtKhẩuToolStripMenuItem.Image = global::ThuVien.Properties.Resources.icons8_password_reset_40;
-            this.đổiMậtKhẩuToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(161, 56);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             // 
             // groupBox1
             // 
@@ -162,9 +164,11 @@ namespace ThuVien
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(53, 98);
+            this.groupBox1.Location = new System.Drawing.Point(60, 122);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1358, 693);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1528, 866);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -174,9 +178,9 @@ namespace ThuVien
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(486, 50);
+            this.label2.Location = new System.Drawing.Point(547, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(460, 44);
+            this.label2.Size = new System.Drawing.Size(542, 52);
             this.label2.TabIndex = 8;
             this.label2.Text = "Các Phương Thức Quản Lý";
             // 
@@ -185,9 +189,10 @@ namespace ThuVien
             this.button8.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Image = global::ThuVien.Properties.Resources.icons8_coworking_60;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(541, 334);
+            this.button8.Location = new System.Drawing.Point(609, 418);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(325, 107);
+            this.button8.Size = new System.Drawing.Size(366, 134);
             this.button8.TabIndex = 7;
             this.button8.Text = "Quản Lý Nhân Viên";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -199,9 +204,10 @@ namespace ThuVien
             this.button7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Image = global::ThuVien.Properties.Resources.icons8_two_tickets_60;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(258, 505);
+            this.button7.Location = new System.Drawing.Point(290, 631);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(379, 108);
+            this.button7.Size = new System.Drawing.Size(426, 135);
             this.button7.TabIndex = 6;
             this.button7.Text = "Quản Lý Thẻ Thư Viện";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -213,9 +219,10 @@ namespace ThuVien
             this.button6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = global::ThuVien.Properties.Resources.icons8_read_online_60;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(981, 322);
+            this.button6.Location = new System.Drawing.Point(1104, 402);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(321, 119);
+            this.button6.Size = new System.Drawing.Size(361, 149);
             this.button6.TabIndex = 5;
             this.button6.Text = "Quản Lý Độc Giả";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -227,9 +234,10 @@ namespace ThuVien
             this.button5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::ThuVien.Properties.Resources.icons8_home_60;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(733, 505);
+            this.button5.Location = new System.Drawing.Point(825, 631);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(380, 108);
+            this.button5.Size = new System.Drawing.Size(428, 135);
             this.button5.TabIndex = 4;
             this.button5.Text = "Quản Lý Nhà Xuất Bản";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -241,9 +249,10 @@ namespace ThuVien
             this.button4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::ThuVien.Properties.Resources.icons8_elective_60;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(34, 334);
+            this.button4.Location = new System.Drawing.Point(38, 418);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(319, 107);
+            this.button4.Size = new System.Drawing.Size(359, 134);
             this.button4.TabIndex = 3;
             this.button4.Text = "Quản Lý Thể Loại";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -255,9 +264,10 @@ namespace ThuVien
             this.button3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::ThuVien.Properties.Resources.icons8_people_60;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(541, 136);
+            this.button3.Location = new System.Drawing.Point(609, 170);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(325, 112);
+            this.button3.Size = new System.Drawing.Size(366, 140);
             this.button3.TabIndex = 2;
             this.button3.Text = "Quản Lý Tác Giả";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -269,9 +279,10 @@ namespace ThuVien
             this.button2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::ThuVien.Properties.Resources.icons8_borrow_book_60;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(981, 136);
+            this.button2.Location = new System.Drawing.Point(1104, 170);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(321, 112);
+            this.button2.Size = new System.Drawing.Size(361, 140);
             this.button2.TabIndex = 1;
             this.button2.Text = "Quản Lý Mượn Trả";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -283,9 +294,10 @@ namespace ThuVien
             this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ThuVien.Properties.Resources.icons8_book_60;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(25, 136);
+            this.button1.Location = new System.Drawing.Point(28, 170);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(328, 112);
+            this.button1.Size = new System.Drawing.Size(369, 140);
             this.button1.TabIndex = 0;
             this.button1.Text = "Quản Lý Sách";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -297,9 +309,11 @@ namespace ThuVien
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(0, 63);
+            this.groupBox2.Location = new System.Drawing.Point(0, 79);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1462, 718);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(1645, 898);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
@@ -310,9 +324,11 @@ namespace ThuVien
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.timkiemtextbox);
             this.groupBox3.Controls.Add(this.btntimkiem);
-            this.groupBox3.Location = new System.Drawing.Point(6, 20);
+            this.groupBox3.Location = new System.Drawing.Point(7, 25);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1450, 198);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Size = new System.Drawing.Size(1631, 248);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
@@ -321,9 +337,9 @@ namespace ThuVien
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(542, 24);
+            this.label1.Location = new System.Drawing.Point(610, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 23);
+            this.label1.Size = new System.Drawing.Size(296, 28);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nhập thông tin cần tìm kiếm";
             // 
@@ -335,9 +351,11 @@ namespace ThuVien
             this.groupBox4.Controls.Add(this.theotensach);
             this.groupBox4.Controls.Add(this.theonhaxuatban);
             this.groupBox4.Controls.Add(this.theotacgia);
-            this.groupBox4.Location = new System.Drawing.Point(6, 0);
+            this.groupBox4.Location = new System.Drawing.Point(7, 0);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(486, 198);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox4.Size = new System.Drawing.Size(547, 248);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             // 
@@ -346,9 +364,9 @@ namespace ThuVien
             this.lbltimkiem.AutoSize = true;
             this.lbltimkiem.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltimkiem.ForeColor = System.Drawing.Color.Red;
-            this.lbltimkiem.Location = new System.Drawing.Point(132, 24);
+            this.lbltimkiem.Location = new System.Drawing.Point(148, 30);
             this.lbltimkiem.Name = "lbltimkiem";
-            this.lbltimkiem.Size = new System.Drawing.Size(191, 23);
+            this.lbltimkiem.Size = new System.Drawing.Size(228, 28);
             this.lbltimkiem.TabIndex = 5;
             this.lbltimkiem.Text = "Chọn Cách Tìm Kiếm";
             // 
@@ -356,9 +374,10 @@ namespace ThuVien
             // 
             this.theotheloai.AutoSize = true;
             this.theotheloai.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theotheloai.Location = new System.Drawing.Point(226, 77);
+            this.theotheloai.Location = new System.Drawing.Point(254, 96);
+            this.theotheloai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.theotheloai.Name = "theotheloai";
-            this.theotheloai.Size = new System.Drawing.Size(166, 23);
+            this.theotheloai.Size = new System.Drawing.Size(204, 28);
             this.theotheloai.TabIndex = 2;
             this.theotheloai.TabStop = true;
             this.theotheloai.Text = "Theo Tên Thể Loại";
@@ -368,9 +387,10 @@ namespace ThuVien
             // 
             this.theotensach.AutoSize = true;
             this.theotensach.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theotensach.Location = new System.Drawing.Point(21, 77);
+            this.theotensach.Location = new System.Drawing.Point(24, 96);
+            this.theotensach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.theotensach.Name = "theotensach";
-            this.theotensach.Size = new System.Drawing.Size(135, 23);
+            this.theotensach.Size = new System.Drawing.Size(168, 28);
             this.theotensach.TabIndex = 1;
             this.theotensach.TabStop = true;
             this.theotensach.Text = "Theo Tên Sách";
@@ -380,9 +400,10 @@ namespace ThuVien
             // 
             this.theonhaxuatban.AutoSize = true;
             this.theonhaxuatban.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theonhaxuatban.Location = new System.Drawing.Point(226, 137);
+            this.theonhaxuatban.Location = new System.Drawing.Point(254, 171);
+            this.theonhaxuatban.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.theonhaxuatban.Name = "theonhaxuatban";
-            this.theonhaxuatban.Size = new System.Drawing.Size(202, 23);
+            this.theonhaxuatban.Size = new System.Drawing.Size(252, 28);
             this.theonhaxuatban.TabIndex = 4;
             this.theonhaxuatban.TabStop = true;
             this.theonhaxuatban.Text = "Theo Tên Nhà Xuất Bản";
@@ -392,9 +413,10 @@ namespace ThuVien
             // 
             this.theotacgia.AutoSize = true;
             this.theotacgia.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theotacgia.Location = new System.Drawing.Point(21, 136);
+            this.theotacgia.Location = new System.Drawing.Point(24, 170);
+            this.theotacgia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.theotacgia.Name = "theotacgia";
-            this.theotacgia.Size = new System.Drawing.Size(159, 23);
+            this.theotacgia.Size = new System.Drawing.Size(195, 28);
             this.theotacgia.TabIndex = 3;
             this.theotacgia.TabStop = true;
             this.theotacgia.Text = "Theo Tên Tác Giả";
@@ -404,10 +426,11 @@ namespace ThuVien
             // 
             this.timkiemtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timkiemtextbox.ForeColor = System.Drawing.Color.Red;
-            this.timkiemtextbox.Location = new System.Drawing.Point(546, 129);
+            this.timkiemtextbox.Location = new System.Drawing.Point(614, 161);
+            this.timkiemtextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.timkiemtextbox.Multiline = true;
             this.timkiemtextbox.Name = "timkiemtextbox";
-            this.timkiemtextbox.Size = new System.Drawing.Size(404, 40);
+            this.timkiemtextbox.Size = new System.Drawing.Size(454, 49);
             this.timkiemtextbox.TabIndex = 6;
             // 
             // btntimkiem
@@ -415,9 +438,10 @@ namespace ThuVien
             this.btntimkiem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntimkiem.Image = global::ThuVien.Properties.Resources.icons8_search_35;
             this.btntimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btntimkiem.Location = new System.Drawing.Point(1003, 125);
+            this.btntimkiem.Location = new System.Drawing.Point(1128, 156);
+            this.btntimkiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btntimkiem.Name = "btntimkiem";
-            this.btntimkiem.Size = new System.Drawing.Size(147, 46);
+            this.btntimkiem.Size = new System.Drawing.Size(165, 58);
             this.btntimkiem.TabIndex = 5;
             this.btntimkiem.Text = "Tìm Kiếm ";
             this.btntimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -427,11 +451,12 @@ namespace ThuVien
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 225);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 281);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1450, 455);
+            this.dataGridView1.Size = new System.Drawing.Size(1631, 569);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -441,20 +466,20 @@ namespace ThuVien
             this.titlelbl.BackColor = System.Drawing.Color.Transparent;
             this.titlelbl.Font = new System.Drawing.Font("Times New Roman", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titlelbl.ForeColor = System.Drawing.Color.Gold;
-            this.titlelbl.Location = new System.Drawing.Point(63, 302);
+            this.titlelbl.Location = new System.Drawing.Point(71, 378);
             this.titlelbl.Name = "titlelbl";
-            this.titlelbl.Size = new System.Drawing.Size(1321, 67);
+            this.titlelbl.Size = new System.Drawing.Size(1587, 81);
             this.titlelbl.TabIndex = 9;
             this.titlelbl.Text = "Chào Mừng Bạn Đến Với Trình Quản Lý Thư Viện ";
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::ThuVien.Properties.Resources.thư_viện_UTT;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1462, 769);
+            this.ClientSize = new System.Drawing.Size(1645, 961);
             this.Controls.Add(this.titlelbl);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

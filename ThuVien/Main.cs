@@ -268,5 +268,12 @@ namespace ThuVien
                 this.Close();
             }
         }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuaMatKhau sk = new SuaMatKhau();
+            sk.Show();
+            this.Hide();
+        }
     }
 }
