@@ -146,3 +146,4 @@ C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.
 C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
 C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
+C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources

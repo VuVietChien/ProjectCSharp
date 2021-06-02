@@ -72,7 +72,7 @@ namespace ThuVien
             }
 
             SqlConnection sql = new SqlConnection();
-            sql.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            sql.ConnectionString = "Data Source=NOBINOBI\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
 
             sql.Open();
             string newc = "select * from login where username='" + textBox1.Text + "' and password='" + textBox3.Text + "'";
