@@ -78,9 +78,9 @@ namespace ThuVien
             this.btnThem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnThem.Image = global::ThuVien.Properties.Resources.icons8_add_book_35;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(20, 123);
+            this.btnThem.Location = new System.Drawing.Point(35, 152);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(159, 43);
+            this.btnThem.Size = new System.Drawing.Size(159, 57);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm Sách";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -93,7 +93,7 @@ namespace ThuVien
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(453, 19);
+            this.label1.Location = new System.Drawing.Point(588, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(373, 43);
             this.label1.TabIndex = 26;
@@ -106,7 +106,7 @@ namespace ThuVien
             this.GridviewSach.Name = "GridviewSach";
             this.GridviewSach.RowHeadersWidth = 51;
             this.GridviewSach.RowTemplate.Height = 24;
-            this.GridviewSach.Size = new System.Drawing.Size(1091, 193);
+            this.GridviewSach.Size = new System.Drawing.Size(1396, 222);
             this.GridviewSach.TabIndex = 27;
             this.GridviewSach.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.GridviewSach_CellMouseClick);
             // 
@@ -142,9 +142,9 @@ namespace ThuVien
             this.Xóa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xóa.Image = global::ThuVien.Properties.Resources.icons8_delete_35;
             this.Xóa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Xóa.Location = new System.Drawing.Point(201, 63);
+            this.Xóa.Location = new System.Drawing.Point(261, 64);
             this.Xóa.Name = "Xóa";
-            this.Xóa.Size = new System.Drawing.Size(148, 41);
+            this.Xóa.Size = new System.Drawing.Size(154, 64);
             this.Xóa.TabIndex = 2;
             this.Xóa.Text = "Xóa Sách";
             this.Xóa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -159,9 +159,9 @@ namespace ThuVien
             this.btnsuasach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsuasach.Image = global::ThuVien.Properties.Resources.icons8_support_35;
             this.btnsuasach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsuasach.Location = new System.Drawing.Point(20, 64);
+            this.btnsuasach.Location = new System.Drawing.Point(35, 64);
             this.btnsuasach.Name = "btnsuasach";
-            this.btnsuasach.Size = new System.Drawing.Size(159, 43);
+            this.btnsuasach.Size = new System.Drawing.Size(159, 64);
             this.btnsuasach.TabIndex = 0;
             this.btnsuasach.Text = "Sửa Sách";
             this.btnsuasach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -176,9 +176,9 @@ namespace ThuVien
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.Image = global::ThuVien.Properties.Resources.icons8_synchronize_35;
             this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoi.Location = new System.Drawing.Point(198, 122);
+            this.btnLamMoi.Location = new System.Drawing.Point(261, 152);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(151, 41);
+            this.btnLamMoi.Size = new System.Drawing.Size(154, 58);
             this.btnLamMoi.TabIndex = 3;
             this.btnLamMoi.Text = "Làm Mới";
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -197,7 +197,7 @@ namespace ThuVien
             // 
             this.MaSachlbl.AutoSize = true;
             this.MaSachlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaSachlbl.Location = new System.Drawing.Point(48, 92);
+            this.MaSachlbl.Location = new System.Drawing.Point(48, 64);
             this.MaSachlbl.Name = "MaSachlbl";
             this.MaSachlbl.Size = new System.Drawing.Size(82, 20);
             this.MaSachlbl.TabIndex = 38;
@@ -225,14 +225,14 @@ namespace ThuVien
             // 
             // masachtb
             // 
-            this.masachtb.Location = new System.Drawing.Point(197, 84);
+            this.masachtb.Location = new System.Drawing.Point(197, 64);
             this.masachtb.Name = "masachtb";
             this.masachtb.Size = new System.Drawing.Size(278, 28);
             this.masachtb.TabIndex = 0;
             // 
             // tensachtb
             // 
-            this.tensachtb.Location = new System.Drawing.Point(197, 120);
+            this.tensachtb.Location = new System.Drawing.Point(197, 117);
             this.tensachtb.Name = "tensachtb";
             this.tensachtb.Size = new System.Drawing.Size(278, 28);
             this.tensachtb.TabIndex = 1;
@@ -248,7 +248,7 @@ namespace ThuVien
             // 
             this.Tacgialb.AutoSize = true;
             this.Tacgialb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tacgialb.Location = new System.Drawing.Point(48, 167);
+            this.Tacgialb.Location = new System.Drawing.Point(48, 162);
             this.Tacgialb.Name = "Tacgialb";
             this.Tacgialb.Size = new System.Drawing.Size(75, 20);
             this.Tacgialb.TabIndex = 44;
@@ -268,7 +268,7 @@ namespace ThuVien
             // 
             this.namxuatbanlb.AutoSize = true;
             this.namxuatbanlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namxuatbanlb.Location = new System.Drawing.Point(48, 270);
+            this.namxuatbanlb.Location = new System.Drawing.Point(48, 275);
             this.namxuatbanlb.Name = "namxuatbanlb";
             this.namxuatbanlb.Size = new System.Drawing.Size(130, 20);
             this.namxuatbanlb.TabIndex = 46;
@@ -318,9 +318,9 @@ namespace ThuVien
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnLamMoi);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(511, 204);
+            this.groupBox2.Location = new System.Drawing.Point(949, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(586, 184);
+            this.groupBox2.Size = new System.Drawing.Size(463, 375);
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             // 
@@ -331,9 +331,9 @@ namespace ThuVien
             this.import.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.import.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
             this.import.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.import.Location = new System.Drawing.Point(371, 64);
+            this.import.Location = new System.Drawing.Point(236, 267);
             this.import.Name = "import";
-            this.import.Size = new System.Drawing.Size(186, 42);
+            this.import.Size = new System.Drawing.Size(199, 62);
             this.import.TabIndex = 49;
             this.import.Text = "Import Excel";
             this.import.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -346,9 +346,9 @@ namespace ThuVien
             this.btnloadfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnloadfile.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
             this.btnloadfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnloadfile.Location = new System.Drawing.Point(371, 123);
+            this.btnloadfile.Location = new System.Drawing.Point(17, 267);
             this.btnloadfile.Name = "btnloadfile";
-            this.btnloadfile.Size = new System.Drawing.Size(186, 42);
+            this.btnloadfile.Size = new System.Drawing.Size(186, 62);
             this.btnloadfile.TabIndex = 4;
             this.btnloadfile.Text = "Export Excel";
             this.btnloadfile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -359,7 +359,7 @@ namespace ThuVien
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(247, 10);
+            this.label2.Location = new System.Drawing.Point(163, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 24);
             this.label2.TabIndex = 48;
@@ -375,7 +375,7 @@ namespace ThuVien
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(0, 394);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1183, 286);
+            this.groupBox3.Size = new System.Drawing.Size(1412, 286);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             // 
@@ -410,7 +410,7 @@ namespace ThuVien
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Location = new System.Drawing.Point(58, 80);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1107, 689);
+            this.groupBox4.Size = new System.Drawing.Size(1418, 689);
             this.groupBox4.TabIndex = 47;
             this.groupBox4.TabStop = false;
             // 
@@ -419,7 +419,7 @@ namespace ThuVien
             this.pictureBox1.Image = global::ThuVien.Properties.Resources.sách;
             this.pictureBox1.Location = new System.Drawing.Point(511, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(586, 185);
+            this.pictureBox1.Size = new System.Drawing.Size(432, 375);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
@@ -452,13 +452,14 @@ namespace ThuVien
             this.BackColor = System.Drawing.Color.Coral;
             this.BackgroundImage = global::ThuVien.Properties.Resources.sách;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1231, 781);
+            this.ClientSize = new System.Drawing.Size(1501, 781);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnback);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Sach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sach";
             this.Load += new System.EventHandler(this.Sach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridviewSach)).EndInit();

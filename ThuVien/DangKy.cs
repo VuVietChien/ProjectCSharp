@@ -20,35 +20,37 @@ namespace ThuVien
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //SqlConnection co = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True");
-            SqlConnection co = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True");
-            co.Open();
-            String con = "insert into  login(username,password,email) ";
-            con += "values('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "') ";
-            /*  con += "values( ";
-              con+="N'" + textBox1.Text + "'";
-              con += ",N'" + textBox2.Text + "'";
-              con += "'" + textBox3.Text + "'";
-              con += "'" + textBox4.Text + "'";
-              con += ");";*/
-            SqlCommand cm = new SqlCommand(con, co);
-            //co.Open();
-            //mo ket noi csdl
-            try
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=DESKTOP-NFOKR1O\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from login where username='" + textBox2.Text + "' and password='" + textBox3.Text + "'", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds1 = new DataSet();
+            da.Fill(ds1);
+            int i = ds1.Tables[0].Rows.Count;
+            if (i > 0)
             {
+                MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TẠI!!");
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox2.Focus();
+            }
+            else
+            {
+                String str = "insert into login(username,password,email) ";
+                str += "values('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "') ";
+                SqlCommand cm = new SqlCommand(str, con);
+                //co.Open();
+                //mo ket noi csdl   
                 cm.ExecuteNonQuery();
+                MessageBox.Show("ĐĂNG KÍ THÀNH CÔNG!!");
+                DangNhap d = new DangNhap();
+                d.Show();
+                this.Hide();
             }
-            catch
-            {
+            con.Close();
 
-            }
-            finally
-            {
-                co.Close();
-            }
-            DangNhap d = new DangNhap();
-            d.Show();
-            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -75,6 +77,26 @@ namespace ThuVien
                 button4.BringToFront();
                 textBox3.PasswordChar = '*';
             }
+        }
+
+        private void DangKy_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

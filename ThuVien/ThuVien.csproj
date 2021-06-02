@@ -107,6 +107,12 @@
     <Compile Include="Sach.Designer.cs">
       <DependentUpon>Sach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sửa mật khẩu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sửa mật khẩu.Designer.cs">
+      <DependentUpon>Sửa mật khẩu.cs</DependentUpon>
+    </Compile>
     <Compile Include="TacGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </Compile>
     <EmbeddedResource Include="Sach.resx">
       <DependentUpon>Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sửa mật khẩu.resx">
+      <DependentUpon>Sửa mật khẩu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TacGia.resx">
       <DependentUpon>TacGia.cs</DependentUpon>
@@ -309,6 +318,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-password-reset-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-sign-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22419085.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-house-icon-for-your-project-png-image_5239769.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-up-in-calendar-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emailopen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emial.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

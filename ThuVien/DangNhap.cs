@@ -21,10 +21,9 @@ namespace ThuVien
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection sql = new SqlConnection();
-            //sql.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
-            sql.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            sql.ConnectionString = "Data Source=DESKTOP-NFOKR1O\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             sql.Open();
-            string newc = "select username from login where username='" + textBox1.Text + "' and password='" + textBox3.Text + "'";
+            string newc = "select * from login where username='" + textBox1.Text + "' and password='" + textBox3.Text + "'";
             SqlDataAdapter adp = new SqlDataAdapter(newc, sql);
             DataSet ds = new DataSet();
             adp.Fill(ds);//Thêm hoặc làm mới các hàng trong Tập dữ liệu để khớp với các hàng trong nguồn dữ liệu.
@@ -32,18 +31,19 @@ namespace ThuVien
             if (dt.Rows.Count >= 1)
             {
                 // String set = textBox1.Text;
+                MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG!!");
                 Main m = new Main();
                 m.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("DANG NHAP THAT BAI!!");
+                MessageBox.Show("ĐĂNG NHẬP THẤT BẠI!!");
                 textBox1.Text = "";
                 textBox3.Text = "";
-                textBox1.SelectAll();
                 textBox1.Focus();
             }
+            sql.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -77,6 +77,11 @@ namespace ThuVien
                 button3.BringToFront();//đưa nút khác về phía trước
                 textBox3.PasswordChar = '\0';//hiển thị kí tự
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
