@@ -17,11 +17,83 @@ namespace ThuVien
         {
             InitializeComponent();
         }
+        //
+        public bool checkMail()
+        {
+            //liệt kê các trường hợp sai
+            //ko chứa @ là false
+            if (!textBox4.Text.Contains("@"))
+            {
+                return false;
+            }
+            //
+            if (!textBox4.Text.Contains(".com"))
+            {
+                return false;
+            }
+            int i = textBox4.Text.IndexOf("@");
+            int i1 = textBox4.Text.IndexOf(".com");
+            String s = textBox4.Text.Substring(i + 1, i1 - i - 1);
+            if (s != "gmail")
+                return false;
+            return true;
+        }
+        //
+        public bool check()
+        {
+            //kiểm tra  thông tin nhập đủ hay chưa
+            if (textBox2.Text == "")
+            {
+                MessageBox.Show("BẠN CHƯA NHẬP TÊN TÀI KHOẢN!!");
+                textBox2.Focus();
+            }
+            else if (textBox3.Text == "")
+            {
+                MessageBox.Show("BẠN CHƯA NHẬP MẬT KHẨU!!");
+                textBox3.Focus();
+            }
+            else if (textBox4.Text == "")
+            {
+                MessageBox.Show("BẠN CHƯA NHẬP EMAIL!!");
+                textBox4.Focus();
+            }
+            bool checkLength = false;
+            if (textBox3.TextLength >= 6)
+            {
+                checkLength = true;
+            }
+            //kiểm tra chữ và số a-z:97; A-Z:65
+            bool checkWord = false;
+            bool checkNumber = false;
+            for (int i = 0; i < textBox3.TextLength; i++)
+            {
+                if (checkNumber == true && checkWord == true)
+                {
+                    break;
+                }
+                if ((textBox3.Text[i] >= 'A' && textBox3.Text[i] <= 'Z') || (textBox3.Text[i] >= 'a' && textBox3.Text[i] <= 'z'))
+                {
+                    checkWord = true;
+                }
+                if (textBox3.Text[i] >= '0' && textBox3.Text[i] <= '9')
+                {
+                    {
+                        checkNumber = true;
+                    }
+                }
+            }
+            if (checkNumber == true && checkWord == true && checkLength == true)
+            {
+                return true;
+            }
+            return false;
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //truy cập kết nối
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=DESKTOP-VJNST16\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from login where username='" + textBox2.Text + "'", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -38,19 +110,32 @@ namespace ThuVien
             }
             else
             {
-                String str = "insert into login(username,password,email) ";
-                str += "values('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "') ";
-                SqlCommand cm = new SqlCommand(str, con);
-                //co.Open();
-                //mo ket noi csdl   
-                cm.ExecuteNonQuery();
-                MessageBox.Show("ĐĂNG KÍ THÀNH CÔNG!!");
-                DangNhap d = new DangNhap();
-                d.Show();
-                this.Hide();
-            }
-            con.Close();
+                if (check() == true && checkMail() == true)
+                {
+                    //
+                    String str = "insert into login(username,password,email) ";
+                    str += "values('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "') ";
+                    SqlCommand cm = new SqlCommand(str, con);
+                    try
+                    {
+                        cm.ExecuteNonQuery();
+                        MessageBox.Show("ĐĂNG KÍ THÀNH CÔNG!!");
+                        DangNhap d = new DangNhap();
+                        d.Show();
+                        this.Hide();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("LỖI!!");
+                    }
+                    con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("ĐĂNG KÍ THẤT BẠI");
+                }
 
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -77,26 +162,6 @@ namespace ThuVien
                 button4.BringToFront();
                 textBox3.PasswordChar = '*';
             }
-        }
-
-        private void DangKy_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

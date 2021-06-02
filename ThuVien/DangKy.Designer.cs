@@ -122,7 +122,7 @@ namespace ThuVien
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(366, 37);
             this.textBox4.TabIndex = 44;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+//            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
@@ -133,7 +133,7 @@ namespace ThuVien
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(366, 37);
             this.textBox3.TabIndex = 43;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+       //     this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -144,7 +144,7 @@ namespace ThuVien
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(366, 49);
             this.textBox2.TabIndex = 42;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+     //       this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // panel2
             // 

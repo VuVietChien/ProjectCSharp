@@ -106,7 +106,7 @@ namespace ThuVien
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(366, 37);
             this.textBox3.TabIndex = 33;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+//            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button2
             // 
@@ -158,7 +158,7 @@ namespace ThuVien
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(366, 37);
             this.textBox2.TabIndex = 43;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+       //     this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
             // 
