@@ -410,7 +410,7 @@ namespace ThuVien
             this.timkiemtextbox.Name = "timkiemtextbox";
             this.timkiemtextbox.Size = new System.Drawing.Size(404, 40);
             this.timkiemtextbox.TabIndex = 6;
-            this.timkiemtextbox.TextChanged += new System.EventHandler(this.timkiemtextbox_TextChanged);
+           
             // 
             // btntimkiem
             // 
@@ -435,7 +435,7 @@ namespace ThuVien
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1450, 455);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+          
             // 
             // titlelbl
             // 

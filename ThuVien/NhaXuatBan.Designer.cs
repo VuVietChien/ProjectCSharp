@@ -313,6 +313,7 @@ namespace ThuVien
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnback);
             this.Name = "NhaXuatBan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NhaXuatBan";
             this.Load += new System.EventHandler(this.NhaXuatBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
