@@ -39,7 +39,7 @@ namespace ThuVien
             // load dữ liệu từ csdl
             configdata config = new configdata();
             DataTable dt = new DataTable();
-            string sql = "select MaSach, TenSach, MaTacGia, MaTheLoai, MaNXB , NamXuatBan from Sach order by TenSach ASC";
+            string sql = "select MaSach, TenSach,soluong, MaTacGia, MaTheLoai, MaNXB , NamXuatBan from Sach order by TenSach ASC";
             dt = config.selectDb(sql);
             // hứng dữ liệu trả về
             
@@ -49,26 +49,36 @@ namespace ThuVien
             column.DataPropertyName = "MaSach";
             column.HeaderText = " Mã Sách";
             GridviewSach.Columns.Add(column);
+
             DataGridViewTextBoxColumn column1 = new DataGridViewTextBoxColumn();
             column1.DataPropertyName = "TenSach";
             column1.HeaderText = " Tên Sách";
             GridviewSach.Columns.Add(column1);
+
             DataGridViewTextBoxColumn column2 = new DataGridViewTextBoxColumn();
-            column2.DataPropertyName = "MaTacGia";
-            column2.HeaderText = " Mã Tác Giả";
+            column2.DataPropertyName = "soluong";
+            column2.HeaderText = " Số Lượng";
             GridviewSach.Columns.Add(column2);
+
             DataGridViewTextBoxColumn column3 = new DataGridViewTextBoxColumn();
-            column3.DataPropertyName = "MaTheLoai";
-            column3.HeaderText = " Mã Thể Loại";
+            column3.DataPropertyName = "MaTacGia";
+            column3.HeaderText = " Mã Tác Giả";
             GridviewSach.Columns.Add(column3);
+
             DataGridViewTextBoxColumn column4 = new DataGridViewTextBoxColumn();
-            column4.DataPropertyName = "MaNXB";
-            column4.HeaderText = " Mã NXB";
+            column4.DataPropertyName = "MaTheLoai";
+            column4.HeaderText = " Mã Thể Loại";
             GridviewSach.Columns.Add(column4);
+
             DataGridViewTextBoxColumn column5 = new DataGridViewTextBoxColumn();
-            column5.DataPropertyName = "NamXuatBan";
-            column5.HeaderText = " Năm XB";
+            column5.DataPropertyName = "MaNXB";
+            column5.HeaderText = " Mã NXB";
             GridviewSach.Columns.Add(column5);
+
+            DataGridViewTextBoxColumn column6 = new DataGridViewTextBoxColumn();
+            column6.DataPropertyName = "NamXuatBan";
+            column6.HeaderText = " Năm XB";
+            GridviewSach.Columns.Add(column6);
 
             GridviewSach.DataSource = dt;
 
@@ -154,8 +164,8 @@ namespace ThuVien
             //this.sachTableAdapter.Fill(this.projectCSharpDataSet.Sach);
 
             configdata a = new configdata();
-            string sql = "insert into Sach(MaSach,TenSach,MaTacGia, MaTheLoai,MaNXB,NamXuatBan  )";
-            sql += " Values('" + masachtb.Text + "' ,  N'" + tensachtb.Text + " ', '" + matacgiacombobox.SelectedValue + "', '" + theloaicombobox.SelectedValue + "',N'" + nhaxuatbancombobox.SelectedValue + "'," + Namxuatbantb.Text + ")";
+            string sql = "insert into Sach(MaSach,TenSach, soluong ,MaTacGia, MaTheLoai,MaNXB,NamXuatBan  )";
+            sql += " Values('" + masachtb.Text + "' ,  N'" + tensachtb.Text + " ', "+soluongtextbox.Text+", '" + matacgiacombobox.SelectedValue + "', '" + theloaicombobox.SelectedValue + "',N'" + nhaxuatbancombobox.SelectedValue + "'," + Namxuatbantb.Text + ")";
             int sosanhdulieu = a.InsertDb(sql);
             if(sosanhdulieu == 0)
             {
@@ -210,16 +220,17 @@ namespace ThuVien
         {
             masachtb.Text = GridviewSach.CurrentRow.Cells[0].Value.ToString();
             tensachtb.Text = GridviewSach.CurrentRow.Cells[1].Value.ToString();
-            matacgiacombobox.SelectedValue = GridviewSach.CurrentRow.Cells[2].Value.ToString();
-            theloaicombobox.SelectedValue = GridviewSach.CurrentRow.Cells[3].Value.ToString();
-            nhaxuatbancombobox.SelectedValue = GridviewSach.CurrentRow.Cells[4].Value.ToString();
-            Namxuatbantb.Text = GridviewSach.CurrentRow.Cells[5].Value.ToString();
+            soluongtextbox.Text = GridviewSach.CurrentRow.Cells[2].Value.ToString();
+            matacgiacombobox.SelectedValue = GridviewSach.CurrentRow.Cells[3].Value.ToString();
+            theloaicombobox.SelectedValue = GridviewSach.CurrentRow.Cells[4].Value.ToString();
+            nhaxuatbancombobox.SelectedValue = GridviewSach.CurrentRow.Cells[5].Value.ToString();
+            Namxuatbantb.Text = GridviewSach.CurrentRow.Cells[6].Value.ToString();
         }
 
         private void btnsuasach_Click(object sender, EventArgs e)
         {
             configdata a = new configdata();
-            string sql = "update Sach set TenSach = N'"+ tensachtb.Text +"', MaTacGia  = '"+matacgiacombobox.SelectedValue +"',MaTheLoai = '"+theloaicombobox.SelectedValue +"', MaNXB = '"+nhaxuatbancombobox.SelectedValue +"', NamXuatBan = "+Namxuatbantb.Text+"  where MaSach = '"+masachtb.Text+"' " ;
+            string sql = "update Sach set TenSach = N'"+ tensachtb.Text + "', soluong = " + soluongtextbox.Text + " , MaTacGia  = '" + matacgiacombobox.SelectedValue +"',MaTheLoai = '"+theloaicombobox.SelectedValue +"', MaNXB = '"+nhaxuatbancombobox.SelectedValue +"', NamXuatBan = "+Namxuatbantb.Text+"  where MaSach = '"+masachtb.Text+"' " ;
 
             int sosanhdulieu = a.InsertDb(sql);
             if (sosanhdulieu == 0)
@@ -259,7 +270,7 @@ namespace ThuVien
             con.Open();
             SqlDataAdapter adapt;
             DataTable dt;
-            adapt = new SqlDataAdapter("select MaSach, TenSach, MaTacGia, MaTheLoai, MaNXB, NamXuatBan from Sach ", con);
+            adapt = new SqlDataAdapter("select MaSach, TenSach, soluong, MaTacGia, MaTheLoai, MaNXB, NamXuatBan from Sach ", con);
             dt = new DataTable();
             adapt.Fill(dt);
             GridviewSach.DataSource = dt;
@@ -271,7 +282,7 @@ namespace ThuVien
             con.Open();
             SqlDataAdapter adapt;
             DataTable dt;
-            string sql = "select MaSach, TenSach, MaTacGia, MaTheLoai, MaNXB , NamXuatBan from Sach where TenSach like N'%" + timkiemtextbox.Text + "%' or MaSach like '%" + timkiemtextbox.Text + "%' or MaTacGia like '%" + timkiemtextbox.Text + "%' or NamXuatBan like '%" + timkiemtextbox.Text + "%' or MaTheLoai like '%" + timkiemtextbox.Text + "%'";
+            string sql = "select MaSach, TenSach,soluong, MaTacGia, MaTheLoai, MaNXB , NamXuatBan from Sach where TenSach like N'%" + timkiemtextbox.Text + "%' or MaSach like '%" + timkiemtextbox.Text + "%' or MaTacGia like '%" + timkiemtextbox.Text + "%' or NamXuatBan like '%" + timkiemtextbox.Text + "%' or MaTheLoai like '%" + timkiemtextbox.Text + "%'";
             adapt = new SqlDataAdapter(sql, con);
             dt = new DataTable();
             adapt.Fill(dt);
@@ -306,10 +317,11 @@ namespace ThuVien
 
             worksheet.Cells[2, 1] = "Mã Sách";
             worksheet.Cells[2, 2] = "Tên Sách";
-            worksheet.Cells[2, 3] = "Mã Tác Giả";
-            worksheet.Cells[2, 4] = "Mã Thể Loại";
-            worksheet.Cells[2, 5] = "Mã Nhà Xuất Bản";
-            worksheet.Cells[2, 6] = "Năm Xuất Bản";
+            worksheet.Cells[2, 3] = "Số Lượng";
+            worksheet.Cells[2, 4] = "Mã Tác Giả";
+            worksheet.Cells[2, 5] = "Mã Thể Loại";
+            worksheet.Cells[2, 6] = "Mã Nhà Xuất Bản";
+            worksheet.Cells[2, 7] = "Năm Xuất Bản";
 
             for (int i = 0; i < GridviewSach.RowCount - 1; i++)// 
             {

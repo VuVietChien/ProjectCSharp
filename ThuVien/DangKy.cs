@@ -23,7 +23,7 @@ namespace ThuVien
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=DESKTOP-NFOKR1O\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from login where username='" + textBox2.Text + "' and password='" + textBox3.Text + "'", con);
+            SqlCommand cmd = new SqlCommand("select * from login where username='" + textBox2.Text + "'", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds1 = new DataSet();
             da.Fill(ds1);

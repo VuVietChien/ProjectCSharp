@@ -72,7 +72,6 @@ namespace ThuVien
             {
                 MessageBox.Show("đã thêm dữ liệu thành công");
                 dataGridView1.DataSource = null;
-
                 Hienthi();
             }
         }
