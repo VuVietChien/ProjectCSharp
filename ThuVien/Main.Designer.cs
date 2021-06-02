@@ -411,6 +411,7 @@ namespace ThuVien
             this.timkiemtextbox.Size = new System.Drawing.Size(404, 40);
             this.timkiemtextbox.TabIndex = 6;
 
+           
             // 
             // btntimkiem
             // 
@@ -436,9 +437,6 @@ namespace ThuVien
             this.dataGridView1.Size = new System.Drawing.Size(1450, 455);
             this.dataGridView1.TabIndex = 0;
 
-            // 
-            // titlelbl
-            // 
             this.titlelbl.AutoSize = true;
             this.titlelbl.BackColor = System.Drawing.Color.Transparent;
             this.titlelbl.Font = new System.Drawing.Font("Times New Roman", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));

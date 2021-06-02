@@ -27,7 +27,7 @@ namespace ThuVien
         private void button1_Click_1(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=DESKTOP-NFOKR1O\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             //
             if (textBox3.Text == textBox4.Text)
@@ -69,7 +69,7 @@ namespace ThuVien
         private void button4_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=DESKTOP-VJNST16\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             String sql = "select *from login where password='" + textBox2.Text + "'";
             SqlCommand cm = new SqlCommand(sql, con);

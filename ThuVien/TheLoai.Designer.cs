@@ -54,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 36);
+            this.label1.Location = new System.Drawing.Point(64, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 20);
             this.label1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 82);
+            this.label2.Location = new System.Drawing.Point(64, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 20);
             this.label2.TabIndex = 1;
@@ -76,7 +76,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Image = global::ThuVien.Properties.Resources.icons8_search_20;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label3.Location = new System.Drawing.Point(415, 37);
+            this.label3.Location = new System.Drawing.Point(562, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 33);
             this.label3.TabIndex = 2;
@@ -85,21 +85,21 @@
             // 
             // maTheLoaitextBox
             // 
-            this.maTheLoaitextBox.Location = new System.Drawing.Point(160, 36);
+            this.maTheLoaitextBox.Location = new System.Drawing.Point(222, 36);
             this.maTheLoaitextBox.Name = "maTheLoaitextBox";
-            this.maTheLoaitextBox.Size = new System.Drawing.Size(138, 22);
+            this.maTheLoaitextBox.Size = new System.Drawing.Size(219, 22);
             this.maTheLoaitextBox.TabIndex = 3;
             // 
             // tenTheLoaitextBox
             // 
-            this.tenTheLoaitextBox.Location = new System.Drawing.Point(161, 82);
+            this.tenTheLoaitextBox.Location = new System.Drawing.Point(222, 82);
             this.tenTheLoaitextBox.Name = "tenTheLoaitextBox";
-            this.tenTheLoaitextBox.Size = new System.Drawing.Size(138, 22);
+            this.tenTheLoaitextBox.Size = new System.Drawing.Size(219, 22);
             this.tenTheLoaitextBox.TabIndex = 4;
             // 
             // TimkiemtextBox
             // 
-            this.TimkiemtextBox.Location = new System.Drawing.Point(562, 37);
+            this.TimkiemtextBox.Location = new System.Drawing.Point(709, 42);
             this.TimkiemtextBox.Multiline = true;
             this.TimkiemtextBox.Name = "TimkiemtextBox";
             this.TimkiemtextBox.Size = new System.Drawing.Size(177, 33);
@@ -112,7 +112,7 @@
             this.btnthem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnthem.Image = global::ThuVien.Properties.Resources.icons8_add_book_35;
             this.btnthem.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnthem.Location = new System.Drawing.Point(29, 320);
+            this.btnthem.Location = new System.Drawing.Point(100, 355);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(129, 53);
             this.btnthem.TabIndex = 6;
@@ -127,7 +127,7 @@
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsua.Image = global::ThuVien.Properties.Resources.icons8_support_35;
             this.btnsua.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnsua.Location = new System.Drawing.Point(198, 320);
+            this.btnsua.Location = new System.Drawing.Point(334, 355);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(129, 53);
             this.btnsua.TabIndex = 7;
@@ -142,7 +142,7 @@
             this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnxoa.Image = global::ThuVien.Properties.Resources.icons8_delete_35;
             this.btnxoa.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnxoa.Location = new System.Drawing.Point(198, 382);
+            this.btnxoa.Location = new System.Drawing.Point(331, 430);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(132, 49);
             this.btnxoa.TabIndex = 8;
@@ -157,7 +157,7 @@
             this.btnlammoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlammoi.Image = global::ThuVien.Properties.Resources.icons8_synchronize_35;
             this.btnlammoi.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnlammoi.Location = new System.Drawing.Point(29, 383);
+            this.btnlammoi.Location = new System.Drawing.Point(97, 431);
             this.btnlammoi.Name = "btnlammoi";
             this.btnlammoi.Size = new System.Drawing.Size(132, 48);
             this.btnlammoi.TabIndex = 9;
@@ -169,11 +169,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(363, 86);
+            this.dataGridView1.Location = new System.Drawing.Point(562, 90);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(376, 339);
+            this.dataGridView1.Size = new System.Drawing.Size(504, 389);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
@@ -190,7 +190,7 @@
             this.groupBox1.Controls.Add(this.TimkiemtextBox);
             this.groupBox1.Location = new System.Drawing.Point(60, 75);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(762, 452);
+            this.groupBox1.Size = new System.Drawing.Size(1100, 511);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             // 
@@ -199,7 +199,7 @@
             this.pictureBox1.Image = global::ThuVien.Properties.Resources.từ_vựng_về_thư_viện_300x200;
             this.pictureBox1.Location = new System.Drawing.Point(22, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(308, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(468, 186);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -211,9 +211,9 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.maTheLoaitextBox);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(22, 173);
+            this.groupBox2.Location = new System.Drawing.Point(22, 213);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(308, 127);
+            this.groupBox2.Size = new System.Drawing.Size(468, 127);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             // 
@@ -223,7 +223,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(295, 9);
+            this.label4.Location = new System.Drawing.Point(505, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(318, 49);
             this.label4.TabIndex = 14;
@@ -248,11 +248,12 @@
             this.AutoSize = true;
             this.BackgroundImage = global::ThuVien.Properties.Resources.thuvien;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(865, 554);
+            this.ClientSize = new System.Drawing.Size(1209, 620);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnback);
             this.Name = "TheLoai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TheLoai";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

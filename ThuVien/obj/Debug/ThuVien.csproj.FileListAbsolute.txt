@@ -109,3 +109,4 @@ C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Deb
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
 E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
+F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
