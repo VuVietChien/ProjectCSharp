@@ -93,6 +93,16 @@ namespace ThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ảnh_mượn_sách {
+            get {
+                object obj = ResourceManager.GetObject("ảnh mượn sách", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap emailopen {
             get {
                 object obj = ResourceManager.GetObject("emailopen", resourceCulture);
