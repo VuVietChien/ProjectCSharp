@@ -39,7 +39,10 @@ namespace ThuVien
             // load dữ liệu từ csdl
             configdata config = new configdata();
             DataTable dt = new DataTable();
-            string sql = "select MaSach, TenSach,soluong, MaTacGia, MaTheLoai, MaNXB , NamXuatBan from Sach order by TenSach ASC";
+            string sql = "select masach,tensach, soluong , tentacgia , tentheloai ,tennxb, namxuatban from sach";
+            sql += " inner join tacgia on tacgia.matacgia = sach.matacgia ";
+            sql += " inner join theloai on theloai.matheloai = sach.matheloai ";
+            sql += " inner join nhaxuatban on nhaxuatban.manxb = sach.manxb order by tensach desc"; 
             dt = config.selectDb(sql);
             // hứng dữ liệu trả về
             
@@ -61,18 +64,18 @@ namespace ThuVien
             GridviewSach.Columns.Add(column2);
 
             DataGridViewTextBoxColumn column3 = new DataGridViewTextBoxColumn();
-            column3.DataPropertyName = "MaTacGia";
-            column3.HeaderText = " Mã Tác Giả";
+            column3.DataPropertyName = "tenTacGia";
+            column3.HeaderText = " Tên Tác Giả";
             GridviewSach.Columns.Add(column3);
 
             DataGridViewTextBoxColumn column4 = new DataGridViewTextBoxColumn();
-            column4.DataPropertyName = "MaTheLoai";
-            column4.HeaderText = " Mã Thể Loại";
+            column4.DataPropertyName = "tenTheLoai";
+            column4.HeaderText = " Tên Thể Loại";
             GridviewSach.Columns.Add(column4);
 
             DataGridViewTextBoxColumn column5 = new DataGridViewTextBoxColumn();
-            column5.DataPropertyName = "MaNXB";
-            column5.HeaderText = " Mã NXB";
+            column5.DataPropertyName = "tenNXB";
+            column5.HeaderText = " Tên NXB";
             GridviewSach.Columns.Add(column5);
 
             DataGridViewTextBoxColumn column6 = new DataGridViewTextBoxColumn();
@@ -81,7 +84,6 @@ namespace ThuVien
             GridviewSach.Columns.Add(column6);
 
             GridviewSach.DataSource = dt;
-
             //căn chỉnh cho bảng vừa bằng cái khung datagridview
             GridviewSach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             GridviewSach.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
@@ -163,57 +165,77 @@ namespace ThuVien
             ////reload lại datagrid để có dữ liệu mới
             //this.sachTableAdapter.Fill(this.projectCSharpDataSet.Sach);
 
-            configdata a = new configdata();
-            string sql = "insert into Sach(MaSach,TenSach, soluong ,MaTacGia, MaTheLoai,MaNXB,NamXuatBan  )";
-            sql += " Values('" + masachtb.Text + "' ,  N'" + tensachtb.Text + " ', "+soluongtextbox.Text+", '" + matacgiacombobox.SelectedValue + "', '" + theloaicombobox.SelectedValue + "',N'" + nhaxuatbancombobox.SelectedValue + "'," + Namxuatbantb.Text + ")";
-            int sosanhdulieu = a.InsertDb(sql);
-            if(sosanhdulieu == 0)
-            {
-                MessageBox.Show("không thêm được dữ liệu");
-            }    
-            else
-            if(sosanhdulieu == -1)
-            {
+            
 
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
+            if (masachtb.Text == "" || soluongtextbox.Text == "" || tensachtb.Text == "" || theloaicombobox.Text == "" || matacgiacombobox.Text == "" || nhaxuatbancombobox.Text == "" || Namxuatbantb.Text == "")
+            {
+                MessageBox.Show("có mục bạn đang để trống, vui lòng nhập đầy đủ thông tin ");
             }
             else
             {
-                MessageBox.Show("đã thêm dữ liệu thành công");
-                GridviewSach.DataSource = null;
-                hienthiGridviewsach();
-            }    
+                if (MessageBox.Show("Bạn muốn đăng thêm sách mới ", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sql = "insert into Sach(MaSach,TenSach, soluong ,MaTacGia, MaTheLoai,MaNXB,NamXuatBan  )";
+                    sql += " Values('" + masachtb.Text + "' ,  N'" + tensachtb.Text + " ', " + soluongtextbox.Text + ", '" + matacgiacombobox.SelectedValue + "', '" + theloaicombobox.SelectedValue + "',N'" + nhaxuatbancombobox.SelectedValue + "'," + Namxuatbantb.Text + ")";
+                    int sosanhdulieu = a.InsertDb(sql);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không thêm được dữ liệu");
+                    }
+                    else
+                        if (sosanhdulieu == -1)
+                    {
+
+                        MessageBox.Show("mã mượn trả bị trùng, bạn vui lòng nhập mã sách khác");
+                    }
+                    else
+                    {
+                        MessageBox.Show("đã thêm sách vào thư viện thành công");
+                        GridviewSach.DataSource = null;
+                        hienthiGridviewsach();
+                    }
+
+                }
+            }
+            
         }
 
         private void Xóa_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sql = "delete from Sach where MaSach = '" + masachtb.Text + "'";
-           
-            int sosanhdulieu = a.InsertDb(sql);
-            if (sosanhdulieu == 0)
+            
+            if (MessageBox.Show("Bạn muốn xóa sách này khỏi hệ thống ", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                MessageBox.Show("không xóa được dữ liệu");
-            }
-            else
-            if (sosanhdulieu == -1)
-            {
+                configdata a = new configdata();
+                string sql = "delete from Sach where MaSach = '" + masachtb.Text + "'";
 
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
+                int sosanhdulieu = a.InsertDb(sql);
+                if (sosanhdulieu == 0)
+                {
+                    MessageBox.Show("không xóa được dữ liệu");
+                }
+                else
+                if (sosanhdulieu == -1)
+                {
+
+                    MessageBox.Show("Sách vẫn có người đang mượn, không thể xóa được !");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa dữ liệu thành công");
+
+                    masachtb.Text = null;
+                    tensachtb.Text = null;
+                    matacgiacombobox.Text = null;
+                    theloaicombobox.Text = "";
+                    soluongtextbox.Text = "";
+                    nhaxuatbancombobox.Text = "";
+                    Namxuatbantb.Text = "";
+                    GridviewSach.DataSource = null;
+                    hienthiGridviewsach();
+                }
             }
-            else
-            {
-                MessageBox.Show("Xóa dữ liệu thành công");
-                
-                masachtb.Text = null;
-                tensachtb.Text = null;
-                matacgiacombobox.Text = null;
-                theloaicombobox.Text = "";
-                nhaxuatbancombobox.Text = "";
-                Namxuatbantb.Text = "";
-                GridviewSach.DataSource = null;
-                hienthiGridviewsach();
-            }
+            
         }
 
         private void GridviewSach_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -221,33 +243,43 @@ namespace ThuVien
             masachtb.Text = GridviewSach.CurrentRow.Cells[0].Value.ToString();
             tensachtb.Text = GridviewSach.CurrentRow.Cells[1].Value.ToString();
             soluongtextbox.Text = GridviewSach.CurrentRow.Cells[2].Value.ToString();
-            matacgiacombobox.SelectedValue = GridviewSach.CurrentRow.Cells[3].Value.ToString();
-            theloaicombobox.SelectedValue = GridviewSach.CurrentRow.Cells[4].Value.ToString();
-            nhaxuatbancombobox.SelectedValue = GridviewSach.CurrentRow.Cells[5].Value.ToString();
+            matacgiacombobox.Text = GridviewSach.CurrentRow.Cells[3].Value.ToString();
+            theloaicombobox.Text = GridviewSach.CurrentRow.Cells[4].Value.ToString();
+            nhaxuatbancombobox.Text = GridviewSach.CurrentRow.Cells[5].Value.ToString();
             Namxuatbantb.Text = GridviewSach.CurrentRow.Cells[6].Value.ToString();
         }
 
         private void btnsuasach_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sql = "update Sach set TenSach = N'"+ tensachtb.Text + "', soluong = " + soluongtextbox.Text + " , MaTacGia  = '" + matacgiacombobox.SelectedValue +"',MaTheLoai = '"+theloaicombobox.SelectedValue +"', MaNXB = '"+nhaxuatbancombobox.SelectedValue +"', NamXuatBan = "+Namxuatbantb.Text+"  where MaSach = '"+masachtb.Text+"' " ;
-
-            int sosanhdulieu = a.InsertDb(sql);
-            if (sosanhdulieu == 0)
+            if (masachtb.Text == "" || soluongtextbox.Text == "" || tensachtb.Text == "" || theloaicombobox.Text == "" || matacgiacombobox.Text == "" || nhaxuatbancombobox.Text == "" || Namxuatbantb.Text == "")
             {
-                MessageBox.Show("không sửa được dữ liệu");
+                MessageBox.Show("có mục bạn đang để trống, vui lòng nhập đầy đủ thông tin ");
             }
             else
-            if (sosanhdulieu == -1)
-            {
+            { 
+                if (MessageBox.Show("Bạn muốn sửa thông tin của sách ", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sql = "update Sach set TenSach = N'" + tensachtb.Text + "', soluong = " + soluongtextbox.Text + " , MaTacGia  = '" + matacgiacombobox.SelectedValue + "',MaTheLoai = '" + theloaicombobox.SelectedValue + "', MaNXB = '" + nhaxuatbancombobox.SelectedValue + "', NamXuatBan = " + Namxuatbantb.Text + "  where MaSach = '" + masachtb.Text + "' ";
 
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
-            }
-            else
-            {
-                MessageBox.Show("Sửa dữ liệu thành công");
-                GridviewSach.DataSource = null;
-                hienthiGridviewsach();
+                    int sosanhdulieu = a.InsertDb(sql);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không sửa được dữ liệu");
+                    }
+                    else
+                    if (sosanhdulieu == -1)
+                    {
+
+                        MessageBox.Show("Lỗi không kết nối giữ liệu");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa dữ liệu thành công");
+                        GridviewSach.DataSource = null;
+                        hienthiGridviewsach();
+                    }
+                }
             }
         }
 
@@ -267,25 +299,38 @@ namespace ThuVien
 
         private void Sach_Load(object sender, EventArgs e)
         {
-            con.Open();
-            SqlDataAdapter adapt;
-            DataTable dt;
-            adapt = new SqlDataAdapter("select MaSach, TenSach, soluong, MaTacGia, MaTheLoai, MaNXB, NamXuatBan from Sach ", con);
-            dt = new DataTable();
-            adapt.Fill(dt);
-            GridviewSach.DataSource = dt;
-            con.Close();
+    
         }
 
         private void timkiemtextbox_TextChanged(object sender, EventArgs e)
         {
+            //con.Open();
+            //SqlDataAdapter adapt;
+            //DataTable dt;
+            //string sql = "select masach,tensach, soluong , tentacgia , tentheloai ,tennxb, namxuatban from sach";
+            //sql += " inner join tacgia on tacgia.matacgia = sach.matacgia ";
+            //sql += " inner join theloai on theloai.matheloai = sach.matheloai ";
+            //sql += " inner join nhaxuatban on nhaxuatban.manxb = sach.manxb where TenSach like N'%" + timkiemtextbox.Text + "%' or MaSach like '%" + timkiemtextbox.Text + "%' or MaTacGia like '%" + timkiemtextbox.Text + "%' or NamXuatBan like '%" + timkiemtextbox.Text + "%' or MaTheLoai like '%" + timkiemtextbox.Text + "%' ";
+
+            //adapt = new SqlDataAdapter(sql, con);
+            //dt = new DataTable();
+            //adapt.Fill(dt);
+            //GridviewSach.DataSource = dt;
+            //con.Close();
+
             con.Open();
             SqlDataAdapter adapt;
             DataTable dt;
-            string sql = "select MaSach, TenSach,soluong, MaTacGia, MaTheLoai, MaNXB , NamXuatBan from Sach where TenSach like N'%" + timkiemtextbox.Text + "%' or MaSach like '%" + timkiemtextbox.Text + "%' or MaTacGia like '%" + timkiemtextbox.Text + "%' or NamXuatBan like '%" + timkiemtextbox.Text + "%' or MaTheLoai like '%" + timkiemtextbox.Text + "%'";
+            string sql = "select masach,tensach, soluong , tentacgia , tentheloai ,tennxb, namxuatban from sach";
+            sql += " inner join tacgia on tacgia.matacgia = sach.matacgia ";
+            sql += " inner join theloai on theloai.matheloai = sach.matheloai ";
+            sql += " inner join nhaxuatban on nhaxuatban.manxb = sach.manxb where Tensach like N'%" + timkiemtextbox.Text + "%' ";
+
             adapt = new SqlDataAdapter(sql, con);
             dt = new DataTable();
             adapt.Fill(dt);
+            GridviewSach.DataSource = null;
+            hienthiGridviewsach();
             GridviewSach.DataSource = dt;
             con.Close();
         }
@@ -318,9 +363,9 @@ namespace ThuVien
             worksheet.Cells[2, 1] = "Mã Sách";
             worksheet.Cells[2, 2] = "Tên Sách";
             worksheet.Cells[2, 3] = "Số Lượng";
-            worksheet.Cells[2, 4] = "Mã Tác Giả";
-            worksheet.Cells[2, 5] = "Mã Thể Loại";
-            worksheet.Cells[2, 6] = "Mã Nhà Xuất Bản";
+            worksheet.Cells[2, 4] = "Tên Tác Giả";
+            worksheet.Cells[2, 5] = "Tên Thể Loại";
+            worksheet.Cells[2, 6] = " Nhà Xuất Bản";
             worksheet.Cells[2, 7] = "Năm Xuất Bản";
 
             for (int i = 0; i < GridviewSach.RowCount - 1; i++)// 

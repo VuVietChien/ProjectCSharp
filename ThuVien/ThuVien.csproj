@@ -143,6 +143,9 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MuonTra.resx">
+      <DependentUpon>MuonTra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -363,6 +366,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\emial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ảnh mượn sách.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

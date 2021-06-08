@@ -66,50 +66,74 @@ namespace ThuVien
 
         private void btnsuatacgia_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sql = "update TacGia set TenTacGia = N'"+tentacgiatextbox.Text + "', GhiChu  = N'" + ghichutextbox.Text + "' where MaTacGia = '"+matacgiatextbox.Text+"'";
-
-            int sosanhdulieu = a.InsertDb(sql);
-            if (sosanhdulieu == 0)
+            if (matacgiatextbox.Text == "" || tentacgiatextbox.Text == "" || ghichutextbox.Text == "")
             {
-                MessageBox.Show("không sửa được dữ liệu");
-            }
-            else
-            if (sosanhdulieu == -1)
-            {
-
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
+                MessageBox.Show("có mục bạn đang để trống, vui lòng nhập đầy đủ thông tin ");
             }
             else
             {
-                MessageBox.Show("Sửa dữ liệu thành công");
-                gridviewtacgia.DataSource = null;
-                hienthiGridviewTacGia();
+                if (MessageBox.Show("Bạn muốn sửa tác giả tác giả ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sql = "update TacGia set TenTacGia = N'" + tentacgiatextbox.Text + "', GhiChu  = N'" + ghichutextbox.Text + "' where MaTacGia = '" + matacgiatextbox.Text + "'";
+
+                    int sosanhdulieu = a.InsertDb(sql);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không sửa được dữ liệu");
+                    }
+                    else
+                    if (sosanhdulieu == -1)
+                    {
+
+                        MessageBox.Show("Lỗi không kết nối giữ liệu");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa dữ liệu thành công");
+                        gridviewtacgia.DataSource = null;
+                        hienthiGridviewTacGia();
+                    }
+                }
+
             }
+           
         }
 
         private void btnthemtacgia_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sql = "insert into TacGia (MaTacGia,TenTacGia,GhiChu )";
-            sql += " Values('" + matacgiatextbox.Text + "' ,  N'" + tentacgiatextbox.Text + "', N'" + ghichutextbox.Text + "')";
-            int sosanhdulieu = a.InsertDb(sql);
-            if (sosanhdulieu == 0)
+            if (matacgiatextbox.Text == "" || tentacgiatextbox.Text == "" || ghichutextbox.Text == "")
             {
-                MessageBox.Show("không thêm được dữ liệu");
+                MessageBox.Show("có mục bạn đang để trống, vui lòng nhập đầy đủ thông tin ");
             }
             else
-            if (sosanhdulieu == -1)
             {
+                if (MessageBox.Show("Bạn muốn thêm mới tác giả ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sql = "insert into TacGia (MaTacGia,TenTacGia,GhiChu )";
+                    sql += " Values('" + matacgiatextbox.Text + "' ,  N'" + tentacgiatextbox.Text + "', N'" + ghichutextbox.Text + "')";
+                    int sosanhdulieu = a.InsertDb(sql);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không thêm được dữ liệu");
+                    }
+                    else
+                    if (sosanhdulieu == -1)
+                    {
 
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
-            }
-            else
-            {
-                MessageBox.Show("đã thêm dữ liệu thành công");
-                gridviewtacgia.DataSource = null;
-                hienthiGridviewTacGia();
-            }
+                        MessageBox.Show("Mã tác giả đã có, vui lòng nhập mã tác giả khác !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("đã thêm dữ liệu thành công");
+                        gridviewtacgia.DataSource = null;
+                        hienthiGridviewTacGia();
+                    }
+                }
+                
+            }    
+            
         }
 
         private void btnxoatacgia_Click(object sender, EventArgs e)
@@ -195,19 +219,21 @@ namespace ThuVien
             app.Visible = true;
 
             // đổ dữ liệu vào sheets
-
-            worksheet.Cells[2, 1] = "Mã Tác Giả";
-            worksheet.Cells[2, 2] = "Tên Tác Giả";
-            worksheet.Cells[2, 3] = "Ghi Chú";
+            worksheet.Cells[1, 2] = " BẢNG THÔNG TIN TÁC GIẢ";
+            worksheet.Cells[3, 1] = "Mã Tác Giả";
+            worksheet.Cells[3, 2] = "Tên Tác Giả";
+            worksheet.Cells[3, 3] = "Ghi Chú";
           
 
             for (int i = 0; i < gridviewtacgia.RowCount - 1; i++)// 
             {
                 for (int j = 0; j < gridviewtacgia.ColumnCount; j++)
                 {
-                    worksheet.Cells[i + 3, j + 1] = gridviewtacgia.Rows[i].Cells[j].Value;
+                    worksheet.Cells[i + 4, j + 1] = gridviewtacgia.Rows[i].Cells[j].Value;
                 }
             }
         }
+
+   
     }
 }

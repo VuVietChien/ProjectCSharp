@@ -42,55 +42,55 @@ namespace ThuVien
             this.button1 = new System.Windows.Forms.Button();
             this.timkiemtacgiatextbox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnexport = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnexport = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewtacgia)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // matacgialabel
             // 
             this.matacgialabel.AutoSize = true;
             this.matacgialabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.matacgialabel.Location = new System.Drawing.Point(11, 58);
+            this.matacgialabel.Location = new System.Drawing.Point(11, 72);
             this.matacgialabel.Name = "matacgialabel";
-            this.matacgialabel.Size = new System.Drawing.Size(106, 20);
+            this.matacgialabel.Size = new System.Drawing.Size(118, 20);
             this.matacgialabel.TabIndex = 0;
-            this.matacgialabel.Text = "Mã Tác Giả";
+            this.matacgialabel.Text = "Mã Tác Giả :";
             // 
             // tentacgialabel
             // 
             this.tentacgialabel.AutoSize = true;
             this.tentacgialabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tentacgialabel.Location = new System.Drawing.Point(11, 105);
+            this.tentacgialabel.Location = new System.Drawing.Point(11, 122);
             this.tentacgialabel.Name = "tentacgialabel";
-            this.tentacgialabel.Size = new System.Drawing.Size(112, 20);
+            this.tentacgialabel.Size = new System.Drawing.Size(124, 20);
             this.tentacgialabel.TabIndex = 1;
-            this.tentacgialabel.Text = "Tên Tác Giả";
+            this.tentacgialabel.Text = "Tên Tác Giả :";
             // 
             // ghichulabel
             // 
             this.ghichulabel.AutoSize = true;
             this.ghichulabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ghichulabel.Location = new System.Drawing.Point(11, 148);
+            this.ghichulabel.Location = new System.Drawing.Point(11, 172);
             this.ghichulabel.Name = "ghichulabel";
-            this.ghichulabel.Size = new System.Drawing.Size(150, 20);
+            this.ghichulabel.Size = new System.Drawing.Size(162, 20);
             this.ghichulabel.TabIndex = 2;
-            this.ghichulabel.Text = "Thông tin tác giả";
+            this.ghichulabel.Text = "Thông tin tác giả :";
             // 
             // gridviewtacgia
             // 
@@ -105,23 +105,32 @@ namespace ThuVien
             // 
             // matacgiatextbox
             // 
-            this.matacgiatextbox.Location = new System.Drawing.Point(181, 58);
+            this.matacgiatextbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matacgiatextbox.ForeColor = System.Drawing.Color.Red;
+            this.matacgiatextbox.Location = new System.Drawing.Point(217, 53);
+            this.matacgiatextbox.Multiline = true;
             this.matacgiatextbox.Name = "matacgiatextbox";
-            this.matacgiatextbox.Size = new System.Drawing.Size(298, 22);
+            this.matacgiatextbox.Size = new System.Drawing.Size(298, 39);
             this.matacgiatextbox.TabIndex = 0;
             // 
             // tentacgiatextbox
             // 
-            this.tentacgiatextbox.Location = new System.Drawing.Point(207, 103);
+            this.tentacgiatextbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tentacgiatextbox.ForeColor = System.Drawing.Color.Red;
+            this.tentacgiatextbox.Location = new System.Drawing.Point(217, 103);
+            this.tentacgiatextbox.Multiline = true;
             this.tentacgiatextbox.Name = "tentacgiatextbox";
-            this.tentacgiatextbox.Size = new System.Drawing.Size(272, 22);
+            this.tentacgiatextbox.Size = new System.Drawing.Size(298, 39);
             this.tentacgiatextbox.TabIndex = 1;
             // 
             // ghichutextbox
             // 
-            this.ghichutextbox.Location = new System.Drawing.Point(217, 148);
+            this.ghichutextbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ghichutextbox.ForeColor = System.Drawing.Color.Red;
+            this.ghichutextbox.Location = new System.Drawing.Point(217, 153);
+            this.ghichutextbox.Multiline = true;
             this.ghichutextbox.Name = "ghichutextbox";
-            this.ghichutextbox.Size = new System.Drawing.Size(262, 22);
+            this.ghichutextbox.Size = new System.Drawing.Size(298, 39);
             this.ghichutextbox.TabIndex = 2;
             // 
             // btnthemtacgia
@@ -172,7 +181,7 @@ namespace ThuVien
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ThuVien.Properties.Resources.icons8_synchronize_35;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(317, 62);
+            this.button1.Location = new System.Drawing.Point(327, 62);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 50);
             this.button1.TabIndex = 3;
@@ -183,9 +192,11 @@ namespace ThuVien
             // 
             // timkiemtacgiatextbox
             // 
-            this.timkiemtacgiatextbox.Location = new System.Drawing.Point(343, 24);
+            this.timkiemtacgiatextbox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timkiemtacgiatextbox.Location = new System.Drawing.Point(343, 11);
+            this.timkiemtacgiatextbox.Multiline = true;
             this.timkiemtacgiatextbox.Name = "timkiemtacgiatextbox";
-            this.timkiemtacgiatextbox.Size = new System.Drawing.Size(243, 22);
+            this.timkiemtacgiatextbox.Size = new System.Drawing.Size(293, 38);
             this.timkiemtacgiatextbox.TabIndex = 0;
             this.timkiemtacgiatextbox.TextChanged += new System.EventHandler(this.timkiemtacgiatextbox_TextChanged);
             // 
@@ -207,19 +218,16 @@ namespace ThuVien
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox2
+            // label3
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.gridviewtacgia);
-            this.groupBox2.Controls.Add(this.timkiemtacgiatextbox);
-            this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.groupBox2.Location = new System.Drawing.Point(17, 426);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1366, 289);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(80, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(185, 25);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Thông tin Tác Giả";
             // 
             // groupBox3
             // 
@@ -235,6 +243,65 @@ namespace ThuVien
             this.groupBox3.Size = new System.Drawing.Size(817, 209);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(80, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 25);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "Chức Năng";
+            // 
+            // btnexport
+            // 
+            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexport.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
+            this.btnexport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexport.Location = new System.Drawing.Point(565, 134);
+            this.btnexport.Name = "btnexport";
+            this.btnexport.Size = new System.Drawing.Size(184, 50);
+            this.btnexport.TabIndex = 4;
+            this.btnexport.Text = "Export Exccel";
+            this.btnexport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnexport.UseVisualStyleBackColor = true;
+            this.btnexport.Click += new System.EventHandler(this.btnexport_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.gridviewtacgia);
+            this.groupBox2.Controls.Add(this.timkiemtacgiatextbox);
+            this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.groupBox2.Location = new System.Drawing.Point(17, 426);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1366, 289);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ThuVien.Properties.Resources.icons8_search_35;
+            this.pictureBox2.Location = new System.Drawing.Point(97, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 33);
+            this.pictureBox2.TabIndex = 50;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(124, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 25);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Tìm kiếm tác giả :";
             // 
             // label1
             // 
@@ -290,62 +357,6 @@ namespace ThuVien
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // btnexport
-            // 
-            this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
-            this.btnexport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexport.Location = new System.Drawing.Point(565, 134);
-            this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(184, 50);
-            this.btnexport.TabIndex = 4;
-            this.btnexport.Text = "Export Exccel";
-            this.btnexport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnexport.UseVisualStyleBackColor = true;
-            this.btnexport.Click += new System.EventHandler(this.btnexport_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(80, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 25);
-            this.label3.TabIndex = 48;
-            this.label3.Text = "Thông tin Tác Giả";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(124, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 25);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "Tìm kiếm tác giả :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(80, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 25);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "Chức Năng";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ThuVien.Properties.Resources.icons8_search_35;
-            this.pictureBox2.Location = new System.Drawing.Point(97, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 33);
-            this.pictureBox2.TabIndex = 50;
-            this.pictureBox2.TabStop = false;
-            // 
             // TacGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -363,13 +374,13 @@ namespace ThuVien
             ((System.ComponentModel.ISupportInitialize)(this.gridviewtacgia)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

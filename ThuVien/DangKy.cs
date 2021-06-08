@@ -93,7 +93,7 @@ namespace ThuVien
         {
             //truy cập kết nối
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=NOBINOBI\\SQLEXPRESS; Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS; Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from login where username='" + textBox2.Text + "'", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);

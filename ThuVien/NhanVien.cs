@@ -65,7 +65,6 @@ namespace ThuVien
             gridviewNhanVien.Columns.Add(column3);
             //
 
-
             gridviewNhanVien.DataSource = dt;
 
             //
@@ -78,7 +77,7 @@ namespace ThuVien
             configdata configdb = new configdata();
 
             String sqlThemDuLieu = "INSERT INTO NhanVien(MaNhanVien, HoTen, NgaySinh, GioiTinh, SDT) ";
-            sqlThemDuLieu += "VALUES (" + txtMaNhanVien.Text + "";
+            sqlThemDuLieu += "VALUES ('" + txtMaNhanVien.Text + "'";
             sqlThemDuLieu += ",N' " + txtHoTen.Text + "'";
             sqlThemDuLieu += ", CONVERT(datetime, '" + ngaySinh.Text + "' , 103)";
             sqlThemDuLieu += ",'" + gioiTinh.Checked + "'";
