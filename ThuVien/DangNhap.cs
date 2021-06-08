@@ -68,7 +68,12 @@ namespace ThuVien
                 textBox3.Focus();
             }
             SqlConnection sql = new SqlConnection();
+
             sql.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+
+      
+
+
             sql.Open();
             //
             if (checkPass() == false)

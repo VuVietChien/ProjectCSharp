@@ -1,155 +1,21 @@
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-F:\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-F:\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-F:\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-F:\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
-E:\DhCNGTVT2021\C#\Project_Chinh\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-F:\đồ án lớn\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-F:\đồ án lớn\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
-F:\đồ án lớn\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-F:\notphatcuoi\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-F:\notphatcuoi\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
-F:\notphatcuoi\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.MuonTra.resources
+C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
+C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.thongtintaikhoan.resources
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-<<<<<<< HEAD
-C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.thongtintaikhoan.resources
-=======
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.AssemblyReference.cache
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
-C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
-E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.MuonTra.resources
->>>>>>> f137fdeffda8c1a704a80d4832abb96e20d41e21
+C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache

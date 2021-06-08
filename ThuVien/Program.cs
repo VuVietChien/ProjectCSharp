@@ -16,7 +16,7 @@ namespace ThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MuonTra());
+            Application.Run(new DangNhap());
         }
     }
 }
