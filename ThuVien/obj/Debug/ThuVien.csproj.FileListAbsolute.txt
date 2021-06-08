@@ -149,3 +149,23 @@ C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.
 C:\Users\PC\Documents\C#\New folder (4)\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
 E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
 E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.MuonTra.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.MuonTra.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
+F:\notphatcuoi\ok\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb

@@ -60,77 +60,107 @@ namespace ThuVien
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sqlthemdulieu = "INSERT INTO NhaXuatBan  (MaNXB,TenNXB,DiaChi,Email)";
-            sqlthemdulieu += "VALUES ('" + maNXBTextBox.Text + "'";
-            sqlthemdulieu += ", N'" + tenNXBTextBox.Text + "'";
-            sqlthemdulieu += ", N'" + diaChiTextBox.Text + "'";
-            sqlthemdulieu += ", N'" + EmailTextBox.Text + "'";
-            sqlthemdulieu += ");";
-            int sosanhdulieu = a.InsertDb(sqlthemdulieu);
-            if (sosanhdulieu == 0)
+            if (maNXBTextBox.Text == "" || tenNXBTextBox.Text == ""|| diaChiTextBox.Text == "" || EmailTextBox.Text =="")
             {
-                MessageBox.Show("không thêm được dữ liệu");
-            }
-            else
-            if (sosanhdulieu == -1)
-            {
-
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
+                MessageBox.Show("có mục bạn đang để trống, vui lòng nhập đầy đủ thông tin ");
             }
             else
             {
-                MessageBox.Show("đã thêm dữ liệu thành công");
-                dataGridView1.DataSource = null;
+                if (MessageBox.Show("Bạn muốn thêm mới nhà xuất bản ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sqlthemdulieu = "INSERT INTO NhaXuatBan  (MaNXB,TenNXB,DiaChi,Email)";
+                    sqlthemdulieu += "VALUES ('" + maNXBTextBox.Text + "'";
+                    sqlthemdulieu += ", N'" + tenNXBTextBox.Text + "'";
+                    sqlthemdulieu += ", N'" + diaChiTextBox.Text + "'";
+                    sqlthemdulieu += ", N'" + EmailTextBox.Text + "'";
+                    sqlthemdulieu += ");";
+                    int sosanhdulieu = a.InsertDb(sqlthemdulieu);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không thêm được dữ liệu");
+                    }
+                    else
+                    if (sosanhdulieu == -1)
+                    {
 
-                Hienthi();
+                        MessageBox.Show("Mã nhà xuất bản đã có, vui lòng nhập mã nhà xuất bản khác !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("đã thêm thành công");
+                        dataGridView1.DataSource = null;
+
+                        Hienthi();
+                    }
+                }
             }
         }
 
         private void btnsua_Click(object sender, EventArgs e)
         {
-            configdata confidb = new configdata();
-            String sqlsua = "update NhaXuatBan set TenNXB=N'" + tenNXBTextBox.Text + "', DiaChi=N'" + diaChiTextBox.Text + "', Email=N'" + EmailTextBox.Text + "' where MaNXB='" + maNXBTextBox.Text + "'";
-            // confidb.InsertDb(sqlsua);
-            int suadulieu = confidb.InsertDb(sqlsua);
-
-            if (suadulieu == 0)
+            if (maNXBTextBox.Text == "" || tenNXBTextBox.Text == "" || diaChiTextBox.Text == "" || EmailTextBox.Text == "")
             {
-                MessageBox.Show("không sửa được dữu liệu");
-            }
-            else if (suadulieu == -1)
-            {
-                MessageBox.Show("lỗi dữu liệu");
+                MessageBox.Show("Bạn chưa chọn mục để sửa, vui lòng chọn ");
             }
             else
             {
-                MessageBox.Show("Đã sửa dữu liệu");
-                dataGridView1.DataSource = null;
-                Hienthi();
+                if (MessageBox.Show("Bạn muốn sửa nhà xuất bản ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata confidb = new configdata();
+                    String sqlsua = "update NhaXuatBan set TenNXB=N'" + tenNXBTextBox.Text + "', DiaChi=N'" + diaChiTextBox.Text + "', Email=N'" + EmailTextBox.Text + "' where MaNXB='" + maNXBTextBox.Text + "'";
+                    // confidb.InsertDb(sqlsua);
+                    int suadulieu = confidb.InsertDb(sqlsua);
+
+                    if (suadulieu == 0)
+                    {
+                        MessageBox.Show("không sửa được mã nhà xuất bản!");
+                    }
+                    else if (suadulieu == -1)
+                    {
+                        MessageBox.Show("lỗi dữu liệu");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã sửa dữu liệu");
+                        dataGridView1.DataSource = null;
+                        Hienthi();
+                    }
+                }
             }
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sql = "delete NhaXuatBan where MaNXB='" + maNXBTextBox.Text + "'";
-
-            int sosanhdulieu = a.InsertDb(sql);
-            if (sosanhdulieu == 0)
+            if (maNXBTextBox.Text == "" || tenNXBTextBox.Text == "" || diaChiTextBox.Text == "" || EmailTextBox.Text == "")
             {
-                MessageBox.Show("không xóa được dữ liệu");
-            }
-            else
-            if (sosanhdulieu == -1)
-            {
-
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
+                MessageBox.Show("Bạn chưa chọn mục để xóa, vui lòng chọn ");
             }
             else
             {
-                MessageBox.Show("Xóa dữ liệu thành công");
-                dataGridView1.DataSource = null;
-                Hienthi();
+                if (MessageBox.Show("Bạn muốn xóa thể loại sách ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sql = "delete NhaXuatBan where MaNXB='" + maNXBTextBox.Text + "'";
+
+                    int sosanhdulieu = a.InsertDb(sql);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không xóa được dữ liệu");
+                    }
+                    else
+                    if (sosanhdulieu == -1)
+                    {
+
+                        MessageBox.Show("Lỗi không kết nối giữ liệu");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa dữ liệu thành công");
+                        dataGridView1.DataSource = null;
+                        Hienthi();
+                    }
+                }
             }
         }
 
@@ -181,26 +211,29 @@ namespace ThuVien
 
         private void btnexxcel_Click(object sender, EventArgs e)
         {
-            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
-            Microsoft.Office.Interop.Excel.Workbook workbook = app.Workbooks.Add(Type.Missing);
-            Microsoft.Office.Interop.Excel.Worksheet worksheet = null;
-            worksheet = workbook.Sheets["Sheet1"];
-            worksheet = workbook.ActiveSheet;
-            app.Visible = true;
-
-            worksheet.Cells[1, 2] = "Bảng thống kê Nhà Xuất Bản";
-            worksheet.Cells[3, 1] = "STT";
-            worksheet.Cells[3, 2] = "Mã Nhà Xuất Bản";
-            worksheet.Cells[3, 3] = "Tên Nhà Xuất Bản";
-            worksheet.Cells[3, 4] = "Địa Chỉ";
-            worksheet.Cells[3, 5] = "Email";
-
-            for (int i = 0; i < dataGridView1.RowCount - 1; i++)
+            if (MessageBox.Show("Bạn muốn xuất thông tin ra Excel ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                for (int j = 0; j < 4 ; j++)
+                Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+                Microsoft.Office.Interop.Excel.Workbook workbook = app.Workbooks.Add(Type.Missing);
+                Microsoft.Office.Interop.Excel.Worksheet worksheet = null;
+                worksheet = workbook.Sheets["Sheet1"];
+                worksheet = workbook.ActiveSheet;
+                app.Visible = true;
+
+                worksheet.Cells[1, 2] = "Bảng thống kê Nhà Xuất Bản";
+                worksheet.Cells[3, 1] = "STT";
+                worksheet.Cells[3, 2] = "Mã Nhà Xuất Bản";
+                worksheet.Cells[3, 3] = "Tên Nhà Xuất Bản";
+                worksheet.Cells[3, 4] = "Địa Chỉ";
+                worksheet.Cells[3, 5] = "Email";
+
+                for (int i = 0; i < dataGridView1.RowCount - 1; i++)
                 {
-                    worksheet.Cells[i + 4, 1] = i + 1;
-                    worksheet.Cells[i + 4, j + 2] = dataGridView1.Rows[i].Cells[j].Value;
+                    for (int j = 0; j < 4; j++)
+                    {
+                        worksheet.Cells[i + 4, 1] = i + 1;
+                        worksheet.Cells[i + 4, j + 2] = dataGridView1.Rows[i].Cells[j].Value;
+                    }
                 }
             }
         }
