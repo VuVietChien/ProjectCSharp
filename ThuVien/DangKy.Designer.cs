@@ -73,8 +73,8 @@ namespace ThuVien
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(346, 56);
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(336, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(230, 51);
             this.label3.TabIndex = 48;
@@ -122,7 +122,6 @@ namespace ThuVien
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(366, 37);
             this.textBox4.TabIndex = 44;
-//            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
@@ -133,7 +132,6 @@ namespace ThuVien
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(366, 37);
             this.textBox3.TabIndex = 43;
-       //     this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -144,7 +142,6 @@ namespace ThuVien
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(366, 49);
             this.textBox2.TabIndex = 42;
-     //       this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // panel2
             // 
@@ -178,9 +175,9 @@ namespace ThuVien
             this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(83, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 36);
+            this.label2.Size = new System.Drawing.Size(216, 36);
             this.label2.TabIndex = 54;
-            this.label2.Text = "Tên tài khoản";
+            this.label2.Text = "Tên tài khoản:";
             // 
             // label1
             // 
@@ -188,11 +185,11 @@ namespace ThuVien
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(108, 314);
+            this.label1.Location = new System.Drawing.Point(126, 325);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 36);
+            this.label1.Size = new System.Drawing.Size(161, 36);
             this.label1.TabIndex = 55;
-            this.label1.Text = "Mật khẩu";
+            this.label1.Text = "Mật khẩu:";
             // 
             // label4
             // 
@@ -200,11 +197,11 @@ namespace ThuVien
             this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(151, 417);
+            this.label4.Location = new System.Drawing.Point(169, 418);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 36);
+            this.label4.Size = new System.Drawing.Size(108, 36);
             this.label4.TabIndex = 56;
-            this.label4.Text = "Email";
+            this.label4.Text = "Email:";
             // 
             // DangKy
             // 
@@ -230,7 +227,7 @@ namespace ThuVien
             this.Controls.Add(this.textBox2);
             this.Name = "DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DangKy";
+            this.Text = "Đăng Ký";
             this.ResumeLayout(false);
             this.PerformLayout();
 

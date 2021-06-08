@@ -270,7 +270,8 @@ namespace ThuVien
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SuaMatKhau sk = new SuaMatKhau();
+            //SuaMatKhau sk = new SuaMatKhau();
+            thongtintaikhoan sk = new thongtintaikhoan();
             sk.Show();
             this.Hide();
         }

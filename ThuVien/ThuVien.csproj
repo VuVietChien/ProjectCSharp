@@ -131,6 +131,12 @@
     <Compile Include="TheThuVien.Designer.cs">
       <DependentUpon>TheThuVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="thongtintaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongtintaikhoan.Designer.cs">
+      <DependentUpon>thongtintaikhoan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TheLoai.resx">
       <DependentUpon>TheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongtintaikhoan.resx">
+      <DependentUpon>thongtintaikhoan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

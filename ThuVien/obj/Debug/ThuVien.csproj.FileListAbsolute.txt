@@ -128,3 +128,4 @@ C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\T
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
+C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.thongtintaikhoan.resources

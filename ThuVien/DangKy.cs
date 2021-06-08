@@ -130,11 +130,27 @@ namespace ThuVien
                     }
                     con.Close();
                 }
+         
+                else if (check() == false)
+                {
+                    MessageBox.Show("NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!!");
+                    textBox3.Text = "";
+                    textBox3.Focus();
+                }
+                else if (checkMail() == false)
+                {
+                    MessageBox.Show("NHẬP SAI ĐỊNH DẠNG EMAIL!!");
+                    textBox4.Text = "";
+                    textBox4.Focus();
+                }
                 else
                 {
-                    MessageBox.Show("ĐĂNG KÍ THẤT BẠI");
+                    MessageBox.Show("ĐĂNG KÍ THẤT BẠI!!");
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text="";
+                    textBox2.Focus();
                 }
-
             }
         }
 

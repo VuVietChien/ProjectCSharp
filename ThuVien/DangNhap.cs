@@ -18,8 +18,10 @@ namespace ThuVien
             InitializeComponent();
         }
         //
+        //
         public bool checkPass()
         {
+          
             bool checkLength = false;
             if (textBox3.TextLength >= 6)
             {
@@ -65,39 +67,53 @@ namespace ThuVien
                 MessageBox.Show("BẠN CHƯA NHẬP MẬT KHẨU!!");
                 textBox3.Focus();
             }
+            SqlConnection sql = new SqlConnection();
+            sql.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            sql.Open();
             //
             if (checkPass() == false)
             {
-                MessageBox.Show("BẠN NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!!");
-            }
-
-            SqlConnection sql = new SqlConnection();
-            sql.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
-
-            sql.Open();
-            string newc = "select * from login where username='" + textBox1.Text + "' and password='" + textBox3.Text + "'";
-            /*  SqlDataAdapter adp = new SqlDataAdapter(newc, sql);
-              *//*DataSet ds = new DataSet();
-              adp.Fill(ds);//Thêm hoặc làm mới các hàng trong Tập dữ liệu để khớp với các hàng trong nguồn dữ liệu.
-              DataTable dt = ds.Tables[0];*/
-            SqlCommand sq = new SqlCommand(newc, sql);
-            SqlDataReader da = sq.ExecuteReader();//lấy dữ liệu
-            if (da.Read() == true)//
-            {
-                MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG!!");
-                Main m = new Main();
-                m.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("ĐĂNG NHẬP THẤT BẠI!!");
-                textBox1.Text = "";
+                MessageBox.Show("NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!!");
                 textBox3.Text = "";
-                textBox1.Focus();
+                textBox3.Focus();
             }
+            //
+            if (checkPass() == true)
+            {
+                //  MessageBox.Show("BẠN NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!!");
+                string newc = "select * from login where username='" + textBox1.Text + "' and password='" + textBox3.Text + "'";
+                /*  SqlDataAdapter adp = new SqlDataAdapter(newc, sql);
+                  *//*DataSet ds = new DataSet();
+                  adp.Fill(ds);//Thêm hoặc làm mới các hàng trong Tập dữ liệu để khớp với các hàng trong nguồn dữ liệu.
+                  DataTable dt = ds.Tables[0];*/
+                SqlCommand sq = new SqlCommand(newc, sql);
+                SqlDataReader da = sq.ExecuteReader();//lấy dữ liệu
+                if (da.Read() == true)//
+                {
+                    MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG!!");
+                    Main m = new Main();
+                    m.Show();
+                    this.Hide();
+                }
+                else
+                {                 
+                        MessageBox.Show("ĐĂNG NHẬP THẤT BẠI!!");
+                        textBox1.Text = "";
+                        textBox3.Text = "";
+                        textBox1.Focus();                    
+                }
+            }
+          //  else
+            //{          
+               /* else
+                {
+                    MessageBox.Show("ĐĂNG NHẬP THẤT BẠI!!");
+                    textBox1.Text = "";
+                    textBox3.Text = "";
+                    textBox1.Focus();
+                }*/
+            //}
             sql.Close();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -110,8 +126,8 @@ namespace ThuVien
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ForgetPassword fo = new ForgetPassword();
-            this.Dispose(false);
             fo.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -132,6 +148,5 @@ namespace ThuVien
                 textBox3.PasswordChar = '\0';//hiển thị kí tự
             }
         }
-
     }
 }

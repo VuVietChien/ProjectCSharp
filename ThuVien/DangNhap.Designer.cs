@@ -59,6 +59,7 @@ namespace ThuVien
             linkLabel1.TabIndex = 44;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Quên mật khẩu";
+            linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label1
             // 
@@ -66,7 +67,7 @@ namespace ThuVien
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(271, 9);
+            this.label1.Location = new System.Drawing.Point(281, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(285, 55);
             this.label1.TabIndex = 47;
@@ -151,7 +152,6 @@ namespace ThuVien
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(366, 49);
             this.textBox1.TabIndex = 40;
-//            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel1
             // 
@@ -175,11 +175,11 @@ namespace ThuVien
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(66, 218);
+            this.label2.Location = new System.Drawing.Point(41, 218);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 36);
+            this.label2.Size = new System.Drawing.Size(216, 36);
             this.label2.TabIndex = 51;
-            this.label2.Text = "Tên tài khoản";
+            this.label2.Text = "Tên tài khoản:";
             // 
             // label3
             // 
@@ -187,11 +187,11 @@ namespace ThuVien
             this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(89, 346);
+            this.label3.Location = new System.Drawing.Point(96, 354);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 36);
+            this.label3.Size = new System.Drawing.Size(161, 36);
             this.label3.TabIndex = 52;
-            this.label3.Text = "Mật khẩu";
+            this.label3.Text = "Mật khẩu:";
             // 
             // DangNhap
             // 
@@ -215,7 +215,7 @@ namespace ThuVien
             this.Controls.Add(this.textBox1);
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DangNhap";
+            this.Text = "Đăng Nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 
