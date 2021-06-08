@@ -138,29 +138,32 @@ namespace ThuVien
 
         private void btnxoatacgia_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sql = "delete from TacGia where MaTacGia = '" + matacgiatextbox.Text + "'";
-
-            int sosanhdulieu = a.InsertDb(sql);
-            if (sosanhdulieu == 0)
+            if (MessageBox.Show("Bạn muốn xóa thể loại sách ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                MessageBox.Show("không xóa được dữ liệu");
-            }
-            else
-            if (sosanhdulieu == -1)
-            {
+                configdata a = new configdata();
+                string sql = "delete from TacGia where MaTacGia = '" + matacgiatextbox.Text + "'";
 
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
-            }
-            else
-            {
-                MessageBox.Show("Xóa dữ liệu thành công");
+                int sosanhdulieu = a.InsertDb(sql);
+                if (sosanhdulieu == 0)
+                {
+                    MessageBox.Show("không xóa được dữ liệu");
+                }
+                else
+                if (sosanhdulieu == -1)
+                {
 
-                matacgiatextbox.Text = null;
-                tentacgiatextbox.Text = null;
-                ghichutextbox.Text = null;
+                    MessageBox.Show("Bạn chưa chọn cái cần xóa, vui lòng chọn mục cần xóa?");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thành công");
 
-                hienthiGridviewTacGia();
+                    matacgiatextbox.Text = null;
+                    tentacgiatextbox.Text = null;
+                    ghichutextbox.Text = null;
+
+                    hienthiGridviewTacGia();
+                }
             }
         }
 

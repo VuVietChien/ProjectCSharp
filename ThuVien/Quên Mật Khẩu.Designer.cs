@@ -68,7 +68,7 @@ namespace ThuVien
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel4.Location = new System.Drawing.Point(571, 296);
+            this.panel4.Location = new System.Drawing.Point(629, 296);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(360, 3);
             this.panel4.TabIndex = 62;
@@ -76,7 +76,7 @@ namespace ThuVien
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel2.Location = new System.Drawing.Point(571, 221);
+            this.panel2.Location = new System.Drawing.Point(629, 227);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 3);
             this.panel2.TabIndex = 61;
@@ -92,7 +92,7 @@ namespace ThuVien
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(303, 396);
+            this.panel1.Location = new System.Drawing.Point(367, 396);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(753, 290);
             this.panel1.TabIndex = 60;
@@ -130,7 +130,7 @@ namespace ThuVien
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(49, 56);
+            this.label2.Location = new System.Drawing.Point(27, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(223, 36);
             this.label2.TabIndex = 35;
@@ -191,7 +191,7 @@ namespace ThuVien
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Blue;
-            this.button4.Location = new System.Drawing.Point(629, 324);
+            this.button4.Location = new System.Drawing.Point(697, 324);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(176, 55);
             this.button4.TabIndex = 59;
@@ -203,7 +203,7 @@ namespace ThuVien
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(571, 253);
+            this.textBox2.Location = new System.Drawing.Point(629, 253);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(366, 37);
             this.textBox2.TabIndex = 58;
@@ -212,7 +212,7 @@ namespace ThuVien
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(571, 111);
+            this.textBox1.Location = new System.Drawing.Point(629, 114);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(366, 37);
             this.textBox1.TabIndex = 56;
@@ -222,7 +222,7 @@ namespace ThuVien
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(320, 278);
+            this.label3.Location = new System.Drawing.Point(394, 275);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(205, 36);
             this.label3.TabIndex = 55;
@@ -235,7 +235,7 @@ namespace ThuVien
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(956, 178);
+            this.button3.Location = new System.Drawing.Point(1001, 190);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(130, 55);
             this.button3.TabIndex = 63;
@@ -248,7 +248,7 @@ namespace ThuVien
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(309, 130);
+            this.label6.Location = new System.Drawing.Point(394, 118);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(216, 36);
             this.label6.TabIndex = 64;
@@ -258,7 +258,7 @@ namespace ThuVien
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(571, 184);
+            this.textBox5.Location = new System.Drawing.Point(629, 190);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(366, 37);
             this.textBox5.TabIndex = 65;
@@ -266,7 +266,7 @@ namespace ThuVien
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel6.Location = new System.Drawing.Point(571, 148);
+            this.panel6.Location = new System.Drawing.Point(629, 151);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(360, 3);
             this.panel6.TabIndex = 66;
@@ -276,7 +276,7 @@ namespace ThuVien
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(409, 23);
+            this.label1.Location = new System.Drawing.Point(584, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(337, 53);
             this.label1.TabIndex = 67;
@@ -287,7 +287,7 @@ namespace ThuVien
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(352, 197);
+            this.label7.Location = new System.Drawing.Point(394, 194);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(129, 36);
             this.label7.TabIndex = 68;
@@ -300,7 +300,7 @@ namespace ThuVien
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1098, 698);
+            this.ClientSize = new System.Drawing.Size(1317, 698);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel6);

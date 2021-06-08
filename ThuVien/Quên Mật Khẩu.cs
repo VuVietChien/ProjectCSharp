@@ -78,31 +78,41 @@ namespace ThuVien
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.Open();
+            String sql = "select *from login where username='" + textBox1.Text + "'";
+            SqlCommand cm = new SqlCommand(sql, con);
+            SqlDataReader dr = cm.ExecuteReader();
+            if (dr.Read())
             {
-                MessageBox.Show("BẠN CHƯA NHẬP TÊN TÀI KHOẢN!!");
-                textBox1.Focus();
-            }
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("BẠN CHƯA NHẬP TÊN TÀI KHOẢN!!");
+                    textBox1.Focus();
+                }
 
-            else if (textBox2.Text == "")
-            {
-                MessageBox.Show("BẠN CHƯA NHẬP MÃ XÁC NHẬN!!");
-                textBox2.Focus();
-            }
+                else if (textBox2.Text == "")
+                {
+                    MessageBox.Show("BẠN CHƯA NHẬP MÃ XÁC NHẬN!!");
+                    textBox2.Focus();
+                }
 
-            if (textBox2.Text==textBox5.Text)
-            {
-                MessageBox.Show("NHẬP ĐÚNG!!");
-                panel1.Visible = true;            
+                if ((textBox2.Text == textBox5.Text))
+                {
+                    MessageBox.Show("NHẬP ĐÚNG!!");
+                    panel1.Visible = true;
+                }
             }
             else
             {
-                MessageBox.Show("NHẬP SAI!!");
+                MessageBox.Show("NHẬP SAI TÊN TÀI KHOẢN HOẶC MÃ XÁC NHẬN!!");
                 textBox1.Text = "";
                 textBox5.Text = "";
                 textBox2.Text = "";
                 textBox1.Focus();
             }
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -141,5 +151,6 @@ namespace ThuVien
                 this.Close();
             }
         }
+
     }
 }

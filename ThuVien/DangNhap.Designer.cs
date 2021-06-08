@@ -187,7 +187,7 @@ namespace ThuVien
             this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(96, 354);
+            this.label3.Location = new System.Drawing.Point(41, 347);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(161, 36);
             this.label3.TabIndex = 52;

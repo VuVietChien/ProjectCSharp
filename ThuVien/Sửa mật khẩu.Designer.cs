@@ -99,7 +99,7 @@ namespace ThuVien
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(49, 56);
+            this.label2.Location = new System.Drawing.Point(68, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(223, 36);
             this.label2.TabIndex = 35;
@@ -213,7 +213,7 @@ namespace ThuVien
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(325, 206);
+            this.label1.Location = new System.Drawing.Point(317, 210);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 36);
             this.label1.TabIndex = 39;

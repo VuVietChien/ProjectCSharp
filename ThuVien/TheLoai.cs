@@ -52,76 +52,104 @@ namespace ThuVien
         }
         private void btnthem_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sqlthemdulieu = "INSERT INTO TheLoai (MaTheLoai,TenTheLoai)";
-            sqlthemdulieu += "VALUES ('" + maTheLoaitextBox.Text + "'";
-            sqlthemdulieu += ", N'" + tenTheLoaitextBox.Text + "'";
-            sqlthemdulieu += ");";
-            int sosanhdulieu = a.InsertDb(sqlthemdulieu);
-            if (sosanhdulieu == 0)
+            if (maTheLoaitextBox.Text == "" || tenTheLoaitextBox.Text == "")
             {
-                MessageBox.Show("không thêm được dữ liệu");
+                MessageBox.Show("có mục bạn đang để trống, vui lòng nhập đầy đủ thông tin ");
             }
             else
-            if (sosanhdulieu == -1)
             {
+                if (MessageBox.Show("Bạn muốn thêm mới thể loại ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sqlthemdulieu = "INSERT INTO TheLoai (MaTheLoai,TenTheLoai)";
+                    sqlthemdulieu += "VALUES ('" + maTheLoaitextBox.Text + "'";
+                    sqlthemdulieu += ", N'" + tenTheLoaitextBox.Text + "'";
+                    sqlthemdulieu += ");";
+                    int sosanhdulieu = a.InsertDb(sqlthemdulieu);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không thêm được dữ liệu");
+                    }
+                    else
+                    if (sosanhdulieu == -1)
+                    {
 
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
-            }
-            else
-            {
-                MessageBox.Show("đã thêm dữ liệu thành công");
-                dataGridView1.DataSource = null;
-                Hienthi();
+                        MessageBox.Show("Mã tác giả đã có, vui lòng nhập mã tác giả khác !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm thành công");
+                        dataGridView1.DataSource = null;
+                        Hienthi();
+                    }
+                }
             }
         }
-
         private void btnsua_Click(object sender, EventArgs e)
         {
-            configdata confidb = new configdata();
-            String sqlsua = "update TheLoai set TenTheLoai=N'" + tenTheLoaitextBox.Text + "' where MaTheLoai='" + maTheLoaitextBox.Text + "'";
-            confidb.InsertDb(sqlsua);
-            int suadulieu = confidb.InsertDb(sqlsua);
-
-            if (suadulieu == 0)
+            if (maTheLoaitextBox.Text == "" || tenTheLoaitextBox.Text == "")
             {
-                MessageBox.Show("không sửa được dữu liệu");
-            }
-            else if (suadulieu == -1)
-            {
-                MessageBox.Show("lỗi dữu liệu");
+                MessageBox.Show("Bạn chưa chọn mục để sửa, vui lòng chọn ");
             }
             else
             {
-                MessageBox.Show("Đã sửa dữu liệu");
-                dataGridView1.DataSource = null;
-                Hienthi();
-            }
+                if (MessageBox.Show("Bạn muốn sửa thể loại sách ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata confidb = new configdata();
+                    String sqlsua = "update TheLoai set TenTheLoai=N'" + tenTheLoaitextBox.Text + "' where MaTheLoai='" + maTheLoaitextBox.Text + "'";
+                    confidb.InsertDb(sqlsua);
+                    int suadulieu = confidb.InsertDb(sqlsua);
+
+                    if (suadulieu == 0)
+                    {
+                        MessageBox.Show("không sửa được mã thể loại!");
+                    }
+                    else if (suadulieu == -1)
+                    {
+                        MessageBox.Show("lỗi dữu liệu");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã sửa thành công");
+                        dataGridView1.DataSource = null;
+                        Hienthi();
+                    }
+                } }
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sql = "delete TheLoai where MaTheLoai='" + maTheLoaitextBox.Text + "'";
-
-            int sosanhdulieu = a.InsertDb(sql);
-            if (sosanhdulieu == 0)
+            if (maTheLoaitextBox.Text == "" || tenTheLoaitextBox.Text == "")
             {
-                MessageBox.Show("không xóa được dữ liệu");
-            }
-            else
-            if (sosanhdulieu == -1)
-            {
-
-                MessageBox.Show("Lỗi không kết nối giữ liệu");
+                MessageBox.Show("Bạn chưa chọn mục để xóa, vui lòng chọn ");
             }
             else
             {
-                MessageBox.Show("Xóa dữ liệu thành công");
-                dataGridView1.DataSource = null;
-                Hienthi();
+                if (MessageBox.Show("Bạn muốn xóa thể loại sách ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    configdata a = new configdata();
+                    string sql = "delete TheLoai where MaTheLoai='" + maTheLoaitextBox.Text + "'";
+
+                    int sosanhdulieu = a.InsertDb(sql);
+                    if (sosanhdulieu == 0)
+                    {
+                        MessageBox.Show("không xóa được dữ liệu");
+                    }
+                    else
+                    if (sosanhdulieu == -1)
+                    {
+
+                        MessageBox.Show("Bạn chưa chọn cái cần xóa, vui lòng chọn mục cần xóa?");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        dataGridView1.DataSource = null;
+                        Hienthi();
+                    }
+                }
             }
-        }
+        } 
 
         private void btnlammoi_Click(object sender, EventArgs e)
         {
