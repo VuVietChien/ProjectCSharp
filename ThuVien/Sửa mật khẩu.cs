@@ -119,7 +119,7 @@ namespace ThuVien
         private void button1_Click_1(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             //
             if (checkPass1() == true)
@@ -136,14 +136,22 @@ namespace ThuVien
                     this.Hide();
 
                 }
+                else
+                {
+                    MessageBox.Show("SỬA THẤT BẠI!!");
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    textBox3.Focus();
+                }
             }
             else
             {
-                MessageBox.Show("SỬA THẤT BẠI!!");
-                textBox1.Text = "";
-                this.Focus();
-            }
+                MessageBox.Show("Sai định dạng mật khẩu !");
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox3.Focus();
 
+            }
         }
 
         /// <summary>
@@ -166,7 +174,7 @@ namespace ThuVien
         private void button4_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             String sql = "select *from login where password='" + textBox2.Text + "'";
             SqlCommand cm = new SqlCommand(sql, con);

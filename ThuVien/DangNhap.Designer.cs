@@ -53,9 +53,9 @@ namespace ThuVien
             linkLabel1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             linkLabel1.ForeColor = System.Drawing.Color.Red;
             linkLabel1.LinkColor = System.Drawing.Color.Blue;
-            linkLabel1.Location = new System.Drawing.Point(318, 393);
+            linkLabel1.Location = new System.Drawing.Point(283, 314);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new System.Drawing.Size(229, 36);
+            linkLabel1.Size = new System.Drawing.Size(195, 31);
             linkLabel1.TabIndex = 44;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Quên mật khẩu";
@@ -67,9 +67,9 @@ namespace ThuVien
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(281, 40);
+            this.label1.Location = new System.Drawing.Point(250, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 55);
+            this.label1.Size = new System.Drawing.Size(239, 45);
             this.label1.TabIndex = 47;
             this.label1.Text = "WELCOME";
             // 
@@ -77,9 +77,10 @@ namespace ThuVien
             // 
             this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(675, 346);
+            this.button4.Location = new System.Drawing.Point(600, 277);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 49);
+            this.button4.Size = new System.Drawing.Size(67, 39);
             this.button4.TabIndex = 46;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -88,9 +89,10 @@ namespace ThuVien
             // 
             this.button3.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(675, 346);
+            this.button3.Location = new System.Drawing.Point(600, 277);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 44);
+            this.button3.Size = new System.Drawing.Size(67, 35);
             this.button3.TabIndex = 45;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -103,9 +105,10 @@ namespace ThuVien
             this.button2.ForeColor = System.Drawing.Color.Blue;
             this.button2.Image = global::ThuVien.Properties.Resources.icons8_sign_up_in_calendar_24;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(491, 467);
+            this.button2.Location = new System.Drawing.Point(436, 374);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 55);
+            this.button2.Size = new System.Drawing.Size(178, 44);
             this.button2.TabIndex = 43;
             this.button2.Text = "  Đăng Ký";
             this.button2.UseVisualStyleBackColor = false;
@@ -121,9 +124,10 @@ namespace ThuVien
             this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Image = global::ThuVien.Properties.Resources.icons8_enter_32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(139, 467);
+            this.button1.Location = new System.Drawing.Point(124, 374);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 55);
+            this.button1.Size = new System.Drawing.Size(217, 44);
             this.button1.TabIndex = 42;
             this.button1.Text = "   Đăng Nhập";
             this.button1.UseVisualStyleBackColor = false;
@@ -135,10 +139,11 @@ namespace ThuVien
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox3.Location = new System.Drawing.Point(288, 335);
+            this.textBox3.Location = new System.Drawing.Point(256, 268);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(369, 37);
+            this.textBox3.Size = new System.Drawing.Size(328, 31);
             this.textBox3.TabIndex = 41;
             // 
             // textBox1
@@ -147,26 +152,30 @@ namespace ThuVien
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox1.Location = new System.Drawing.Point(288, 205);
+            this.textBox1.Location = new System.Drawing.Point(256, 164);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(366, 49);
+            this.textBox1.Size = new System.Drawing.Size(325, 39);
             this.textBox1.TabIndex = 40;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel1.Location = new System.Drawing.Point(291, 378);
+            this.panel1.Location = new System.Drawing.Point(259, 302);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 3);
+            this.panel1.Size = new System.Drawing.Size(320, 2);
             this.panel1.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel2.Location = new System.Drawing.Point(291, 251);
+            this.panel2.Location = new System.Drawing.Point(259, 201);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 3);
+            this.panel2.Size = new System.Drawing.Size(320, 2);
             this.panel2.TabIndex = 50;
             // 
             // label2
@@ -175,9 +184,9 @@ namespace ThuVien
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(41, 218);
+            this.label2.Location = new System.Drawing.Point(36, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 36);
+            this.label2.Size = new System.Drawing.Size(186, 31);
             this.label2.TabIndex = 51;
             this.label2.Text = "Tên tài khoản:";
             // 
@@ -187,20 +196,20 @@ namespace ThuVien
             this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(41, 347);
+            this.label3.Location = new System.Drawing.Point(36, 278);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 36);
+            this.label3.Size = new System.Drawing.Size(137, 31);
             this.label3.TabIndex = 52;
             this.label3.Text = "Mật khẩu:";
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(784, 559);
+            this.ClientSize = new System.Drawing.Size(697, 447);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -213,6 +222,7 @@ namespace ThuVien
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";

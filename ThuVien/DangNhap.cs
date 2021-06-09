@@ -19,6 +19,9 @@ namespace ThuVien
         }
         //
         //
+
+        static public string a = "";
+        
         public bool checkPass()
         {
           
@@ -69,7 +72,7 @@ namespace ThuVien
             }
             SqlConnection sql = new SqlConnection();
 
-            sql.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            sql.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
 
       
 
@@ -152,6 +155,16 @@ namespace ThuVien
                 button3.BringToFront();//đưa nút khác về phía trước
                 textBox3.PasswordChar = '\0';//hiển thị kí tự
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            a = textBox1.Text;
+        }
+
+        static public string geta()
+        {
+            return a;
         }
     }
 }

@@ -28,8 +28,9 @@ namespace ThuVien
         private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = false;
-
+            clock.Visible = true;
             titlelbl.Visible = true;
+            lich.Visible = true;
         }
 
 
@@ -55,6 +56,8 @@ namespace ThuVien
         {
             groupBox1.Visible = true;
             titlelbl.Visible = false;
+            clock.Visible = false;
+            lich.Visible = false;
 
 
         }
@@ -62,6 +65,8 @@ namespace ThuVien
         private void Main_Load(object sender, EventArgs e)
         {
             groupBox1.Visible = false;
+            timer1.Start();
+            
 
 
         }
@@ -102,12 +107,6 @@ namespace ThuVien
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DocGia a = new DocGia();
-            a.Show();
-        }
 
         private void button7_Click(object sender, EventArgs e)
         {
@@ -135,12 +134,18 @@ namespace ThuVien
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SuaMatKhau sk = new SuaMatKhau();
-            sk.Show();
+            thongtintaikhoan a = new thongtintaikhoan();
+            a.Show();
             this.Hide();
         }
 
-       
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            clock.Text = DateTime.Now.ToString("T");
+            lich.Text = DateTime.Now.ToString("dd/mm/yyyy");
+        }
+
+
     }
 }
 

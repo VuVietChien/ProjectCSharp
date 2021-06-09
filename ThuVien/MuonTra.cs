@@ -25,9 +25,6 @@ namespace ThuVien
             loaddulieucomboboxtennhanvien();
             loaddulieumamuontra();
             hienthiGridviewmuonsach();
-
-
-
         }
 
         public void loaddulieumamuontra()
@@ -93,9 +90,6 @@ namespace ThuVien
             column6.DataPropertyName = "soluongmuon";
             column6.HeaderText = " Số lượng mượn";
             gridviewmuonsach.Columns.Add(column6);
-
-
-
 
             gridviewmuonsach.DataSource = dt;
             //căn chỉnh cho bảng vừa bằng cái khung datagridview
@@ -172,8 +166,6 @@ namespace ThuVien
 
         public int soluongsach()
         {
-
-
             configdata config = new configdata();
             DataTable dt = new DataTable();
             string sql = ("select soluong from sach where masach ='" + tensachcbb.SelectedValue + "';");
@@ -193,6 +185,8 @@ namespace ThuVien
             DataRow dr = dt.Rows[0];
             int soluongmuon = Convert.ToInt32(dr["soluongmuon"].ToString());
             return soluongmuon;
+
+
         }
 
         public int soluongtra()
@@ -360,6 +354,11 @@ namespace ThuVien
                     gridviewmuonsach.DataSource = dt;
                     con.Close();
                 }
+                else
+                {
+                    gridviewmuonsach.DataSource = null;
+                    hienthiGridviewmuonsach();
+                }
             }
             catch
             {
@@ -377,7 +376,7 @@ namespace ThuVien
                 string sql = "select MaMuonTra, muontra.SoThe, tendocgia , HoTen,ngaymuon , tensach , soluongmuon from MuonTra";
                 sql += "  inner join TheThuVien on TheThuVien.SoThe = MuonTra.SoThe ";
                 sql += "inner join Sach on Sach.MaSach = MuonTra.MaSach";
-                sql += " inner join NhanVien on NhanVien.MaNhanVien= MuonTra.MaNhanVien where hoten like  '%" + timkiemtb.Text + "%' or tendocgia like  '%" + timkiemtb.Text + "%' or tensach like  '%" + timkiemtb.Text + "%' ";
+                sql += " inner join NhanVien on NhanVien.MaNhanVien= MuonTra.MaNhanVien where nhanvien.hoten like  N'%" + timkiemtb.Text + "%' or thethuvien.tendocgia like  N'%" + timkiemtb.Text + "%' or sach.tensach like  N'%" + timkiemtb.Text + "%' ";
                 adapt = new SqlDataAdapter(sql, con);
                 dt = new DataTable();
                 adapt.Fill(dt);
@@ -385,6 +384,11 @@ namespace ThuVien
                 hienthiGridviewmuonsach();
                 gridviewmuonsach.DataSource = dt;
                 con.Close();
+            }    
+            else
+            {
+                gridviewmuonsach.DataSource = null;
+                hienthiGridviewmuonsach();
             }    
         }
 
