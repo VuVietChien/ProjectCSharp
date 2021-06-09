@@ -324,7 +324,7 @@ namespace ThuVien
             string sql = "select masach,tensach, soluong , tentacgia , tentheloai ,tennxb, namxuatban from sach";
             sql += " inner join tacgia on tacgia.matacgia = sach.matacgia ";
             sql += " inner join theloai on theloai.matheloai = sach.matheloai ";
-            sql += " inner join nhaxuatban on nhaxuatban.manxb = sach.manxb where Tensach like N'%" + timkiemtextbox.Text + "%' ";
+            sql += " inner join nhaxuatban on nhaxuatban.manxb = sach.manxb where Tensach like N'%" + timkiemtextbox.Text + "%' or tennxb like N'%" + timkiemtextbox.Text + "%' or Tentheloai like N'%" + timkiemtextbox.Text + "%' or Tentacgia like N'%" + timkiemtextbox.Text + "%' or masach like N'%" + timkiemtextbox.Text + "%' ";
 
             adapt = new SqlDataAdapter(sql, con);
             dt = new DataTable();

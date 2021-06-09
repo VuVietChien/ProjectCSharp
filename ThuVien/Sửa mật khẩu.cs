@@ -136,14 +136,22 @@ namespace ThuVien
                     this.Hide();
 
                 }
+                else
+                {
+                    MessageBox.Show("SỬA THẤT BẠI!!");
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    textBox3.Focus();
+                }
             }
             else
             {
-                MessageBox.Show("SỬA THẤT BẠI!!");
-                textBox1.Text = "";
-                this.Focus();
-            }
+                MessageBox.Show("Sai định dạng mật khẩu !");
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox3.Focus();
 
+            }
         }
 
         /// <summary>

@@ -45,6 +45,7 @@ namespace ThuVien
             this.sothecbb = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.grouponsach = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grouptraxach = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -68,10 +69,9 @@ namespace ThuVien
             this.label13 = new System.Windows.Forms.Label();
             this.btnback = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.trasachchinh = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.trasachchinh = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewmuonsach)).BeginInit();
             this.grouponsach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -259,6 +259,19 @@ namespace ThuVien
             this.grouponsach.Size = new System.Drawing.Size(1306, 417);
             this.grouponsach.TabIndex = 20;
             this.grouponsach.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(87, 11);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(382, 34);
+            this.label18.TabIndex = 22;
+            this.label18.Text = "Bảng thêm người mượn sách";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
             // 
@@ -506,7 +519,7 @@ namespace ThuVien
             this.btnback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnback.ForeColor = System.Drawing.SystemColors.Control;
             this.btnback.Image = global::ThuVien.Properties.Resources._188797746_378192953613005_3137058549730593592_n;
-            this.btnback.Location = new System.Drawing.Point(3, 2);
+            this.btnback.Location = new System.Drawing.Point(0, -2);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(42, 43);
             this.btnback.TabIndex = 19;
@@ -525,30 +538,6 @@ namespace ThuVien
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.PeachPuff;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(46, 131);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(333, 136);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Thêm Người Mượn Sách";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // trasachchinh
-            // 
-            this.trasachchinh.BackColor = System.Drawing.Color.PeachPuff;
-            this.trasachchinh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trasachchinh.Location = new System.Drawing.Point(599, 133);
-            this.trasachchinh.Name = "trasachchinh";
-            this.trasachchinh.Size = new System.Drawing.Size(333, 136);
-            this.trasachchinh.TabIndex = 20;
-            this.trasachchinh.Text = "Xác Nhận Trả Sách";
-            this.trasachchinh.UseVisualStyleBackColor = false;
-            this.trasachchinh.Click += new System.EventHandler(this.trasachchinh_Click);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -562,18 +551,29 @@ namespace ThuVien
             this.label17.Text = "Mời bạn chọn chức năng thực hiện";
             this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label18
+            // trasachchinh
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(87, 11);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(382, 34);
-            this.label18.TabIndex = 22;
-            this.label18.Text = "Bảng thêm người mượn sách";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.trasachchinh.BackColor = System.Drawing.Color.PeachPuff;
+            this.trasachchinh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trasachchinh.Location = new System.Drawing.Point(599, 133);
+            this.trasachchinh.Name = "trasachchinh";
+            this.trasachchinh.Size = new System.Drawing.Size(333, 136);
+            this.trasachchinh.TabIndex = 20;
+            this.trasachchinh.Text = "Xác Nhận Trả Sách";
+            this.trasachchinh.UseVisualStyleBackColor = false;
+            this.trasachchinh.Click += new System.EventHandler(this.trasachchinh_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.PeachPuff;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(46, 131);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(333, 136);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Thêm Người Mượn Sách";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MuonTra
             // 

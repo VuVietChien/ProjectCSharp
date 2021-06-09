@@ -103,10 +103,15 @@ namespace ThuVien
                     MessageBox.Show("NHẬP ĐÚNG!!");
                     panel1.Visible = true;
                 }
+                else
+                {
+                    MessageBox.Show("Nhập sai mã xác nhận ");
+                    panel1.Visible = false;
+                }    
             }
             else
             {
-                MessageBox.Show("NHẬP SAI TÊN TÀI KHOẢN HOẶC MÃ XÁC NHẬN!!");
+                MessageBox.Show("NHẬP SAI TÊN TÀI KHOẢN !");
                 textBox1.Text = "";
                 textBox5.Text = "";
                 textBox2.Text = "";
@@ -135,13 +140,23 @@ namespace ThuVien
                     this.Hide();
 
                 }
+                else
+                {
+                    MessageBox.Show("THẤT BẠI!!");
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    textBox3.Focus();
+                }
             }
             else
             {
-                MessageBox.Show("THẤT BẠI!!");
-                textBox1.Text = "";
-                this.Focus();
-            }
+                MessageBox.Show("Sai định dạng mật khẩu !");
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox3.Focus();
+
+            }    
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

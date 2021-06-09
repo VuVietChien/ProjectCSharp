@@ -20,30 +20,45 @@ namespace ThuVien
         }
 
 
-  
-      
+        static string connection = ConfigurationManager.ConnectionStrings["QuanLyThuVien"].ConnectionString;
+        // tạo kết nối đến database sử dụng thư viện using System.Data.SqlClient;
+        SqlConnection con = new SqlConnection(connection);  //Doi tuong ket noi CSDL
+
 
         protected void thongtintaikhoan_Load(object sender, EventArgs e)
         {
-            using (SqlConnection con1 = new SqlConnection("Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True"))
-            {
 
-                con1.Open();
-                SqlDataReader m = null;
-                SqlCommand myCommand = new SqlCommand("select * from login where username='" + textBox2.Text + "'", con1);
-                DataTable dta = new DataTable();
-                m = myCommand.ExecuteReader();
-               // dta.Load(m);
-                if (m.Read())
-                {
-                    //textBox2.Text = m["username"].ToString();
-                    textBox1.Text = m["password"].ToString();
+            con.Open();
+            string sql = "select username, password , email from login where username = '"+DangNhap.geta()+"'";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+            dr.Read();
+            textBox2.Text= dr["username"].ToString();
+            textBox1.Text = dr["password"].ToString();
+            textBox3.Text = dr["email"].ToString();
+            con.Close();
+        }
 
-                    textBox3.Text = m["email"].ToString();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SuaMatKhau a = new SuaMatKhau();
+            a.Show();
+        }
 
-                }
-                con1.Close();
-            }//end using
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DangNhap a = new DangNhap();
+            a.Show();
+            this.Hide();
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            Main a = new Main();
+            this.Hide();
+            a.Show();
         }
     }
 }

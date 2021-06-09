@@ -63,12 +63,6 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocGia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DocGia.Designer.cs">
-      <DependentUpon>DocGia.cs</DependentUpon>
-    </Compile>
     <Compile Include="Quên Mật Khẩu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -381,6 +375,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ảnh mượn sách.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

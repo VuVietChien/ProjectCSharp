@@ -95,19 +95,23 @@ namespace ThuVien
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=localhost\\SQLEXPRESS; Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from login where username='" + textBox2.Text + "'", con);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds1 = new DataSet();
-            da.Fill(ds1);
-            int i = ds1.Tables[0].Rows.Count;
-            if (i > 0)
+            //SqlCommand cmd = new SqlCommand("select * from login where username='" + textBox2.Text + "'", con);
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //DataSet ds1 = new DataSet();
+            //da.Fill(ds1);
+            //int i = ds1.Tables[0].Rows.Count;
+            //if (i > 0)
+            
+            if(ck() == true)
             {
+
                 MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TẠI!!");
                 textBox2.Text = "";
                 textBox3.Text = "";
                 textBox4.Text = "";
                 textBox2.Focus();
             }
+
             else
             {
                 if (check() == true && checkMail() == true)
@@ -178,6 +182,20 @@ namespace ThuVien
                 button4.BringToFront();
                 textBox3.PasswordChar = '*';
             }
+        }
+        public bool ck()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.Open();
+            String sql = "select *from login where username='" + textBox2.Text + "'";
+            SqlCommand cm = new SqlCommand(sql, con);
+            SqlDataReader dr = cm.ExecuteReader();
+            if (dr.Read())
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
