@@ -69,7 +69,7 @@ namespace ThuVien
             }
             SqlConnection sql = new SqlConnection();
 
-            sql.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            sql.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
 
       
 

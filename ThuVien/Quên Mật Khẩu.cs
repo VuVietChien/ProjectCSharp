@@ -79,7 +79,7 @@ namespace ThuVien
         private void button4_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=localhost\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             String sql = "select *from login where username='" + textBox1.Text + "'";
             SqlCommand cm = new SqlCommand(sql, con);
@@ -118,7 +118,7 @@ namespace ThuVien
         private void button1_Click_1(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=DESKTOP-VJNST16\\VVLONG;Initial Catalog=ProjectCSharp;Integrated Security=True";
+            con.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectCSharp;Integrated Security=True";
             con.Open();
             //
             if (checkPass1() == true)

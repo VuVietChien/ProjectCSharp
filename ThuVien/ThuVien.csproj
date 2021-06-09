@@ -180,6 +180,9 @@
     <EmbeddedResource Include="TheLoai.resx">
       <DependentUpon>TheLoai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TheThuVien.resx">
+      <DependentUpon>TheThuVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="thongtintaikhoan.resx">
       <DependentUpon>thongtintaikhoan.cs</DependentUpon>
     </EmbeddedResource>

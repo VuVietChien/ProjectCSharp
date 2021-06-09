@@ -19,3 +19,25 @@ C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\T
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
 C:\Users\ADMIN\Desktop\ProjectCSharp\ProjectCSharp\ProjectCSharp\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.MuonTra.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheThuVien.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.thongtintaikhoan.resources
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
+C:\Users\admin\Dropbox\My PC (LAPTOP-A082NEGA)\Documents\C#\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
