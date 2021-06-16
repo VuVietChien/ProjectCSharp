@@ -74,7 +74,7 @@ namespace ThuVien
                     if (sosanhdulieu == -1)
                     {
 
-                        MessageBox.Show("Mã tác giả đã có, vui lòng nhập mã tác giả khác !");
+                        MessageBox.Show("lỗi khi thêm dữ liệu, vui lòng kiểm tra lại các dữ liệu ( mã thể loại ) !");
                     }
                     else
                     {

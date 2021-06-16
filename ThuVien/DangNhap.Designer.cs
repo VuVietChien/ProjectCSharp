@@ -77,7 +77,7 @@ namespace ThuVien
             // 
             this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(600, 277);
+            this.button4.Location = new System.Drawing.Point(600, 270);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(67, 39);

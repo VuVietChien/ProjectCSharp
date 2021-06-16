@@ -146,7 +146,7 @@ namespace ThuVien
             }
             else
             {
-                MessageBox.Show("Sai định dạng mật khẩu !");
+                MessageBox.Show("Sai định dạng mật khẩu !\n ( Mật khẩu bao gồm chữ số + chữ thường + chữ in hoa + độ dài >= 6 kí tự )");
                 textBox3.Text = "";
                 textBox4.Text = "";
                 textBox3.Focus();
@@ -179,22 +179,25 @@ namespace ThuVien
             String sql = "select *from login where password='" + textBox2.Text + "'";
             SqlCommand cm = new SqlCommand(sql, con);
             SqlDataReader dr = cm.ExecuteReader();
+
+            if (textBox2.Text == "")
+            {
+                MessageBox.Show("BẠN CHƯA NHẬP MẬT KHẨU!!");
+                textBox2.Focus();
+            }
+            else if (textBox1.Text == "")
+            {
+                MessageBox.Show("BẠN CHƯA NHẬP TÊN TÀI KHOẢN!!");
+                textBox1.Focus();
+            }
+
             if (dr.Read())
             {
-                if (textBox2.Text == "")
-                {
-                    MessageBox.Show("BẠN CHƯA NHẬP MẬT KHẨU!!");
-                    textBox2.Focus();
-                }
-                else if (textBox1.Text == "")
-                {
-                    MessageBox.Show("BẠN CHƯA NHẬP TÊN TÀI KHOẢN!!");
-                    textBox1.Focus();
-                }
+               
                 //
                 if (checkPass() == false)
                 {
-                    MessageBox.Show("BẠN NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!!");
+                    MessageBox.Show("BẠN NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!! \n \n (  Mật khẩu bao gồm chữ số + chữ thường + chữ in hoa + độ dài >= 6 kí tự )");
                 }
 
                 MessageBox.Show("NHẬP ĐÚNG!!");
@@ -209,6 +212,60 @@ namespace ThuVien
             }
             dr.Close();
             con.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (textBox2.PasswordChar == '*')
+            {
+                button9.BringToFront();
+                textBox2.PasswordChar = '\0';
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (textBox2.PasswordChar == '\0')
+            {
+                button8.BringToFront();
+                textBox2.PasswordChar = '*';
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (textBox3.PasswordChar == '*')
+            {
+                button6.BringToFront();
+                textBox3.PasswordChar = '\0';
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (textBox3.PasswordChar == '\0')
+            {
+                button5.BringToFront();
+                textBox3.PasswordChar = '*';
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox4.PasswordChar == '*')
+            {
+                button7.BringToFront();
+                textBox4.PasswordChar = '\0';
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (textBox4.PasswordChar == '\0')
+            {
+                button3.BringToFront();
+                textBox4.PasswordChar = '*';
+            }
         }
     }
 }

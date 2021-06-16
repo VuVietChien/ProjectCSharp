@@ -137,13 +137,13 @@ namespace ThuVien
          
                 else if (check() == false)
                 {
-                    MessageBox.Show("NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!!");
+                    MessageBox.Show("NHẬP SAI ĐỊNH DẠNG MẬT KHẨU !!!\n ( Mật khẩu bao gồm chữ số + chữ thường + chữ in hoa + độ dài >= 6 kí tự )");
                     textBox3.Text = "";
                     textBox3.Focus();
                 }
                 else if (checkMail() == false)
                 {
-                    MessageBox.Show("NHẬP SAI ĐỊNH DẠNG EMAIL!!");
+                    MessageBox.Show("NHẬP SAI ĐỊNH DẠNG EMAIL!!\n ( Email phải có đinh dạng @gmail.com )");
                     textBox4.Text = "";
                     textBox4.Focus();
                 }

@@ -15,8 +15,10 @@ namespace ThuVien
         public chi_tiết_mượn_trả()
         {
             InitializeComponent();
-
-
+            InitGridviewCTSach();
+            hienthiGridviewCTmuonsach();
+            loaddulieucomboboxtensach();
+            loadmamuontra();
         }
 
         public void loadmamuontra()
@@ -36,22 +38,8 @@ namespace ThuVien
             CTtensach.DisplayMember = dt.Columns[1].ToString();
             CTtensach.ValueMember = dt.Columns[0].ToString();
         }
-        public void hienthiGridviewCTmuonsach()
-        {
 
-            configdata config = new configdata();
-            DataTable dt = new DataTable();
-            string sql = "select CTmuontra.MaMuonTra, tensach, soluongmuon , ngaymuon from CTMuonTra";
-            sql += "  inner join MuonTra on MuonTra.mamuontra = CTMuonTra.mamuontra ";
-            sql += " inner join Sach on Sach.masach = CTMuonTra.masach  where CTmuontra.MaMuonTra = " + MuonTra.getMamuontra() + " ";
-
-
-            dt = config.selectDb(sql);
-            // hứng dữ liệu trả về
-
-
-            //thay đổi tên trường khi hiển thị
-
+        public void InitGridviewCTSach() {
             DataGridViewTextBoxColumn column = new DataGridViewTextBoxColumn();
             column.DataPropertyName = "mamuontra";
             column.HeaderText = " Mã Mượn Trả";
@@ -73,18 +61,38 @@ namespace ThuVien
             gridviewCTmuonsach.Columns.Add(column3);
 
 
-            gridviewCTmuonsach.DataSource = dt;
+            //gridviewCTmuonsach.DataSource = dt;
             //căn chỉnh cho bảng vừa bằng cái khung datagridview
             gridviewCTmuonsach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridviewCTmuonsach.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            gridviewCTmuonsach.AutoGenerateColumns = false;
             this.gridviewCTmuonsach.DefaultCellStyle.Font = new Font("Arial", 12);
             this.gridviewCTmuonsach.DefaultCellStyle.ForeColor = Color.Black;
             this.gridviewCTmuonsach.DefaultCellStyle.BackColor = Color.Beige;
             this.gridviewCTmuonsach.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.gridviewCTmuonsach.DefaultCellStyle.SelectionBackColor = Color.Gray;
+        }
+        public void hienthiGridviewCTmuonsach()
+        {
+            gridviewCTmuonsach.DataSource = null;
+            //gridviewCTmuonsach.Rows.Clear();
+            configdata config = new configdata();
+            DataTable dt = new DataTable();
+            string sql = "select CTmuontra.MaMuonTra, tensach, soluongmuon , ngaymuon from CTMuonTra";
+            sql += "  inner join MuonTra on MuonTra.mamuontra = CTMuonTra.mamuontra ";
+            sql += " inner join Sach on Sach.masach = CTMuonTra.masach  where CTmuontra.MaMuonTra = " + MuonTra.getMamuontra() + " ";
+            //MessageBox.Show(sql);
+
+            dt = config.selectDb(sql);
+            // hứng dữ liệu trả về
+            //InitGridviewCTSach();
+
+            //thay đổi tên trường khi hiển thị
+            gridviewCTmuonsach.DataSource = dt;
+
 
             int count = gridviewCTmuonsach.Rows.Count;
-            if (count == 1)
+            if (count == 0)
             {
                 cttrasachbtn.Visible = false;
             }
@@ -98,9 +106,7 @@ namespace ThuVien
 
         private void chi_tiết_mượn_trả_Load(object sender, EventArgs e)
         {
-            hienthiGridviewCTmuonsach();
-            loaddulieucomboboxtensach();
-            loadmamuontra();
+
           
         }
 
@@ -114,7 +120,7 @@ namespace ThuVien
         {
             configdata config = new configdata();
             DataTable dt = new DataTable();
-            string sql = ("select soluongmuon from ctmuontra where mamuontra =" + CTMaMuonTra.Text + ";");
+            string sql = ("select soluongmuon from ctmuontra where masach = '" + CTtensach.SelectedValue + "' and mamuontra = "+CTMaMuonTra.Text+";");
             dt = config.selectDb(sql);
             DataRow dr = dt.Rows[0];
             int soluongmuon = Convert.ToInt32(dr["soluongmuon"].ToString());
@@ -199,35 +205,42 @@ namespace ThuVien
         }
         private void btnmuonsach_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show(" Xác nhận cho đọc giả này mượn thêm sách  ", "xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (CTSoLuongMuon.Text == "")
+                try
                 {
-                    MessageBox.Show("bạn chưa điền số lượng sách cần mượn , vui lòng nhập đầy đủ thông tin ");
-                }
-                else
-                if (soluongsach() - soluongmuontra() >= 0)
-                {
-                    if (kiemtradulieu() == 0)
+                    if (CTSoLuongMuon.Text == "")
                     {
-                        insertsachmuon();
-                        updateslsachkhimuon();
+                        MessageBox.Show("bạn chưa điền số lượng sách cần mượn , vui lòng nhập đầy đủ thông tin ");
+                    }
+                    else
+                    if (soluongsach() - soluongmuontra() >= 0)
+                    {
+                        if (kiemtradulieu() == 0)
+                        {
+                            insertsachmuon();
+                            updateslsachkhimuon();
+                        }
+                        else
+                        {
+                            updatesachmuon();
+                            updateslsachkhimuon();
+                        }
                     }
                     else
                     {
-                        updatesachmuon();
-                        updateslsachkhimuon();
+                        MessageBox.Show("số lượng sách trong thư viên không đủ, vui lòng giảm bớt số lượng sách !");
                     }
                 }
-                else
+                catch
                 {
-                    MessageBox.Show("số lượng sách trong thư viên không đủ, vui lòng giảm bớt số lượng sách !");
+                    MessageBox.Show("Bạn nhập sai định dạng của số lượng, số lượng phải là kiểu số nguyên !");
                 }
             }
-            catch
-            {
-                MessageBox.Show("Bạn nhập sai định dạng của số lượng, số lượng phải là kiểu số nguyên !");
-            }
+
+
+
+            
         }
 
         private void btnback_Click(object sender, EventArgs e)
@@ -308,28 +321,33 @@ namespace ThuVien
         }
         private void cttrasachbtn_Click(object sender, EventArgs e)
         {
-
-            if (CTSoLuongMuon.Text == "")
+            if (MessageBox.Show("Xác nhận trả sách của đọc giả này ", "Xác nhận ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                MessageBox.Show("bạn chưa điền số lượng sách cần trả , vui lòng nhập đầy đủ thông tin ");
-            }
-            else
-            if (kiemtraslmuon() - soluongmuontra() > 0)
-            {
-                updateslsachthuvienkhitra1();
-                updateslsachmuonkhitra();
-            }
-            else
-            {
-                if (kiemtraslmuon() - soluongmuontra() == 0)
+                if (CTSoLuongMuon.Text == "")
                 {
-                    updateslsachthuvienkhitra1();
-                    deleteslsachmuonkhitra();
+                    MessageBox.Show("bạn chưa điền số lượng sách cần trả , vui lòng nhập đầy đủ thông tin ");
                 }
                 else
-            {
-                MessageBox.Show("số lượng bạn trả nhiều hơn số lượng bạn đã mượn, vui lòng kiểm tra lại !");
-            }   
+           if (kiemtraslmuon() - soluongmuontra() > 0)
+                {
+                    updateslsachthuvienkhitra1();
+                    updateslsachmuonkhitra();
+                    CTSoLuongMuon.Text = "";
+                }
+                else
+                {
+                    if (kiemtraslmuon() - soluongmuontra() == 0)
+                    {
+                        updateslsachthuvienkhitra1();
+                        deleteslsachmuonkhitra();
+                        CTSoLuongMuon.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("số lượng bạn trả nhiều hơn số lượng bạn đã mượn, vui lòng kiểm tra lại !");
+                    }
+                }
+           
                     
         }
  

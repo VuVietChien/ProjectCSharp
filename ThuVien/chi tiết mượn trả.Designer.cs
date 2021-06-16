@@ -199,9 +199,13 @@ namespace ThuVien
             // 
             // gridviewCTmuonsach
             // 
+            this.gridviewCTmuonsach.AllowUserToAddRows = false;
+            this.gridviewCTmuonsach.AllowUserToDeleteRows = false;
             this.gridviewCTmuonsach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridviewCTmuonsach.Location = new System.Drawing.Point(8, 423);
+            this.gridviewCTmuonsach.MultiSelect = false;
             this.gridviewCTmuonsach.Name = "gridviewCTmuonsach";
+            this.gridviewCTmuonsach.ReadOnly = true;
             this.gridviewCTmuonsach.RowHeadersWidth = 51;
             this.gridviewCTmuonsach.RowTemplate.Height = 24;
             this.gridviewCTmuonsach.Size = new System.Drawing.Size(1323, 332);

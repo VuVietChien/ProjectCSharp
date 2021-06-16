@@ -81,7 +81,7 @@ namespace ThuVien
             //
             if (checkPass() == false)
             {
-                MessageBox.Show("NHẬP SAI ĐỊNH DẠNG MẬT KHẨU!!");
+                MessageBox.Show("NHẬP SAI MẬT KHẨU !");
                 textBox3.Text = "";
                 textBox3.Focus();
             }

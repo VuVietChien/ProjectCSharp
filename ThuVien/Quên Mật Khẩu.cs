@@ -84,19 +84,20 @@ namespace ThuVien
             String sql = "select *from login where username='" + textBox1.Text + "'";
             SqlCommand cm = new SqlCommand(sql, con);
             SqlDataReader dr = cm.ExecuteReader();
+
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("BẠN CHƯA NHẬP TÊN TÀI KHOẢN!!");
+                textBox1.Focus();
+            }
+
+            else if (textBox2.Text == "")
+            {
+                MessageBox.Show("BẠN CHƯA NHẬP MÃ XÁC NHẬN!!");
+                textBox2.Focus();
+            }
             if (dr.Read())
             {
-                if (textBox1.Text == "")
-                {
-                    MessageBox.Show("BẠN CHƯA NHẬP TÊN TÀI KHOẢN!!");
-                    textBox1.Focus();
-                }
-
-                else if (textBox2.Text == "")
-                {
-                    MessageBox.Show("BẠN CHƯA NHẬP MÃ XÁC NHẬN!!");
-                    textBox2.Focus();
-                }
 
                 if ((textBox2.Text == textBox5.Text))
                 {
@@ -150,7 +151,7 @@ namespace ThuVien
             }
             else
             {
-                MessageBox.Show("Sai định dạng mật khẩu !");
+                MessageBox.Show("Sai định dạng mật khẩu ! \n ( Mật khẩu bao gồm chữ số + chữ thường + chữ in hoa + độ dài >= 6 kí tự )");
                 textBox3.Text = "";
                 textBox4.Text = "";
                 textBox3.Focus();
@@ -167,5 +168,40 @@ namespace ThuVien
             }
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if(textBox3.PasswordChar == '*')
+            {
+                button6.BringToFront();
+                textBox3.PasswordChar = '\0';
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (textBox3.PasswordChar == '\0')
+            {
+                button5.BringToFront();
+                textBox3.PasswordChar = '*';
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (textBox4.PasswordChar == '*')
+            {
+                button8.BringToFront();
+                textBox4.PasswordChar = '\0';
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (textBox4.PasswordChar == '\0')
+            {
+                button7.BringToFront();
+                textBox4.PasswordChar = '*';
+            }
+        }
     }
 }

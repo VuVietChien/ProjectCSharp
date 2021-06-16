@@ -18,15 +18,14 @@ namespace ThuVien
         public int InsertDb(String sql)
         {
 
-            
             SqlCommand cmd = new SqlCommand(sql, con);
-           int i = -1;
+            int i = -1;
             try
             {
                 // mở kết nối csdl
                 con.Open();
                 //cmd.ExecuteNonQuery();
-                i =cmd.ExecuteNonQuery();
+                i = cmd.ExecuteNonQuery();
             }
             catch
             {
