@@ -125,9 +125,9 @@ namespace ThuVien
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(83, 63);
+            this.groupBox1.Location = new System.Drawing.Point(0, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1423, 739);
+            this.groupBox1.Size = new System.Drawing.Size(1506, 739);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
@@ -148,7 +148,7 @@ namespace ThuVien
             this.button8.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Image = global::ThuVien.Properties.Resources.icons8_coworking_60;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(968, 322);
+            this.button8.Location = new System.Drawing.Point(1060, 322);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(349, 96);
             this.button8.TabIndex = 7;
@@ -165,7 +165,7 @@ namespace ThuVien
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.Location = new System.Drawing.Point(258, 505);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(379, 88);
+            this.button7.Size = new System.Drawing.Size(393, 88);
             this.button7.TabIndex = 6;
             this.button7.Text = "Quản Lý Thẻ Thư Viện";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -178,9 +178,9 @@ namespace ThuVien
             this.button5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::ThuVien.Properties.Resources.icons8_home_60;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(733, 505);
+            this.button5.Location = new System.Drawing.Point(834, 505);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(380, 88);
+            this.button5.Size = new System.Drawing.Size(397, 88);
             this.button5.TabIndex = 4;
             this.button5.Text = "Quản Lý Nhà Xuất Bản";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -193,9 +193,9 @@ namespace ThuVien
             this.button4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::ThuVien.Properties.Resources.icons8_elective_60;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(34, 322);
+            this.button4.Location = new System.Drawing.Point(83, 322);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(332, 96);
+            this.button4.Size = new System.Drawing.Size(341, 96);
             this.button4.TabIndex = 3;
             this.button4.Text = "Quản Lý Thể Loại";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -208,7 +208,7 @@ namespace ThuVien
             this.button3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::ThuVien.Properties.Resources.icons8_people_60;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(535, 237);
+            this.button3.Location = new System.Drawing.Point(593, 243);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(325, 91);
             this.button3.TabIndex = 2;
@@ -223,7 +223,7 @@ namespace ThuVien
             this.button2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::ThuVien.Properties.Resources.icons8_borrow_book_60;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(968, 136);
+            this.button2.Location = new System.Drawing.Point(1060, 131);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(349, 91);
             this.button2.TabIndex = 1;
@@ -238,7 +238,7 @@ namespace ThuVien
             this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ThuVien.Properties.Resources.icons8_book_60;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(25, 136);
+            this.button1.Location = new System.Drawing.Point(83, 131);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(341, 91);
             this.button1.TabIndex = 0;

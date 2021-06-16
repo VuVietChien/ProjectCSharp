@@ -23,7 +23,8 @@ namespace ThuVien
             hienthiGridviewsach();
             setbackground();
         }
-      
+
+    
 
         public void setbackground()
         {

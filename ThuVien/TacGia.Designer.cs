@@ -138,7 +138,7 @@ namespace ThuVien
             this.btnthemtacgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnthemtacgia.Image = global::ThuVien.Properties.Resources.icons8_add_book_35;
             this.btnthemtacgia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnthemtacgia.Location = new System.Drawing.Point(23, 62);
+            this.btnthemtacgia.Location = new System.Drawing.Point(186, 62);
             this.btnthemtacgia.Name = "btnthemtacgia";
             this.btnthemtacgia.Size = new System.Drawing.Size(190, 50);
             this.btnthemtacgia.TabIndex = 0;
@@ -181,7 +181,7 @@ namespace ThuVien
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ThuVien.Properties.Resources.icons8_synchronize_35;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(327, 62);
+            this.button1.Location = new System.Drawing.Point(446, 62);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 50);
             this.button1.TabIndex = 3;
@@ -249,7 +249,7 @@ namespace ThuVien
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(80, 18);
+            this.label4.Location = new System.Drawing.Point(18, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 25);
             this.label4.TabIndex = 49;
@@ -345,7 +345,6 @@ namespace ThuVien
             this.groupBox4.Size = new System.Drawing.Size(1400, 715);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
             // 
             // pictureBox1
             // 
@@ -370,6 +369,7 @@ namespace ThuVien
             this.Controls.Add(this.label1);
             this.Name = "TacGia";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TacGia";
             ((System.ComponentModel.ISupportInitialize)(this.gridviewtacgia)).EndInit();
             this.groupBox1.ResumeLayout(false);

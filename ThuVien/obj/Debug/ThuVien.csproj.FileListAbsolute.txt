@@ -19,3 +19,26 @@ F:\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
 F:\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
 F:\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
 F:\new C#\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangKy.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.DangNhap.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.ForgetPassword.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Main.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.MuonTra.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhanVien.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.NhaXuatBan.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Properties.Resources.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.Sach.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.SuaMatKhau.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TacGia.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheLoai.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.TheThuVien.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.thongtintaikhoan.resources
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.GenerateResource.cache
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.exe
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.pdb
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe.config
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.exe
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\bin\Debug\ThuVien.pdb
+E:\DhCNGTVT2021\C#\Project\ProjectCSharp\ThuVien\obj\Debug\ThuVien.chi_tiết_mượn_trả.resources

@@ -68,36 +68,49 @@ namespace ThuVien
             // setbackground();
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Arial", 12);
+            this.dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            this.dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
+            this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
+            this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Gray;
         }
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            configdata a = new configdata();
-            string sqlthemdulieu = "INSERT INTO TheThuVien (SoThe,TenDocGia,DiaChi,NgayBatDau,NgayHetHan,GhiChu)";
-            sqlthemdulieu += "VALUES ('" + SoThetextBox.Text + "'";
-            sqlthemdulieu += ", N'" + TenDocGiatextBox.Text + "'";
-            sqlthemdulieu += ", N'" + DiaChitextBox.Text + "'";
-            sqlthemdulieu += ", N'" + dateTimePicker1.Text + "'";
-            sqlthemdulieu += ", N'" + dateTimePicker2.Text + "'";
-            sqlthemdulieu += ", N'" + GhiChutextBox.Text + "'";
-            sqlthemdulieu += ");";
-            int sosanhdulieu = a.InsertDb(sqlthemdulieu);
-            if (sosanhdulieu == 0)
+            if(getvaluedate1() < getvaluedate2())
             {
-                MessageBox.Show("không thêm được dữ liệu");
-            }
-            else
-            if (sosanhdulieu == -1)
-            {
+                configdata a = new configdata();
+                string sqlthemdulieu = "INSERT INTO TheThuVien (SoThe,TenDocGia,DiaChi,NgayBatDau,NgayHetHan,GhiChu)";
+                sqlthemdulieu += "VALUES ('" + SoThetextBox.Text + "'";
+                sqlthemdulieu += ", N'" + TenDocGiatextBox.Text + "'";
+                sqlthemdulieu += ", N'" + DiaChitextBox.Text + "'";
+                sqlthemdulieu += ", CONVERT(DATETIME,'" + dateTimePicker1.Text + "',103)";
+                sqlthemdulieu += ", CONVERT(DATETIME,'" + dateTimePicker2.Text + "',103)";
+                sqlthemdulieu += ", N'" + GhiChutextBox.Text + "'";
+                sqlthemdulieu += ");";
+                int sosanhdulieu = a.InsertDb(sqlthemdulieu);
+                if (sosanhdulieu == 0)
+                {
+                    MessageBox.Show("không thêm được dữ liệu");
+                }
+                else
+                if (sosanhdulieu == -1)
+                {
 
-                MessageBox.Show("Lỗi không kết nối dữ liệu");
+                    MessageBox.Show("Lỗi không kết nối dữ liệu");
+                }
+                else
+                {
+                    MessageBox.Show("đã thêm dữ liệu thành công");
+                    dataGridView1.DataSource = null;
+                    Hienthi();
+                }
             }
             else
             {
-                MessageBox.Show("đã thêm dữ liệu thành công");
-                dataGridView1.DataSource = null;
-                Hienthi();
-            }
+                MessageBox.Show("ngày kết thúc sớm hơn ngày bắt đầu, vui lòng kiểm tra lại");
+            }    
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
@@ -127,7 +140,7 @@ namespace ThuVien
         private void btnsua_Click(object sender, EventArgs e)
         {
             configdata confidb = new configdata();
-            String sqlsua = "update TheThuVien set TenDocGia=N'" + TenDocGiatextBox.Text + "', DiaChi=N'" + DiaChitextBox.Text + "' NgayBatDau=N'" + dateTimePicker1.Text + "', NgayHetHan=N'" + dateTimePicker2.Text + "', GhiChu=N'" + GhiChutextBox.Text + "'where SoThe='" + SoThetextBox.Text + "'";
+            String sqlsua = "update TheThuVien set TenDocGia=N'" + TenDocGiatextBox.Text + "', DiaChi=N'" + DiaChitextBox.Text + "' NgayBatDau = CONVERT(DATETIME,'" + dateTimePicker1.Text + "',103), NgayHetHan= CONVERT(DATETIME,'" + dateTimePicker2.Text + "',103), GhiChu=N'" + GhiChutextBox.Text + "'where SoThe='" + SoThetextBox.Text + "'";
             // confidb.InsertDb(sqlsua);
             int suadulieu = confidb.InsertDb(sqlsua);
 
@@ -185,6 +198,17 @@ namespace ThuVien
             dateTimePicker1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             dateTimePicker2.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             GhiChutextBox.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+        }
+
+        public DateTime getvaluedate1()
+        {
+            DateTime ngaybd = Convert.ToDateTime(dateTimePicker1.Text.ToString());
+            return ngaybd;
+        }
+        public DateTime getvaluedate2()
+        {
+            DateTime ngaybd = Convert.ToDateTime(dateTimePicker2.Text.ToString());
+            return ngaybd;
         }
     }
 }

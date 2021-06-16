@@ -53,7 +53,6 @@ namespace ThuVien
             this.lblSoluong = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.import = new System.Windows.Forms.Button();
             this.btnloadfile = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -97,7 +96,7 @@ namespace ThuVien
             this.label1.ForeColor = System.Drawing.Color.Lime;
             this.label1.Location = new System.Drawing.Point(588, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 38);
+            this.label1.Size = new System.Drawing.Size(296, 37);
             this.label1.TabIndex = 26;
             this.label1.Text = "Bảng Quản Lý Sách";
             // 
@@ -346,7 +345,6 @@ namespace ThuVien
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Controls.Add(this.import);
             this.groupBox2.Controls.Add(this.btnloadfile);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnsuasach);
@@ -360,21 +358,6 @@ namespace ThuVien
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             // 
-            // import
-            // 
-            this.import.BackColor = System.Drawing.Color.Snow;
-            this.import.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.import.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.import.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
-            this.import.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.import.Location = new System.Drawing.Point(261, 257);
-            this.import.Name = "import";
-            this.import.Size = new System.Drawing.Size(159, 62);
-            this.import.TabIndex = 49;
-            this.import.Text = "Import Excel";
-            this.import.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.import.UseVisualStyleBackColor = false;
-            // 
             // btnloadfile
             // 
             this.btnloadfile.BackColor = System.Drawing.Color.Snow;
@@ -382,7 +365,7 @@ namespace ThuVien
             this.btnloadfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnloadfile.Image = global::ThuVien.Properties.Resources.icons8_export_excel_35;
             this.btnloadfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnloadfile.Location = new System.Drawing.Point(35, 257);
+            this.btnloadfile.Location = new System.Drawing.Point(158, 257);
             this.btnloadfile.Name = "btnloadfile";
             this.btnloadfile.Size = new System.Drawing.Size(159, 62);
             this.btnloadfile.TabIndex = 4;
@@ -544,7 +527,6 @@ namespace ThuVien
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button import;
         private System.Windows.Forms.TextBox soluongtextbox;
         private System.Windows.Forms.Label lblSoluong;
     }

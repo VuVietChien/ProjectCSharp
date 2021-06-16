@@ -142,7 +142,7 @@ namespace ThuVien
         private void timer1_Tick(object sender, EventArgs e)
         {
             clock.Text = DateTime.Now.ToString("T");
-            lich.Text = DateTime.Now.ToString("dd/mm/yyyy");
+            lich.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
 
