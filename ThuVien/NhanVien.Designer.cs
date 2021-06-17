@@ -29,9 +29,17 @@ namespace ThuVien
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTimKiemNhanVien = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.loadfile = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
+            this.btLamMoi = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtMaNhanVien = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
@@ -46,10 +54,6 @@ namespace ThuVien
             this.gridviewNhanVien = new System.Windows.Forms.DataGridView();
             this.btHome = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.btXoa = new System.Windows.Forms.Button();
-            this.btThem = new System.Windows.Forms.Button();
-            this.btLamMoi = new System.Windows.Forms.Button();
-            this.btSua = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewNhanVien)).BeginInit();
@@ -80,6 +84,7 @@ namespace ThuVien
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Snow;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox2.Controls.Add(this.loadfile);
             this.groupBox2.Controls.Add(this.btXoa);
             this.groupBox2.Controls.Add(this.btThem);
             this.groupBox2.Controls.Add(this.btLamMoi);
@@ -92,6 +97,70 @@ namespace ThuVien
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
+            // 
+            // loadfile
+            // 
+            this.loadfile.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.loadfile.Location = new System.Drawing.Point(168, 175);
+            this.loadfile.Name = "loadfile";
+            this.loadfile.Size = new System.Drawing.Size(139, 64);
+            this.loadfile.TabIndex = 30;
+            this.loadfile.Text = "Ghi Excel";
+            this.loadfile.UseVisualStyleBackColor = true;
+            this.loadfile.Click += new System.EventHandler(this.loadfile_Click);
+            // 
+            // btXoa
+            // 
+            this.btXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Image = global::ThuVien.Properties.Resources.icons8_delete_35;
+            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXoa.Location = new System.Drawing.Point(286, 29);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(139, 63);
+            this.btXoa.TabIndex = 28;
+            this.btXoa.Text = "   Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
+            // 
+            // btThem
+            // 
+            this.btThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Image = global::ThuVien.Properties.Resources.icons8_add_book_35;
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.Location = new System.Drawing.Point(36, 29);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(139, 64);
+            this.btThem.TabIndex = 15;
+            this.btThem.Text = "   Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
+            // 
+            // btLamMoi
+            // 
+            this.btLamMoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLamMoi.Image = global::ThuVien.Properties.Resources.icons8_refresh_16;
+            this.btLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btLamMoi.Location = new System.Drawing.Point(286, 105);
+            this.btLamMoi.Name = "btLamMoi";
+            this.btLamMoi.Size = new System.Drawing.Size(139, 64);
+            this.btLamMoi.TabIndex = 29;
+            this.btLamMoi.Text = "   Làm mới";
+            this.btLamMoi.UseVisualStyleBackColor = true;
+            this.btLamMoi.Click += new System.EventHandler(this.btLamMoi_Click);
+            // 
+            // btSua
+            // 
+            this.btSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.Image = global::ThuVien.Properties.Resources.icons8_support_35;
+            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSua.Location = new System.Drawing.Point(36, 105);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(139, 64);
+            this.btSua.TabIndex = 27;
+            this.btSua.Text = "   Sửa";
+            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // groupBox1
             // 
@@ -122,6 +191,8 @@ namespace ThuVien
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.Size = new System.Drawing.Size(265, 30);
             this.txtMaNhanVien.TabIndex = 16;
+            this.txtMaNhanVien.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMaNhanVien_KeyDown);
+            this.txtMaNhanVien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaNhanVien_KeyPress);
             // 
             // txtHoTen
             // 
@@ -131,15 +202,20 @@ namespace ThuVien
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(265, 30);
             this.txtHoTen.TabIndex = 17;
+            this.txtHoTen.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHoTen_KeyDown);
+            this.txtHoTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTen_KeyPress);
             // 
             // txtDienThoai
             // 
             this.txtDienThoai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDienThoai.Location = new System.Drawing.Point(191, 162);
+            this.txtDienThoai.MaxLength = 10;
             this.txtDienThoai.Multiline = true;
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(265, 30);
             this.txtDienThoai.TabIndex = 18;
+            this.txtDienThoai.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDienThoai_KeyDown);
+            this.txtDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDienThoai_KeyPress);
             // 
             // ngaySinh
             // 
@@ -150,6 +226,8 @@ namespace ThuVien
             this.ngaySinh.Name = "ngaySinh";
             this.ngaySinh.Size = new System.Drawing.Size(265, 30);
             this.ngaySinh.TabIndex = 19;
+            this.ngaySinh.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ngaySinh_KeyDown);
+            this.ngaySinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ngaySinh_KeyPress);
             // 
             // gioiTinh
             // 
@@ -161,6 +239,7 @@ namespace ThuVien
             this.gioiTinh.TabIndex = 20;
             this.gioiTinh.Text = "Nam";
             this.gioiTinh.UseVisualStyleBackColor = true;
+            this.gioiTinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gioiTinh_KeyPress);
             // 
             // label5
             // 
@@ -214,11 +293,23 @@ namespace ThuVien
             // 
             // gridviewNhanVien
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridviewNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridviewNhanVien.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.gridviewNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridviewNhanVien.Location = new System.Drawing.Point(80, 486);
             this.gridviewNhanVien.Name = "gridviewNhanVien";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewNhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridviewNhanVien.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridviewNhanVien.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridviewNhanVien.RowTemplate.Height = 24;
             this.gridviewNhanVien.Size = new System.Drawing.Size(1179, 241);
             this.gridviewNhanVien.TabIndex = 36;
@@ -245,58 +336,6 @@ namespace ThuVien
             this.label7.Size = new System.Drawing.Size(268, 33);
             this.label7.TabIndex = 41;
             this.label7.Text = "     Tìm kiếm nhân viên";
-            // 
-            // btXoa
-            // 
-            this.btXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Image = global::ThuVien.Properties.Resources.icons8_delete_35;
-            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(286, 58);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(139, 63);
-            this.btXoa.TabIndex = 28;
-            this.btXoa.Text = "   Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
-            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
-            // 
-            // btThem
-            // 
-            this.btThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Image = global::ThuVien.Properties.Resources.icons8_add_book_35;
-            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(36, 58);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(139, 64);
-            this.btThem.TabIndex = 15;
-            this.btThem.Text = "   Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
-            this.btThem.Click += new System.EventHandler(this.btThem_Click);
-            // 
-            // btLamMoi
-            // 
-            this.btLamMoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLamMoi.Image = global::ThuVien.Properties.Resources.icons8_refresh_16;
-            this.btLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btLamMoi.Location = new System.Drawing.Point(286, 148);
-            this.btLamMoi.Name = "btLamMoi";
-            this.btLamMoi.Size = new System.Drawing.Size(139, 64);
-            this.btLamMoi.TabIndex = 29;
-            this.btLamMoi.Text = "   Làm mới";
-            this.btLamMoi.UseVisualStyleBackColor = true;
-            this.btLamMoi.Click += new System.EventHandler(this.btLamMoi_Click);
-            // 
-            // btSua
-            // 
-            this.btSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSua.Image = global::ThuVien.Properties.Resources.icons8_support_35;
-            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(36, 148);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(139, 64);
-            this.btSua.TabIndex = 27;
-            this.btSua.Text = "   Sửa";
-            this.btSua.UseVisualStyleBackColor = true;
-            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // NhanVien
             // 
@@ -345,5 +384,6 @@ namespace ThuVien
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView gridviewNhanVien;
+        private System.Windows.Forms.Button loadfile;
     }
 }
